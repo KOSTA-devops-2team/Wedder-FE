@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../css/mypage/mypage.css" />
     <link rel="stylesheet" href="../../css/main/main.css" />
     <script defer src="../../js/main/main.js"></script>
+    <script defer src="../../js/mypage/mypage.js"></script>
   </head>
   <body>
     <div id="header-placeholder"></div>
@@ -96,6 +97,48 @@
             <a href="#">예약 관리 바로가기</a>
           </div>
           <div class="v1-line"></div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <span class="dropbtn_content">Select a menu...</span>
+              <img
+                src="../../assets/images/arrow_drop_down.png"
+                alt="미구현 드랍다운"
+              />
+            </button>
+            <div class="dropdown-content">
+              <div class="fastfood" onclick="showMenu(this.innerText)">
+                Burgerking
+              </div>
+              <div class="fastfood" onclick="showMenu(this.innerText)">
+                Mcdonals
+              </div>
+              <div class="fastfood" onclick="showMenu(this.innerText)">
+                Lotteria
+              </div>
+            </div>
+          </div>
+          <div class="table-divide">
+            <div class="table">
+              <img
+                src="../../assets/images/studioimage.jpg"
+                alt="프로필 이미지"
+              />
+              <div>
+                <div>비슈어 스튜디오</div>
+                <div>서울특별시 서초구 신반포로 41길 7</div>
+              </div>
+            </div>
+            <div class="table">
+              <img
+                src="../../assets/images/studioimage.jpg"
+                alt="프로필 이미지"
+              />
+              <div>
+                <div>비슈어 스튜디오</div>
+                <div>서울특별시 서초구 신반포로 41길 7</div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
