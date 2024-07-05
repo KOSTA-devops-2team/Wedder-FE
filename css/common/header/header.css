@@ -64,15 +64,17 @@ header {
 }
 
 /* 네비게이션 바 */
+
 .header-cate ul {
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+    justify-content: center;
+    padding-top: 35px;
 }
 
-.header-cate li {
+.header-cate li:not(:last-of-type) {
     list-style-type: none;
     font-size: 17px;
+    margin-right: 50px;
 }
 
 .header-cate li:hover {
