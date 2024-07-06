@@ -71,6 +71,10 @@ header {
     padding-top: 35px;
 }
 
+.header-cate a {
+    text-decoration: none;
+}
+
 .header-cate li:not(:last-of-type) {
     list-style-type: none;
     font-size: 17px;
@@ -83,5 +87,4 @@ header {
 
 .header-cate .grey {
     color: gray;
-    font-size: 20px;
 }

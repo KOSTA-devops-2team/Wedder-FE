@@ -1,0 +1,153 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    color: rgb(51, 61, 75);
+    word-break: keep-all;
+}
+
+/* 1. 메인 */
+.main {
+    background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0) 10%,
+            rgba(255, 255, 255, 0.25) 25%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.75) 75%,
+            rgb(255, 255, 255) 100%
+        ),
+        url(/assets/images/main0.png) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    padding-top: 100px;
+}
+
+.main h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.main h3 {
+    font-size: 25px;
+}
+
+/* 2. 스드메 패키지 */
+.package {
+    background: #eeeeee;
+    padding: 180px 0px;
+}
+
+.package h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.package-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 140px 0px;
+}
+
+.package-content {
+    max-width: calc(50% - 30px);
+}
+
+.package-content h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.package-content p {
+    margin-bottom: 22px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.package-item img {
+    max-width: calc(50% - 30px);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: -6px 8px 12px rgb(0, 0, 0, 0.3);
+}
+
+/* 3. 예약  */
+.booking {
+    background: white;
+    padding: 180px 0px;
+}
+
+.booking-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-content h2 {
+    margin-bottom: 80px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.booking-content p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.booking img {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+}
+
+/* 메인 페이지 공통 버튼 */
+.main-btn {
+    display: flex;
+    justify-content: center;
+}
+.main-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ca1a5a;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .main h3 {
+        font-size: 18px;
+    }
+}
