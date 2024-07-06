@@ -96,7 +96,7 @@ p {
 /* 3. 예약  */
 .booking {
     background: white;
-    padding: 180px 0px;
+    padding: 180px 0px 0px 0px;
 }
 
 .booking-content {
