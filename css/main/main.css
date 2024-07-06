@@ -1,138 +1,153 @@
-/* 메인 타이틀 문구 */
-.title {
-  color: #ca1a5a;
+/* 기본 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
 }
 
-.sub-title {
-  font-size: 20px;
+::-webkit-scrollbar {
+    display: none;
 }
 
-.main-title {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 10px;
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    color: rgb(51, 61, 75);
+    word-break: keep-all;
 }
 
-/* 조건 검색 버튼들*/
-.search {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+/* 1. 메인 */
+.main {
+    background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0) 10%,
+            rgba(255, 255, 255, 0.25) 25%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.75) 75%,
+            rgb(255, 255, 255) 100%
+        ),
+        url(/assets/images/main0.png) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
 }
 
-.search-condition {
-  display: flex;
-  font-size: 14px;
-}
-.search-condition div span {
-  border: 1px solid #eeeeee;
-  color: #858585;
-  border-radius: 5px;
-  padding: 7px 14px;
-  margin-right: 15px;
+.main-content {
+    padding-top: 100px;
 }
 
-.search-condition div span img {
-  width: 10px;
-  height: 10px;
-  margin-left: 15px;
+.main h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: black;
 }
 
-/* 지도로보기, 목록으로보기 버튼*/
-.list-search-btn {
-  font-size: 14px;
-  border: 1px solid #ca1a5a;
-  border-radius: 5px;
-  padding: 7px 12px;
-  margin-right: 10px;
+.main h3 {
+    font-size: 25px;
 }
 
-.list-search-btn:hover {
-  font-size: 14px;
-  background-color: #ca1a5a;
-  color: white;
-  border-radius: 5px;
-  padding: 7px 12px;
-  margin-right: 10px;
+/* 2. 스드메 패키지 */
+.package {
+    background: #eeeeee;
+    padding: 180px 0px;
 }
 
-.map-search-btn {
-  font-size: 14px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 7px 12px;
+.package h1 {
+    text-align: center;
+    font-size: 50px;
 }
 
-.map-search-btn:hover {
-  font-size: 14px;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  padding: 7px 12px;
+.package-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 140px 0px;
 }
 
-/* 업체 리스트(card) 부분 */
-.list-all {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 35px;
-  margin-top: 30px;
+.package-content {
+    max-width: calc(50% - 30px);
 }
 
-.card {
-  /* border-radius: 10px;
-    border: 1px solid #eeeeee;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); */
-  height: 350px;
-  width: 250px;
-}
-.card img {
-  width: 250px;
-  height: 240px;
-  /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
+.package-content h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
 }
 
-.card-info {
-  display: flex;
-  flex-direction: column;
-  font-size: 11px;
-  padding: 8px 0px;
+.package-content p {
+    margin-bottom: 22px;
+    font-size: 22px;
+    line-height: 1.5;
 }
 
-.card-info div {
-  margin-bottom: 4px;
+.package-item img {
+    max-width: calc(50% - 30px);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: -6px 8px 12px rgb(0, 0, 0, 0.3);
 }
 
-.card-info div:last-child {
-  margin-bottom: 0;
+/* 3. 예약  */
+.booking {
+    background: white;
+    padding: 180px 0px 0px 0px;
 }
 
-.weddinghall-name {
-  color: #ca1a5a;
-  font-weight: 500;
-  font-size: 13px;
+.booking-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.weddinghall-address {
-  color: #828282;
-  font-weight: 100;
+.booking-content h2 {
+    margin-bottom: 80px;
+    font-size: 40px;
+    text-align: center;
 }
 
-.like-and-score {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.booking-content p {
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
-.like-and-score a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+.booking img {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
 }
 
-.like-and-score img {
-  margin-right: 5px;
-  width: 18px;
-  height: 18px;
+/* 메인 페이지 공통 버튼 */
+.main-btn {
+    display: flex;
+    justify-content: center;
+}
+.main-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ca1a5a;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .main h3 {
+        font-size: 18px;
+    }
 }
