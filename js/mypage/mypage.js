@@ -1,10 +1,5 @@
 window.onload=()=>{
-    document.querySelector('.dropbtn_click').onclick = ()=>{
-      dropdown();
-    }
-    document.getElementsByClassName('fastfood').onclick = ()=>{
-      showMenu(value);
-    };
+
     dropdown = () => {
       var v = document.querySelector('.dropdown-content');
       var dropbtn = document.querySelector('.dropbtn')

@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-family: "Roboto", sans-serif;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
 }
 
 ol,
@@ -115,11 +115,10 @@ section {
 
 html,
 body {
-    min-height: 100vh;
-    min-width: 1480px;
-    height: 100vh;
-    font-family: "Roboto", sans-serif;
-
+  min-height: 100vh;
+  min-width: 1480px;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -127,7 +126,7 @@ body {
 }
 
 body > * {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (min-width: 1200px) {
@@ -187,7 +186,7 @@ table {
 }
 
 .main-content {
-  /*min-height: calc(100vh - 136px);*/
+  min-height: calc(100vh - 136px);
 }
 
 .hd__contianer {
