@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .sub-title {
-  font-size: 15px;
+  font-size: 20px;
   color: #ca1a5a;
   font-weight: bold;
 }
@@ -164,10 +164,6 @@
   height: 20px;
 }
 
-.visit-plan table #today-vs-plan-table {
-  border-spacing: 10px;
-}
-
 /* ------- */
 .table {
   display: flex;
@@ -194,15 +190,11 @@
   font-size: 20px;
   font-weight: bold;
 }
-table,
-th,
-td {
-  border: 2px solid black;
+/*  */
+#today-vs-plan-table {
+  padding: 10px;
+  tab-size: 50px;
 }
-table {
-  border-collapse: collapse;
-}
-
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   color: yellow;
@@ -218,4 +210,15 @@ table {
   width: 20px;
   height: 20px;
   margin: 0px;
+}
+/* proposal */
+.Proposal :nth-last-of-type(1) {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+}
+.Proposal img {
+  width: 200px;
 }
