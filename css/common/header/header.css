@@ -44,7 +44,7 @@ header {
 
 .header-user {
     display: flex;
-    font-size: 12px;
+    font-size: 13px;
     justify-content: flex-end;
     flex: 1;
     align-items: center;
@@ -54,25 +54,12 @@ header {
     margin-right: 15px;
 }
 
-.header-user a {
-    text-decoration: none;
-}
-
-.header-user a:hover {
-    text-decoration: none;
-    color: #ca1a5a;
-}
-
 /* 네비게이션 바 */
 
 .header-cate ul {
     display: flex;
     justify-content: center;
     padding-top: 35px;
-}
-
-.header-cate a {
-    text-decoration: none;
 }
 
 .header-cate li:not(:last-of-type) {

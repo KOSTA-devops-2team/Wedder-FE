@@ -30,10 +30,6 @@
     font-size: 14px;
 }
 
-.keyword-container ul li a {
-    text-decoration: none;
-}
-
 /* 카드 슬라이드 부분 */
 .carousel-container {
     position: relative;

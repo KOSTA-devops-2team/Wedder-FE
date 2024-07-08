@@ -26,21 +26,21 @@ p {
     background: linear-gradient(
             to top,
             rgba(255, 255, 255, 0) 10%,
-            rgba(255, 255, 255, 0.25) 25%,
-            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.4) 25%,
+            rgba(255, 255, 255, 0.55) 50%,
             rgba(255, 255, 255, 0.75) 75%,
             rgb(255, 255, 255) 100%
         ),
-        url(/assets/images/main0.png) no-repeat center center/cover;
+        url(../../assets/images/main0.png) no-repeat center center/cover;
     color: white;
     text-align: center;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 170px);
     display: flex;
     justify-content: center;
 }
 
 .main-content {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .main h1 {
@@ -134,7 +134,6 @@ p {
     color: white;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none;
 }
 
 .main-button:hover {
