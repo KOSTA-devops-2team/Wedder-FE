@@ -39,6 +39,9 @@
   flex-direction: row;
   justify-content: center;
 }
+.divide p {
+  color: white;
+}
 
 .v-line {
   border-left: 1px solid white;
@@ -202,4 +205,17 @@ table {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: yellow;
+}
+.evaluate-store {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 40px;
+}
+
+.evaluate-store img {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
 }
