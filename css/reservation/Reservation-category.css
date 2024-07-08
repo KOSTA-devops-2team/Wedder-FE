@@ -5,17 +5,13 @@
 }
 
 .title-sub {
-    font-size: 16px;
-    font-weight: normal;
-    letter-spacing: -0.5px;
-    margin-bottom: 5px;
+    font-size: 17px;
 }
 
 .title-main {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 8px 0 20px 0;
 }
 
 /* 스텝 Bar */
