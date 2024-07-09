@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.p {
+  text-align: center;
+}
+
 .sub-title {
   font-size: 20px;
   color: #ca1a5a;
@@ -191,10 +195,27 @@
   font-weight: bold;
 }
 /*  */
-#today-vs-plan-table {
-  padding: 10px;
-  tab-size: 50px;
+.table-VSplan {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-size: 1rem;
+  letter-spacing: 5px;
+  border-spacing: 300px;
 }
+.table-VSplan th {
+  font-size: 1.3rem;
+}
+.table-VSplan thead {
+  background-color: #f5dcbc;
+  color: black;
+}
+
+th,
+td {
+  width: 400px;
+  text-align: center;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   color: yellow;
