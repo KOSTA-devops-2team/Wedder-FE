@@ -31,7 +31,8 @@ p {
             rgba(255, 255, 255, 0.75) 75%,
             rgb(255, 255, 255) 100%
         ),
-        url(../../assets/images/main0.png) no-repeat center center/cover;
+        url(https://wdrtest1.s3.ap-northeast-2.amazonaws.com/main/main0.png)
+            no-repeat center center/cover;
     color: white;
     text-align: center;
     height: calc(100vh - 180px);
