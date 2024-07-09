@@ -31,15 +31,24 @@ h3 {
 .List-content h3 {
   font-size: 24px;
 }
+/* Search-bar */
 .search-bar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   text-align: center;
+  margin-right: 400px;
 }
+/* LikeList-Card */
 .LikeList-Card {
-  border: 1px solid #ca1a5a;
+  border: 1px solid black;
   width: 200px;
+  border-radius: 5%;
+}
+
+.LikeList-Card img {
+  width: 198px;
+  border-radius: 7%;
 }
 .LikeList-Card-List {
   display: grid;
