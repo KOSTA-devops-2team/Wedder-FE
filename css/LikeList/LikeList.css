@@ -8,17 +8,10 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-  color: rgb(51, 61, 75);
-  word-break: keep-all;
-}
 .List-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin-left: 400px;
 }
 .List-content p,
@@ -29,7 +22,7 @@ h3 {
   font-size: 10px;
 }
 .List-content h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 /* Search-bar */
 .search-bar {
@@ -42,11 +35,18 @@ h3 {
 /* LikeList-Card */
 .LikeList-Card {
   border: 1px solid black;
-  width: 200px;
+  width: 210px;
   border-radius: 5%;
+  text-align: center;
 }
-
+.LikeList-Card h5 {
+  font-size: 13px;
+}
+.LikeList-Card li {
+  font-size: 11px;
+}
 .LikeList-Card img {
+  margin: 5px;
   width: 198px;
   border-radius: 7%;
 }
