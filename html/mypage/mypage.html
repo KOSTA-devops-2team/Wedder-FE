@@ -23,7 +23,8 @@
   <body>
     <div id="header-placeholder"></div>
     <div class="hd__inner1100">
-      <section class="body-header">
+      <!-- 1.마이페이지 메인페이지 -->
+      <section class="body-header" id="Mypage-section1">
         <div class="divide">
           <div class="body-header-main">
             <p>안녕하십니까 순두부님</p>
@@ -46,8 +47,8 @@
         </div>
       </section>
       <main>
-        <!-- 프로필 정보 -->
-        <section class="profile">
+        <!-- 2.프로필 정보 -->
+        <section class="profile" id="Mypage-section2">
           <div class="sub-title">나의 프로필 정보</div>
           <div class="out">
             <a href="#">회원 탈퇴</a>
@@ -97,25 +98,55 @@
             </div>
           </div>
         </section>
-
-        <section class="visit-plan">
+        <!-- 3.금일 방문 일정 -->
+        <section class="visit-plan" id="Mypage-section3">
           <div class="sub-title">금일 방문 일정</div>
           <div>💡️금일 일정 <span id="EA">2건</span> 있습니다.</div>
           <div class="ReservationMange-go">
             <a href="#">방문 일정 상세보기</a>
           </div>
           <div class="v1-line"></div>
-          <div class="table_VSplan">
-            <div class="row_header">
-              <div class="cell">Name</div>
-              <div class="cell">Age</div>
-              <div class="cell">Occupation</div>
-              <div class="cell">Location</div>
-            </div>
-          </div>
+          <br>
+          <table class="table-VSplan">
+            <thead>
+              <tr>
+              <th>스튜디오명</th>
+              <th>예약자</th>
+              <th>금일 예약 시간</th>
+              <th>상태</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>s스튜디오</td>
+                <td>박종원</td>
+                <td>2025-10-19 일요일</td>
+                <td>예약 중</td>
+              </tr> 
+              <tr>
+                <td>t스튜디오</td>
+                <td>박종원</td>
+                <td>2025- 1-31 월요일</td>
+                <td>결제 완료</td>
+              </tr> 
+              <tr>
+                <td>c스튜디오</td>
+                <td>박종원</td>
+                <td>2025- 2-04 월요일</td>
+                <td>예약 중</td>
+              </tr> 
+              <tr>
+                <td>p스튜디오</td>
+                <td>박종원</td>
+                <td>2025- 3-05 월요일</td>
+                <td>결제 완료</td>
+              </tr> 
+            </tbody>
+          </table>
         </section>
         <BR></BR>
-        <section class="recent-reservation">
+        <!-- 4.현재 예약 현황 -->
+        <section class="recent-reservation" id="Mypage-section4">
           <div class="sub-title">현재 예약 현황</div>
           <div>✅금일 한정 추천 예약  <span id="EA">3건</span> 있습니다.</div>
           <div class="ReservationMange-go">
@@ -225,7 +256,8 @@
             </div>
           </div>
         </section>
-        <section class="Proposal">
+        <!--5. 추천 스튜디오  -->
+        <section class="Proposal" id="Mypage-section5">
           <div class="sub-title">추천 스튜디오</div>
           <br>
           <div class="proposal-cardpackage">
