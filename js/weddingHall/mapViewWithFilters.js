@@ -8,7 +8,8 @@ document.getElementById("prevButton").addEventListener("click", () => {
     if (currentIndex > 0) {
         currentIndex--;
     } else {
-        currentIndex = totalItems - itemsPerSlide;
+        // currentIndex = totalItems - itemsPerSlide;
+        Event.preventDefault();
     }
     updateCarousel();
 });
@@ -17,7 +18,8 @@ document.getElementById("nextButton").addEventListener("click", () => {
     if (currentIndex < totalItems - itemsPerSlide) {
         currentIndex++;
     } else {
-        currentIndex = 0;
+        // currentIndex = 0;
+        Event.preventDefault();
     }
     updateCarousel();
 });
