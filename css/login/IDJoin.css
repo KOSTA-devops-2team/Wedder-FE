@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+/* 모양맞추기 */
+.join{
+    position: absolute;
+    padding: 50px;
+    width: 460px;
+    background-color: #fff;
+    border-radius: 5px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+hr{
+    width: 180px;
+    border: 3px solid;
+    margin-left: 0;
+}
+
+.idset input{
+    width: 440px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius:1px;
+}
+
+.idset input:focus{
+    border-color: #CA1A5A;
+    outline: none;
+    
+}
+
+.bt{
+    width: 450px;
+    height: 50px;
+    background-color: #b1b1b1;
+    border: none;
+    color:white;
+}
