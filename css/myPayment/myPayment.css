@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* 기본 */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+/* 1.폴더 위치 */
+.myPayment-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.myPayment-location :nth-last-of-type(1) {
+  color: #ca1a5a;
+}
+/* 2.헤더 설명 */
+.myPayment-header h3 {
+  color: #ca1a5a;
+}
+/* 3. 서치 바 */
+.myPayment-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+/*  중간 선 */
+.v1-line {
+  border-bottom: 3px solid black;
+  height: 2px;
+  margin: 5px;
+}
+/* 4. 결제 내역*/
+.table-myPayment {
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  border-spacing: 500px;
+}
+th,
+td {
+  width: 400px;
+
+  text-align: center;
+  vertical-align: middle;
+}
+.table-myPayment tr {
+  border: 1px solid #757575;
+}
+.table-myPayment thead tr {
+  border: none;
+}
+.table-myPayment tbody :nth-last-of-type(5) {
+  color: #ca1a5a;
+}
+.table-myPayment tbody img {
+  width: 100px;
+}
