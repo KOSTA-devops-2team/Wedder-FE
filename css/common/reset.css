@@ -97,7 +97,7 @@ ul {
     list-style: none;
 }
 
-/* article,
+article,
 aside,
 details,
 figcaption,
@@ -109,7 +109,7 @@ menu,
 nav,
 section {
     display: block;
-} */
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
@@ -117,6 +117,7 @@ html,
 body {
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
+    min-width: 1480px;
 }
 
 body {
@@ -142,11 +143,13 @@ button {
         min-width: 1200px;
     }
 }
+
 @media screen and (min-width: 1300px) {
     body {
         min-width: 1300px;
     }
 }
+
 @media screen and (min-width: 1400px) {
     body {
         min-width: 1400px;
@@ -159,11 +162,6 @@ button {
     }
 }
 
-@media screen and (min-width: 1600px) {
-    body {
-        min-width: 1600px;
-    }
-}
 @media screen and (min-width: 1900px) {
     body {
         min-width: 1900px;

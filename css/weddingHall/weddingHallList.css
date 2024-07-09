@@ -13,7 +13,7 @@
     margin-top: 8px;
 }
 
-/* 조건 검색 버튼들*/
+/* 조건 검색 버튼들 */
 .search {
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,7 @@
     display: flex;
     font-size: 14px;
 }
+
 .search-condition div span {
     border: 1px solid #eeeeee;
     color: #858585;
@@ -38,7 +39,7 @@
     margin-left: 15px;
 }
 
-/* 지도로보기, 목록으로보기 버튼*/
+/* 지도로보기, 목록으로보기 버튼 */
 .list-search-btn {
     font-size: 14px;
     border: 1px solid #ca1a5a;
@@ -81,11 +82,15 @@
 
 .card {
     height: 350px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
+    overflow: inherit;
 }
+
 .card img {
-    width: 250px;
-    height: 240px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
 }
 
 .card-info {
