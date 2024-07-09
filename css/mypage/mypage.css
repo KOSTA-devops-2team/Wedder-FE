@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
+.p {
+  text-align: center;
+}
+
 .sub-title {
-  font-size: 15px;
+  font-size: 20px;
   color: #ca1a5a;
   font-weight: bold;
 }
@@ -164,10 +168,6 @@
   height: 20px;
 }
 
-.visit-plan table #today-vs-plan-table {
-  border-spacing: 10px;
-}
-
 /* ------- */
 .table {
   display: flex;
@@ -194,13 +194,26 @@
   font-size: 20px;
   font-weight: bold;
 }
-table,
+/*  */
+.table-VSplan {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-size: 1rem;
+  letter-spacing: 5px;
+  border-spacing: 300px;
+}
+.table-VSplan th {
+  font-size: 1.3rem;
+}
+.table-VSplan thead {
+  background-color: #f5dcbc;
+  color: black;
+}
+
 th,
 td {
-  border: 2px solid black;
-}
-table {
-  border-collapse: collapse;
+  width: 400px;
+  text-align: center;
 }
 
 .material-symbols-outlined {
@@ -218,4 +231,25 @@ table {
   width: 20px;
   height: 20px;
   margin: 0px;
+}
+/* proposal */
+.proposal-cardpackage {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
+  margin-left: 90px;
+}
+.proposal-card {
+  border: 1px solid rgb(158, 158, 158);
+  margin: 10px;
+  width: 205px;
+}
+.proposal-card div {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.Proposal img {
+  width: 200px;
 }

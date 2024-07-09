@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  color: rgb(51, 61, 75);
+  word-break: keep-all;
+}
+.List-content {
+  margin-left: 400px;
+}
+.List-content p,
+h3 {
+  color: #ca1a5a;
+}
+.List-content p {
+  font-size: 10px;
+}
+.List-content h3 {
+  font-size: 24px;
+}
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+}
+.LikeList-Card {
+  border: 1px solid #ca1a5a;
+  width: 200px;
+}
+.LikeList-Card-List {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
