@@ -1,7 +1,7 @@
 let currentIndex = 0;
 
-const carousel = document.querySelector(".carousel");
-const totalItems = document.querySelectorAll(".carousel-item").length;
+const carousel = document.querySelector(".slide-inner");
+const totalItems = document.querySelectorAll(".slide-item").length;
 const itemsPerSlide = 4;
 
 document.getElementById("prevButton").addEventListener("click", () => {

@@ -8,10 +8,12 @@
     width: 800px;
     height: 500px;
 }
+
 /* 키워드 */
 .keyword {
     margin: 70px 0 30px 0;
 }
+
 .keyword h2 {
     font-size: 20px;
 }
@@ -31,26 +33,29 @@
 }
 
 /* 카드 슬라이드 부분 */
-.carousel-container {
+.slide {
     position: relative;
     margin: 0 auto;
-    overflow: hidden;
 }
 
-.carousel {
+.slide-container {
     display: flex;
+    transition: transform 1.5s ease;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.slide-inner {
+    display: flex;
+    width: 100%;
+    transform: translateX(0);
     transition: transform 1.5s ease;
 }
 
-.carousel-inner {
-    display: flex;
-    width: 100%;
-}
-
-.carousel-item {
+.slide-item {
     flex: 0 0 calc(25% - 20px);
     border-radius: 15px;
-    border: 1px solid #e7e8eb;
+    border: 1px solid #eeeeee;
     box-shadow: 4px 6px 7px rgb(202, 202, 202);
     margin: 0px 10px;
     display: flex;
@@ -58,9 +63,7 @@
     align-items: center;
 }
 
-.carousel-item-title {
-    background-color: #dca9ba;
-
+.slide-item-title {
     font-size: 12px;
     color: white;
     padding: 20px;
@@ -68,7 +71,7 @@
     border-top-right-radius: 15px;
 }
 
-.carousel-item-title {
+.slide-item-title {
     font-size: 12px;
     color: white;
     padding: 20px;
@@ -76,39 +79,39 @@
     border-top-right-radius: 15px;
 }
 
-.carousel-item:nth-child(4n + 1) .carousel-item-title {
+.slide-item:nth-child(4n + 1) .slide-item-title {
     background-color: #dca9ba;
 }
 
-.carousel-item:nth-child(4n + 2) .carousel-item-title {
+.slide-item:nth-child(4n + 2) .slide-item-title {
     background-color: #85aed4;
 }
 
-.carousel-item:nth-child(4n + 3) .carousel-item-title {
+.slide-item:nth-child(4n + 3) .slide-item-title {
     background-color: #65af83;
 }
 
-.carousel-item:nth-child(4n + 4) .carousel-item-title {
+.slide-item:nth-child(4n + 4) .slide-item-title {
     background-color: #8a8dd3;
 }
 
-.carousel-item-title h2 {
+.slide-item-title h2 {
     font-size: 16px;
 }
 
-.carousel-item-img {
+.slide-item-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.carousel-item-img img {
+.slide-item-img img {
     border-radius: 5px;
     width: 210px;
     height: 180px;
     margin: 15px auto;
 }
 
-.carousel-item-content {
+.slide-item-content {
     width: 83%;
     padding: 10px 20px;
     background-color: #f7f7f8;
@@ -119,25 +122,33 @@
     align-items: left;
 }
 
-.carousel-item-content h3 {
+.slide-item-content h3 {
     font-size: 14px;
 }
-.carousel-item-content p {
+.slide-item-content p {
     margin-top: 3px;
     font-size: 13px;
 }
 
-.carousel-button {
-    position: absolute;
-    top: 50%;
+.slide-button {
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 10;
-    background-color: rgb(255, 255, 255, 0.1);
     border: none;
+    position: absolute;
+    z-index: 1000;
 }
 
-.carousel-button img {
+.slide-button.right {
+    right: -5%;
+    top: 50%;
+}
+
+.slide-button.left {
+    top: 50%;
+    left: -5%;
+}
+
+.slide-button img {
     width: 30px;
     height: 90px;
 }
