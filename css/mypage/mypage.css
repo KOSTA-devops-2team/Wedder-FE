@@ -212,12 +212,22 @@
   margin: 0px;
 }
 /* proposal */
-.Proposal :nth-last-of-type(1) {
+.proposal-cardpackage {
   display: inline-flex;
   flex-direction: row;
-  justify-content: center;
-  border: 1px solid #ccc;
-  margin-left: 20px;
+  justify-content: flex-start;
+  margin: 10px;
+  margin-left: 90px;
+}
+.proposal-card {
+  border: 1px solid rgb(158, 158, 158);
+  margin: 10px;
+  width: 205px;
+}
+.proposal-card div {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .Proposal img {
   width: 200px;
