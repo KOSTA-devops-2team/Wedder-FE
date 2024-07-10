@@ -10,15 +10,16 @@
             href="../../css/weddingHall/weddingHallDetail.css"
         />
         <script defer src="../../js/main/main.js"></script>
+        <script defer src="../../js/weddingHall/weddingHallDetail.js"></script>
     </head>
     <body>
         <div id="header-placeholder"></div>
         <div class="hd__inner1100">
             <!-- 1. 업체 설명 + 이미지 슬라이드 -->
-            <section class=""></section>
+            <section class="description"></section>
 
             <!-- 2. 업체 정보 + 지도-->
-            <section class="imforamtion">
+            <section class="information">
                 <div class="title-container">
                     <h2>Information</h2>
                     <a href="#">후기 보러가기 >>></a>
@@ -86,16 +87,62 @@
             </section>
 
             <!-- 3. 예식일정 현황-->
-            <section class=""></section>
+            <section class="schedule">
+                <div class="title-container">
+                    <h2>예식 일정 현황</h2>
+                </div>
+
+                <div class="schedule-container">
+                    <div class="calendar">
+                        <h4>
+                            ✔️ 예식을 의망하는 날짜에 예약이 가능한지 확인해
+                            보세요
+                        </h4>
+                        <div id="calendar"></div>
+                        <img
+                            src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/calendar.png"
+                        />
+                    </div>
+                    <div class="schedule-choose">
+                        <div class="schedule-choose-container">
+                            <div>
+                                <span></span>
+                                <h3>가능한 일정만 보기</h3>
+                            </div>
+                            <div class="time-lists">
+                                <div class="time-list">
+                                    <span>10:00</span>
+                                    <span>[웨딩홀] 마리아쥬스퀘어</span>
+                                </div>
+                                <div class="time-list">
+                                    <span>12:00</span>
+                                    <span>[웨딩홀] 마리아쥬스퀘어</span>
+                                </div>
+                                <div class="time-list">
+                                    <span>14:00</span>
+                                    <span>[웨딩홀] 마리아쥬스퀘어</span>
+                                </div>
+                                <div class="time-list">
+                                    <span>16:00</span>
+                                    <span>[웨딩홀] 마리아쥬스퀘어</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="schedule-button">
+                            방문 상담 신청 하러가기
+                        </button>
+                    </div>
+                </div>
+            </section>
 
             <!-- 4. 웨딩홀 견적 계산기-->
-            <section class=""></section>
+            <section class="estimator"></section>
 
-            <!-- 5. 비슷한 가격대 웨딩홀-->
-            <section class=""></section>
+            <!-- 5. 비슷한 가격대 웨딩홀 -->
+            <section class="similar-price"></section>
 
-            <!-- 6. 다른 고객이 함께 본 상품-->
-            <section class=""></section>
+            <!-- 6. 다른 고객이 함께 본 상품 -->
+            <section class="recommended"></section>
         </div>
         <div id="footer-placeholder"></div>
     </body>
