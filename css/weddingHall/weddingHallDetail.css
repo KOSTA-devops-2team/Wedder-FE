@@ -1,0 +1,76 @@
+.imforamtion {
+    position: relative;
+    margin: 0 auto;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ca1a5a;
+    padding-bottom: 10px;
+}
+
+.title-container h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.title-container a {
+    color: #ca1a5a;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 50px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    padding: 6px;
+    text-align: left;
+}
+
+.info-map img {
+    width: 450px;
+    height: 200px;
+    margin-left: 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin: 0 10px;
+}
+
+.like-btn {
+    background-color: #ca1a5a;
+    padding: 10px 30px;
+}
+.like-btn:hover {
+    background-color: #ff9ec2;
+    padding: 10px 30px;
+}
+
+.list-btn {
+    background-color: black;
+    padding: 10px 36px;
+}
+
+.list-btn:hover {
+    background-color: #717171;
+    padding: 10px 36px;
+}
