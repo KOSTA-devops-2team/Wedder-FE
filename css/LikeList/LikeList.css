@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 400px;
 }
 .List-content p,
 h3 {
@@ -30,7 +29,6 @@ h3 {
   flex-direction: row;
   justify-content: flex-end;
   text-align: center;
-  margin-right: 400px;
 }
 /* LikeList-Card */
 .LikeList-Card {

@@ -64,4 +64,5 @@ td {
 }
 .table-myPayment tbody li {
   font-size: 9px;
+  display: none;
 }
