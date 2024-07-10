@@ -44,7 +44,6 @@ td {
   width: 400px;
 
   text-align: center;
-  vertical-align: middle;
 }
 .table-myPayment tr {
   border: 1px solid #757575;
@@ -57,4 +56,12 @@ td {
 }
 .table-myPayment tbody img {
   width: 100px;
+}
+.table-myPayment tbody td ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.table-myPayment tbody li {
+  font-size: 9px;
 }
