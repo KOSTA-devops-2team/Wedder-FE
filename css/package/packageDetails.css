@@ -1,2 +1,125 @@
-@charset "utf-8";
-
+.body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.container {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 24px;
+    color: #666;
+}
+.header h2 {
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
+}
+.service {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.service img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.service .description {
+    flex: 1;
+}
+.service .description h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+.service .description p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+.service .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.service .actions a {
+    font-size: 14px;
+    color: #ff0066;
+    text-decoration: none;
+}
+.totals {
+    margin-top: 20px;
+    text-align: right;
+}
+.totals p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+.totals p.discount {
+    color: #ff0066;
+}
+.discount-box {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffebee;
+    color: #ff0066;
+    text-align: center;
+    border: 1px solid #ff0066;
+    border-radius: 10px;
+}
+.saving {
+    padding-top: 10px;
+    font-weight: bold;  
+    font-size: 25px;
+}
+.discount-box p {
+    color: #333;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.buttons .pay {
+    width: 270px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff0066;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}   
+.buttons .back {
+    width: 270px;
+    height: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e5e5e5;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
