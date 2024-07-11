@@ -32,20 +32,25 @@ h3 {
 }
 /* LikeList-Card */
 .LikeList-Card {
-  border: 1px solid black;
-  width: 210px;
+  border: 2px solid #eeeeee;
+  width: 240px;
   border-radius: 5%;
-  text-align: center;
+  text-align: left;
+  margin: 20px;
 }
 .LikeList-Card h5 {
   font-size: 13px;
 }
+.LikeList-Card ul {
+  margin-left: 40px;
+}
 .LikeList-Card li {
+  margin-top: 5px;
   font-size: 11px;
 }
 .LikeList-Card img {
-  margin: 5px;
-  width: 198px;
+  margin: 20px;
+  width: 200px;
   border-radius: 7%;
 }
 .LikeList-Card-List {
