@@ -133,7 +133,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 30px 50px;
-    gap: 70px;
+    gap: 23px 80px;
 }
 
 .section h2 {
@@ -161,11 +161,11 @@
 .month-grids {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin: 0 40px;
+    margin: 0 20px;
 }
 .month-grids button {
     border: 1px solid #eeeeee;
-    height: 50px;
+    height: 58px;
 }
 
 .month-grid-selected {
@@ -174,10 +174,56 @@
     border: 1px solid #ca1a5a;
 }
 
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-start;
+}
+
+.guest-num {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.result input {
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.result-sub-title {
+    font-size: 16px;
+    color: #848484;
+    margin-bottom: 10px;
+}
+
+.guest-num span {
+    width: 50%;
+}
+
+.guest-num input {
+    margin-left: 200px;
+    margin-right: 10px;
+    width: 50%;
+}
+
+.estimator-warning {
+    width: 95%;
+    border: 1px solid #ca1a5a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.estimator-warning p {
+    font-size: 14px;
+    word-break: keep-all;
+}
+
 .result-calc {
     text-align: right;
     font-size: 20px;
-    margin-top: 20px;
 }
 
 .calculate-button {
@@ -192,40 +238,4 @@
 
 .calculate-button:hover {
     background-color: #f4699c;
-}
-.result p {
-    margin-top: -20px;
-}
-.result input {
-    border: 1px solid #eeeeee;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-}
-
-.guest-num {
-    display: flex;
-    align-items: center;
-}
-
-.guest-num span {
-    width: 50%;
-}
-
-.guest-num input {
-    margin-left: 200px;
-    margin-right: 10px;
-    width: 50%;
-}
-
-.result-sub-title {
-    font-size: 16px;
-    color: #848484;
-    margin-bottom: 10px;
-}
-
-.result {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
