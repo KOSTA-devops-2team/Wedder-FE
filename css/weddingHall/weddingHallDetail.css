@@ -14,7 +14,7 @@
 
 .title-container h2 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .title-container a {
@@ -238,4 +238,168 @@
 
 .calculate-button:hover {
     background-color: #f4699c;
+}
+
+/* 5. 비슷한 가격대 웨딩홀 */
+.similar {
+    margin-top: 120px;
+    position: relative;
+}
+
+.similar-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.similar-inner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.similar-item {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+}
+
+.similar-item-title {
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.similar-item-img {
+    display: flex;
+    justify-content: center;
+}
+.similar-item-img img {
+    width: 186px;
+    height: 186px;
+    margin: 10px auto;
+    object-fit: cover;
+}
+
+.similar-item-content p {
+    font-size: 13px;
+}
+
+.similar-item-title h2 {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+/* 슬라이드 <, > 버튼 */
+.similar-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.similar-button {
+    cursor: pointer;
+    border: none;
+}
+
+.similar-button.left {
+    margin-right: 30px;
+}
+
+.similar-button.right {
+    margin-left: 30px;
+}
+.similar-button img {
+    width: 25px;
+    height: 30px;
+}
+
+/* 6. 다른 고객이 함께 본 상품  */
+.recommend {
+    margin-top: 120px;
+    position: relative;
+}
+
+.recommend-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.recommend-inner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.recommend-item {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+}
+
+.recommend-item-title {
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.recommend-item-img {
+    display: flex;
+    justify-content: center;
+}
+.recommend-item-img img {
+    width: 186px;
+    height: 186px;
+    margin: 10px auto;
+    object-fit: cover;
+}
+
+.recommend-item-content p {
+    font-size: 13px;
+}
+
+.recommend-item-title h2 {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+/* 슬라이드 <, > 버튼 */
+.recommend-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.recommend-button {
+    cursor: pointer;
+    border: none;
+}
+
+.recommend-button.left {
+    margin-right: 30px;
+}
+
+.recommend-button.right {
+    margin-left: 30px;
+}
+.recommend-button img {
+    width: 25px;
+    height: 30px;
+}
+
+.currentPage {
+    font-size: 25px;
+    margin: 0 10px;
+    font-weight: 300;
+}
+
+.totalPages {
+    margin: 0 10px;
+    font-size: 25px;
+    color: rgb(160, 160, 160);
+    font-weight: 300;
+}
+
+.slice {
+    margin: 0 15px;
+    font-size: 25px;
+    color: rgb(160, 160, 160);
+    font-weight: 300;
 }
