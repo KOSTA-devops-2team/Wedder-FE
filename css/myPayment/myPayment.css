@@ -39,14 +39,18 @@ body {
   letter-spacing: 3px;
   border-spacing: 500px;
 }
+.table-myPayment thead {
+  height: 60px;
+}
 th,
 td {
   width: 400px;
-
   text-align: center;
+  border-bottom: 1px solid #eeeeee;
 }
-.table-myPayment tr {
-  border: 1px solid #757575;
+.table-myPayment td {
+  height: 130px;
+  background-color: white;
 }
 .table-myPayment thead tr {
   border: none;
