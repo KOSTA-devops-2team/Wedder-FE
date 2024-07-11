@@ -10,11 +10,13 @@
     align-items: center;
     border-bottom: 2px solid #ca1a5a;
     padding-bottom: 10px;
+    /* margin: 0 40px; */
 }
 
 .title-container h2 {
     font-weight: 700;
     font-size: 22px;
+    margin-left: 30px;
 }
 
 .title-container a {
@@ -242,7 +244,7 @@
 
 /* 5. 비슷한 가격대 웨딩홀 */
 .similar {
-    margin-top: 120px;
+    margin-top: 90px;
     position: relative;
 }
 
@@ -314,7 +316,7 @@
 
 /* 6. 다른 고객이 함께 본 상품  */
 .recommend {
-    margin-top: 120px;
+    margin-top: 90px;
     position: relative;
 }
 
@@ -402,4 +404,8 @@
     font-size: 25px;
     color: rgb(160, 160, 160);
     font-weight: 300;
+}
+
+.noline {
+    border-bottom: none;
 }
