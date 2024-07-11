@@ -26,12 +26,6 @@ body {
   flex-direction: row;
   justify-content: flex-end;
 }
-/*  중간 선 */
-.v1-line {
-  border-bottom: 3px solid black;
-  height: 2px;
-  margin: 5px;
-}
 /* 4. 결제 내역*/
 .table-myPayment {
   border-collapse: collapse;
