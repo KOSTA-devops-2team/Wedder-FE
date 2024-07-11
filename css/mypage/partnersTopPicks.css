@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*  기본 */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+/* 1. 헤더 설명 */
+.partnersTopPicks-header h3 {
+  color: #ca1a5a;
+}
+/* 2. 서치 바 */
+.partnersTopPicks-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+/* 3. 신랑 Like , 신부 Like */
