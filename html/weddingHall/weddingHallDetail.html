@@ -136,7 +136,154 @@
             </section>
 
             <!-- 4. 웨딩홀 견적 계산기-->
-            <section class="estimator"></section>
+            <section class="estimator">
+                <div class="title-container">
+                    <h2>예식 일정 현황</h2>
+                </div>
+                <div class="grid-container">
+                    <div class="section">
+                        <h2>기본 사용료</h2>
+                        <table>
+                            <tr>
+                                <th>선택</th>
+                                <th>홀 명칭</th>
+                                <th>음식사용료(대관비)</th>
+                                <th>최소보증인원</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked /></td>
+                                <td>에드토홀</td>
+                                <td>7,000,000원</td>
+                                <td>200명</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="section">
+                        <h2>예식 희망월</h2>
+                        <div class="month-grids" >
+                            <button class="month-grid">1월</button>
+                            <button class="month-grid">2월</button>
+                            <button class="month-grid">3월</button>
+                            <button class="month-grid">4월</button>
+                            <button class="month-grid">5월</button>
+                            <button class="month-grid">6월</button>
+                            <button class="month-grid">7월</button>
+                            <button class="month-grid">8월</button>
+                            <button class="month-grid">9월</button>
+                            <button class="month-grid">10월</button>
+                            <button class="month-grid">11월</button>
+                            <button class="month-grid">12월</button>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h2>식사가격</h2>
+                        <table>
+                            <tr>
+                                <th>선택</th>
+                                <th>식사 유형</th>
+                                <th>가격</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>양식(A코스)</td>
+                                <td>70,000원</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>한식(B코스)</td>
+                                <td>70,000원</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="section">
+                        <h2>예식 시간</h2>
+                        <table>
+                            <tr>
+                                <th>선택</th>
+                                <th>시간</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>오전(~12:00)
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>점심(12:00~14:30)
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    오후(14:30~17:00)
+                                   </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    저녁(17:00~)
+                                   </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    시간 무관</td>
+                            </tr>    
+                        </table>
+
+                    </div>
+            
+                    <div class="section">
+                        <h2>옵션</h2>
+                        <table>
+                            <tr>
+                                <th>선택</th>
+                                <th>구분</th>
+                                <th>가격</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>웨딩 디렉팅</td>
+                                <td>600,000원</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>연주 피아노 3중주</td>
+                                <td>330,000원</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>사회자</td>
+                                <td>350,000원</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>꽃장식</td>
+                                <td>4,500,000원</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="section result">
+                        <h2>예상 하객수</h2>
+                        <p class="result-sub-title">최소보증인원 이상으로 계산이 가능합니다. 100단위로 작성해주세요</p>
+                        
+                        <div class="guest-num">
+                            <span>예상 하객수 </span>
+                            <input type="number" value="100"> 명
+                        </div>
+
+                        <div class="result-calc">
+                            <button class="calculate-button" onclick="calculate()">견적 계산하기</button>
+                            <span>정상가 기준 견적(부가세 포함) : </span> 
+                            <span>276,000,000원</span>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                </div>
+            </section>
 
             <!-- 5. 비슷한 가격대 웨딩홀 -->
             <section class="similar-price"></section>

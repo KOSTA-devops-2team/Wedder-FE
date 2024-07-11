@@ -98,7 +98,7 @@
 
 .time-list {
     background-color: #eeeeee;
-    padding: 18px 25px;
+    padding: 18px 35px;
     margin: 10px 0;
     border-radius: 5px;
     display: flex;
@@ -122,4 +122,110 @@
 
 .schedule-button:hover {
     background-color: #f4699c;
+}
+
+/* 4. 웨딩홀 견적 계산기 */
+.estimator {
+    margin-top: 120px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 50px;
+    gap: 70px;
+}
+
+.section h2 {
+    margin-bottom: 13px;
+    font-size: 20px;
+    color: #ca1a5a;
+}
+
+.estimator table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.estimator th {
+    background-color: #f2f2f2;
+    padding: 8px 0px;
+}
+
+.estimator td {
+    height: 35px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.month-grids {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 40px;
+}
+.month-grids button {
+    border: 1px solid #eeeeee;
+    height: 50px;
+}
+
+.month-grid-selected {
+    background-color: rgba(255, 203, 222, 0.3);
+    color: #ca1a5a;
+    border: 1px solid #ca1a5a;
+}
+
+.result-calc {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.calculate-button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #ca1a5a;
+    padding: 13px 30px;
+    margin-bottom: 12px;
+}
+
+.calculate-button:hover {
+    background-color: #f4699c;
+}
+.result p {
+    margin-top: -20px;
+}
+.result input {
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.guest-num {
+    display: flex;
+    align-items: center;
+}
+
+.guest-num span {
+    width: 50%;
+}
+
+.guest-num input {
+    margin-left: 200px;
+    margin-right: 10px;
+    width: 50%;
+}
+
+.result-sub-title {
+    font-size: 16px;
+    color: #848484;
+    margin-bottom: 10px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
