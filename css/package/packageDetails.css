@@ -1,16 +1,5 @@
-.body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
 .container {
-    width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
 }
 .header {
     text-align: center;
@@ -19,8 +8,8 @@
 .header h1 {
     margin: 0;
     text-align: left;
-    font-size: 24px;
-    color: #666;
+    font-size: 20px;
+    color: #757575;
 }
 .header h2 {
     margin: 0;
@@ -28,17 +17,17 @@
     font-size: 30px;
     color: #000;
     font-weight: bold;
-    border-bottom: 1px solid #000;
-    padding-bottom: 1px;
+    border-bottom: 1px solid #757575;
+    padding-bottom: 20px;
 }
 .service {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 10px;
     border-bottom: 1px solid #e5e5e5;
 }
 .service img {
-    width: 150px;
+    width: 180px;
     height: auto;
     margin-right: 20px;
     border-radius: 10px;
@@ -55,48 +44,87 @@
 .service .description p {
     margin: 5px 0;
     font-size: 14px;
-    color: #666;
+    color: #000;
 }
 .service .actions {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    padding-right: 30px;
 }
 .service .actions a {
     font-size: 14px;
-    color: #ff0066;
+    color: #ca1a5a  ;
     text-decoration: none;
 }
+.heart {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('../../assets/images/empty-heart.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}.liked {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('../../assets/images/full-heart.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
 .totals {
-    margin-top: 20px;
+    margin-top: 100px;
     text-align: right;
 }
-.totals p {
-    margin: 5px 0;
-    font-size: 18px;
+.title {
+    text-align: left;
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #757575;
+    padding: 15px 5px;
+}
+.cost {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    font-size: 15px;
     color: #333;
 }
-.totals p.discount {
-    color: #ff0066;
+.discount {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    font-size: 15px;
+    color: #ca1a5a;
+    border-bottom: 1px solid #757575;
+}
+.final {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    font-size: 18px;
+    color: #000000;
 }
 .discount-box {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #ffebee;
-    color: #ff0066;
-    text-align: center;
-    border: 1px solid #ff0066;
+    margin: 50px 100px 100px;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #ca1a5a;
+    border: 1px solid #ca1a5a;
     border-radius: 10px;
+    text-align: center;
 }
 .saving {
-    padding-top: 10px;
+    padding: 10px 10px;
     font-weight: bold;  
-    font-size: 25px;
+    font-size: 20px;
 }
-.discount-box p {
-    color: #333;
+.notice {
+    color: #2c3245;
+    font-size: 15px;
 }
 .buttons {
     display: flex;
@@ -107,7 +135,7 @@
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #ff0066;
+    background-color: #ca1a5a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -117,7 +145,7 @@
     height: auto;
     padding: 10px 20px;
     font-size: 16px;
-    color: #333;
+    color: #757575;
     background-color: #e5e5e5;
     border: 1px solid;
     border-radius: 5px;
