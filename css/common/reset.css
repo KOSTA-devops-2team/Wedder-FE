@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -62,8 +62,6 @@ tbody,
 tfoot,
 thead,
 tr,
-th,
-td,
 article,
 aside,
 canvas,
@@ -84,20 +82,20 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-family: "IBM";
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-/* article,
+article,
 aside,
 details,
 figcaption,
@@ -108,167 +106,157 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
-} */
-
-@font-face {
-    font-family: "han";
-    src: url("../../font/한수원_한울림_R.ttf") format("truetype");
-}
-@font-face {
-    font-family: "IBM-B";
-    src: url("../../font/IBMPlexSansKR-Bold.ttf") format("truetype");
+  display: block;
 }
 
-@font-face {
-    font-family: "IBM";
-    src: url("../../font/IBMPlexSansKR-Regular.ttf") format("truetype");
-}
-
-/*@font-face {*/
-/*    font-family: 'l-life-bold';*/
-/*    src: url(../../font/Happiness-Sans-Print-Bold.ttf) format('truetype');*/
-/*}*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 html,
 body {
-    min-height: 100vh;
-    min-width: 1480px;
-    height: 100vh;
-    font-family: "IBM";
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  min-width: 1480px;
 }
 
 body {
-    margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 190px;
 }
+
 body > * {
-    font-family: "han" !important;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
 }
 
 @media screen and (min-width: 1200px) {
-    body {
-        min-width: 1200px;
-    }
+  body {
+    min-width: 1200px;
+  }
 }
+
 @media screen and (min-width: 1300px) {
-    body {
-        min-width: 1300px;
-    }
+  body {
+    min-width: 1300px;
+  }
 }
+
 @media screen and (min-width: 1400px) {
-    body {
-        min-width: 1400px;
-    }
+  body {
+    min-width: 1400px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
-    body {
-        min-width: 1600px;
-    }
+  body {
+    min-width: 1600px;
+  }
 }
 
-@media screen and (min-width: 1600px) {
-    body {
-        min-width: 1600px;
-    }
-}
 @media screen and (min-width: 1900px) {
-    body {
-        min-width: 1900px;
-    }
+  body {
+    min-width: 1900px;
+  }
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .main-content {
-    /*min-height: calc(100vh - 136px);*/
+  min-height: calc(100vh - 136px);
 }
 
 .hd__contianer {
-    display: flex;
+  display: flex;
 }
 
 .hd__inner1100 {
-    width: 1100px;
-    margin: 0 auto;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .hd__inner960 {
-    width: 960px;
-    margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .hd__inner900 {
-    width: 900px;
-    margin: 0 auto;
+  width: 900px;
+  margin: 0 auto;
 }
 .hd__inner1400 {
-    width: 1400px;
-    margin: 0 auto;
+  width: 1400px;
+  margin: 0 auto;
 }
 .hr {
-    width: 100%;
-    height: 1px;
-    border-top: 0.5px solid #9e9e9e;
+  width: 100%;
+  height: 1px;
+  border-top: 0.5px solid #9e9e9e;
 }
 
 .text-xsm {
-    font-size: 18px;
+  font-size: 18px;
 }
 .text-sm {
-    font-size: 20px;
+  font-size: 20px;
 }
 .text-md {
-    font-size: 24px;
+  font-size: 24px;
 }
 .text-lg {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .light-gray {
-    color: #a1a1a1;
+  color: #a1a1a1;
 }
 .f-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 .lf-btn-brown {
-    background: #ca1a5a;
+  background: #ca1a5a;
 }
 
 .lf-btn-light-brown {
-    background: #aea49e;
+  background: #aea49e;
 }
 .dark-pink {
-    color: #ca1a5a;
+  color: #ca1a5a;
 }
 .modal-backdrop {
-    width: 100% !important;
-    height: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 a {
-    color: inherit;
+  color: inherit;
 }

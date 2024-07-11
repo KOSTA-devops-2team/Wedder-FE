@@ -6,7 +6,7 @@ header {
     top: 0;
     z-index: 100000;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #d4d4d4 !important;
 }
 
 .header-container {
@@ -44,7 +44,7 @@ header {
 
 .header-user {
     display: flex;
-    font-size: 12px;
+    font-size: 13px;
     justify-content: flex-end;
     flex: 1;
     align-items: center;
@@ -54,25 +54,18 @@ header {
     margin-right: 15px;
 }
 
-.header-user a {
-    text-decoration: none;
-}
-
-.header-user a:hover {
-    text-decoration: none;
-    color: #ca1a5a;
-}
-
 /* 네비게이션 바 */
+
 .header-cate ul {
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+    justify-content: center;
+    padding-top: 35px;
 }
 
-.header-cate li {
+.header-cate li:not(:last-of-type) {
     list-style-type: none;
     font-size: 17px;
+    margin-right: 50px;
 }
 
 .header-cate li:hover {
@@ -81,5 +74,4 @@ header {
 
 .header-cate .grey {
     color: gray;
-    font-size: 20px;
 }

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.List-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.List-content p,
+h3 {
+  color: #ca1a5a;
+}
+.List-content p {
+  font-size: 10px;
+}
+.List-content h3 {
+  font-size: 20px;
+}
+/* Search-bar */
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+}
+/* LikeList-Card */
+.LikeList-Card {
+  border: 2px solid #eeeeee;
+  width: 240px;
+  border-radius: 5%;
+  text-align: left;
+  margin: 20px;
+}
+.LikeList-Card h5 {
+  font-size: 13px;
+}
+.LikeList-Card ul {
+  margin-left: 40px;
+}
+.LikeList-Card li {
+  margin-top: 5px;
+  font-size: 11px;
+}
+.LikeList-Card img {
+  margin: 20px;
+  width: 200px;
+  border-radius: 7%;
+}
+.LikeList-Card-List {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}

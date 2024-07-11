@@ -1,0 +1,125 @@
+/* 2. 업체 정보 + 지도  */
+.information {
+    position: relative;
+    margin: 0 auto;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ca1a5a;
+    padding-bottom: 10px;
+}
+
+.title-container h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.title-container a {
+    color: #ca1a5a;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 50px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    padding: 6px;
+    text-align: left;
+}
+
+.info-map img {
+    width: 450px;
+    height: 200px;
+    margin-left: 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin: 0 10px;
+}
+
+.like-btn {
+    background-color: #ca1a5a;
+    padding: 10px 30px;
+}
+.like-btn:hover {
+    background-color: #f4699c;
+}
+
+.list-btn {
+    background-color: black;
+    padding: 10px 36px;
+}
+
+.list-btn:hover {
+    background-color: #717171;
+}
+
+/* 3. 예식일정 현황  */
+.schedule {
+    margin-top: 120px;
+}
+.schedule-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 50px;
+}
+
+.calendar img {
+    width: 450px;
+    height: auto;
+}
+
+.schedule-choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.time-list {
+    background-color: #eeeeee;
+    padding: 18px 25px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-list-selected {
+    background-color: rgba(255, 203, 222, 0.3);
+    color: #ca1a5a;
+    border: 1px solid #ca1a5a;
+}
+
+.schedule-button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #ca1a5a;
+    padding: 15px 30px;
+}
+
+.schedule-button:hover {
+    background-color: #f4699c;
+}
