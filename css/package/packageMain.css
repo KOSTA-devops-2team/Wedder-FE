@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.banner {
+    background-color: #F2DCE7;
+    padding: 200px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+.banner h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #333;
+}
+.paragraph {
+    text-align: left;
+}
+.par1 {
+    margin: 30px 0px 20px;
+    color: #666;
+}
+.par2 {
+    margin: 30px 0px 20px;
+    color: #666;
+}
+.par2 span {
+    color : red;
+}
+.par3 {
+    margin: 30px 0px 20px;
+    color: #666;
+}
+.gift {
+    width: fit-content;
+    float: right;
+}
+.coin {
+    width: fit-content;
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+.midpar {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 100px;
+    text-align: center;
+}
+.color {
+    color: red;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.recommendations {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-row-gap: 100px;
+    grid-column-gap: 400px;
+    margin-bottom: 40px;
+}
+.recommendation img {
+    width: 100px;
+    height: auto;
+}
+.recommendation {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight:bold;
+    position: relative;
+    left: 90px;
+    top: 30px;
+}
+.recommendation h2 {
+    font-size: 18px;
+    color: #333;
+
+}
+.recommendpar {
+    color: #666;
+    font-size: 15px;
+}
+.steps {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.step-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+.how-to-use {
+    font-size: 24px;
+    color: #333;
+    font-weight: bolder;
+}
+.steps {
+    margin-top: 60px;
+    padding-bottom: 150px;
+}
+.step {
+    text-align: center;
+    width: 23%;
+    font-size: 18px;
+}
+.step img {
+    width: auto;
+    margin-bottom: 10px;    
+}
+.title {
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+.packages {
+    text-align: center;
+}
+.pack-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+.bestpackage {
+    font-size: 24px;
+    color: #333;
+    font-weight: bolder;
+}
+.look-aroud {
+    font-size: 14px;
+}
+.look-aroud a {
+    text-decoration-line: none;
+}
+.package-list {
+    display: flex;
+    justify-content: space-around;
+}
+.package {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+.package img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.package h3 {
+    font-size: 18px;
+    color: #333;
+}
+.package p {
+    color: #666;
+}

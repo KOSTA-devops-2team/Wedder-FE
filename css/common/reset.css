@@ -62,8 +62,6 @@ tbody,
 tfoot,
 thead,
 tr,
-th,
-td,
 article,
 aside,
 canvas,
@@ -89,7 +87,7 @@ video {
   border: 0;
   font-size: 100%;
   font-family: "Roboto", sans-serif;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 ol,
@@ -97,7 +95,7 @@ ul {
   list-style: none;
 }
 
-/* article,
+article,
 aside,
 details,
 figcaption,
@@ -108,25 +106,34 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
-} */
+  display: block;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 html,
 body {
   min-height: 100vh;
-  min-width: 1480px;
-  height: 100vh;
   font-family: "Roboto", sans-serif;
+  min-width: 1480px;
 }
 
 body {
-  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 190px;
 }
 
 body > * {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
 }
 
 @media screen and (min-width: 1200px) {
@@ -134,11 +141,13 @@ body > * {
     min-width: 1200px;
   }
 }
+
 @media screen and (min-width: 1300px) {
   body {
     min-width: 1300px;
   }
 }
+
 @media screen and (min-width: 1400px) {
   body {
     min-width: 1400px;
@@ -151,11 +160,6 @@ body > * {
   }
 }
 
-@media screen and (min-width: 1600px) {
-  body {
-    min-width: 1600px;
-  }
-}
 @media screen and (min-width: 1900px) {
   body {
     min-width: 1900px;
