@@ -1,7 +1,66 @@
+/*  1. 업체 설명 + 이미지 캐러셀  */
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.main-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 30px;
+    flex: 1;
+}
+
+.main-title-container h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    height: 31px;
+    font-weight: 600;
+    padding: 8px 14px 7px 14px;
+    margin: 10px 8px 20px 0px;
+}
+
+.main-title-container p {
+    word-break: keep-all;
+    margin-right: 50px;
+    line-height: 23px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 600px;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.company-image-item {
+    display: flex;
+    justify-content: center;
+}
+
+.company-image-item img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
 /* 2. 업체 정보 + 지도  */
 .information {
-    position: relative;
-    margin: 0 auto;
+    margin-top: 80px;
 }
 
 .title-container {
@@ -78,7 +137,7 @@
 
 /* 3. 예식일정 현황  */
 .schedule {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 .schedule-container {
     display: grid;
@@ -128,7 +187,7 @@
 
 /* 4. 웨딩홀 견적 계산기 */
 .estimator {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .grid-container {
