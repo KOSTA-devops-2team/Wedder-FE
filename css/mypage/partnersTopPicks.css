@@ -20,3 +20,51 @@ body {
   justify-content: flex-end;
 }
 /* 3. 신랑 Like , 신부 Like */
+.partnersTopPicks-Like {
+  margin: 10px;
+}
+.partnersTopPicks-Like div {
+  display: inline;
+}
+.partnersTopPicks-Like div p:nth-of-type(1) {
+  display: inline;
+  color: blue;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.partnersTopPicks-Like div p:nth-of-type(2) {
+  display: inline;
+  color: #ca1a5a;
+  font-size: 1.3rem;
+  font-weight: bold;
+  float: right;
+}
+/* 4. 카드 리스트 */
+.Card-List {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid #eeeeee;
+  margin: 20px;
+  border-radius: 10%;
+}
+.Card img {
+  width: 200px;
+  margin: 20px;
+  border-radius: 5%;
+}
+.Card div {
+  margin-left: 15px;
+}
+.Card:nth-of-type(1) {
+  background-color: skyblue;
+}
+.Card:nth-of-type(4) {
+  background-color: #ca1a5a;
+}
