@@ -9,6 +9,7 @@
             rel="stylesheet"
             href="../../css/weddingHall/weddingHallDetail.css"
         />
+        <link rel="stylesheet" href="../../css/weddingHall/reviewSearchModal.css" />
         <script defer src="../../js/main/main.js"></script>
         <script defer src="../../js/weddingHall/weddingHallDetail.js"></script>
     </head>
@@ -54,8 +55,9 @@
             <section class="information">
                 <div class="title-container">
                     <h2>Information</h2>
-                    <a href="#">후기 보러가기 >>></a>
+                    <a href="#" id="review-link">후기 보러가기 >>></a>
                 </div>
+                <div id="modal-container"></div>
 
                 <div class="info-container">
                     <!-- 왼쪽 정보 -->
@@ -569,5 +571,7 @@
         </section>
         </div>
         <div id="footer-placeholder"></div>
+        <script src="../../js/weddingHall/reviewSearchModal.js"></script>
+
     </body>
 </html>
