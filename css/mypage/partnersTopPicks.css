@@ -42,29 +42,20 @@ body {
 /* 4. 카드 리스트 */
 .Card-List {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .Card {
-  width: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border: 2px solid #eeeeee;
-  margin: 20px;
-  border-radius: 10%;
+  display: inline;
+  margin: 10px;
 }
-.Card img {
+img {
   width: 200px;
-  margin: 20px;
-  border-radius: 5%;
 }
-.Card div {
-  margin-left: 15px;
+
+.Card-List .Card-hover {
+  display: none;
 }
-.Card:nth-of-type(1) {
-  background-color: skyblue;
-}
-.Card:nth-of-type(4) {
-  background-color: #ca1a5a;
+.Card-List .Card-hover {
+  display: block;
 }
