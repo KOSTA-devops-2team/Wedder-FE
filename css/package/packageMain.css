@@ -1,13 +1,5 @@
-@charset "utf-8";
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
 .banner {
-    background-color: #F2DCE7;
+    background-color: rgba(202, 21, 165, 0.08);
     padding: 200px;
 }
 .content {
