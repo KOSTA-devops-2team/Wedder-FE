@@ -63,7 +63,7 @@
 /* 2. 신규 방문 예약  */
 .new-visit-reservation {
     margin-top: 50px;
-    min-height: 400px;
+    min-height: 300px;
 }
 .new-visit-reservation h2 {
     color: #ca1a5a;
@@ -129,8 +129,8 @@ table th {
 
 .visit-details {
     border: 1px solid #eeeeee;
-    border-radius: 10px;
-    box-shadow: 5px 5px 7px #858585;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px #eeeeee;
     padding: 20px 35px;
     margin-top: 20px;
     display: flex;
@@ -164,5 +164,17 @@ table th {
 
 .visit-customer-info span:nth-of-type(1),
 .wedding-info span:nth-of-type(1) {
-    margin-right: 20px;
+    margin-right: 22px;
+}
+.message {
+    display: flex;
+    justify-content: space-between;
+}
+.message-summary {
+    width: 310px;
+    background-color: #eeeeee;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    word-break: keep-all;
 }
