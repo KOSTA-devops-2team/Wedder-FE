@@ -62,10 +62,15 @@ header {
     position: relative;
 }
 
-.header-cate li:not(:last-of-type) {
+.header-cate li {
     list-style-type: none;
     font-size: 17px;
     margin-right: 50px;
+}
+
+.header-cate li a {
+    text-decoration: none;
+    padding-bottom: 8px;
 }
 
 .header-cate .grey {
@@ -74,9 +79,11 @@ header {
 
 #horizontal-underline {
     position: absolute;
+    left: 0;
     height: 2px;
-    border-radius: 2px;
+    width: 0;
+    border-radius: 3px;
     transition: 0.5s;
-    background-color: #000000;
-    margin-top: 8px;
+    background-color: #b76e79;
+    top: 0px;
 }
