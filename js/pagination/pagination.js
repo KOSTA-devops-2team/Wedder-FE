@@ -4,7 +4,20 @@ const itemsPerPage = 16; // 페이지당 아이템 수
 const totalPages = Math.ceil(totalItems / itemsPerPage);
 
 document.addEventListener("DOMContentLoaded", () => {
-    updatePagination();
+    loadPagination();
+});
+
+function loadPagination() {
+    fetch("../../components/pagination/pagination.html")
+        .then((response) => response.text())
+        .then((data) => {
+            document.getElementById("pagination-placeholder").innerHTML = data;
+            addPaginationEventListeners();
+            updatePagination();
+        });
+}
+
+function addPaginationEventListeners() {
     document
         .getElementById("startBtn")
         .addEventListener("click", () => goToPage(1));
@@ -17,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document
         .getElementById("endBtn")
         .addEventListener("click", () => goToPage(totalPages));
-});
+}
 
 function goToPage(page) {
     if (page < 1 || page > totalPages) return;
