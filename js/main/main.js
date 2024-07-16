@@ -18,12 +18,12 @@ function includeHTML() {
             document.getElementById("footer-placeholder").innerHTML = data;
         });
 
-    fetch("../../components/sidebar/sidebarAdmin.html")
-        .then((response) => response.text())
-        .then((data) => {
-            document.getElementById("admin-sidebar-placeholder").innerHTML =
-                data;
-        });
+    // fetch("../../components/sidebar/sidebarAdmin.html")
+    //     .then((response) => response.text())
+    //     .then((data) => {
+    //         document.getElementById("admin-sidebar-placeholder").innerHTML =
+    //             data;
+    //     });
 }
 
 function loadScript(url, callback) {
