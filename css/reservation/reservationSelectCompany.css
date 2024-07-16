@@ -1,0 +1,375 @@
+/* 타이틀 */
+.title {
+    text-align: left;
+    color: #ca1a5a;
+}
+
+.title-sub {
+    font-size: 17px;
+}
+
+.title-main {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0 20px 0;
+}
+
+/* 스텝 Bar */
+.steps-bar {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+}
+
+.step {
+    color: #737373;
+    position: relative;
+    flex: 1;
+    padding: 13px 20px;
+    text-align: center;
+    background: #f3f3f3;
+}
+
+.step::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #f3f3f3;
+    z-index: 1;
+}
+
+.step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    z-index: 2;
+}
+
+.step.active::after {
+    border-left-color: #000;
+}
+
+.step.active {
+    background: #000;
+    color: #fff;
+}
+
+/* 안내멘트 */
+.guide {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.guide-step {
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-right: 5px;
+}
+
+.guide-explain {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    padding-top: 3px;
+    padding-left: 13px;
+}
+
+/* 검색 필터 분류 */
+.tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.tab {
+    width: 550px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #757575;
+    justify-content: center;
+    align-items: center                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #ca1a5a;
+    border-bottom: 2px solid #ca1a5a;
+}
+
+/* 태그로 검색 */
+.search-bar {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-bar > input {
+    width: 900px;
+    margin: 0px 100px;
+    padding: 15px;
+    border: 1px solid #dddddd; 
+    border-radius: 4px;
+}
+
+#search-icon {
+    position: absolute; 
+    top: 15px; 
+    right: 120px; 
+    width: 17px;
+    height: 17px;
+}
+
+/* 태그 검색의 태그들 */
+.filters {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    margin: 17px 100px;
+}
+
+.filters > button {
+    font-size: 15px;
+    padding: 6px 18px;
+    justify-content: space-between;
+    border: none;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.filters > button:hover {
+    color: #ca1a5a;
+}
+
+.filters > p {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 0 0 45px
+}
+
+.filters.purpose-filter > button {
+    font-weight: 600;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #000;
+    border-radius: 5px
+}
+
+.filters.purpose-filter > button:hover {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 5px
+}
+
+.filters.style-filter, .filters.price-filter, .filters.possible-filter {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.filters.possible-filter {
+    /* display: none; */
+}
+
+/* 더 많은 검색 필터 */
+
+/* .more-filter {
+    display: flex;
+    position:relative;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+#more-icon {
+    position: absolute; 
+    top: 10px; 
+    right: 0px; 
+    padding-top: 3px;
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+} */
+
+
+/* 스케줄로 검색 */
+.schedule-container {
+    display: inline-block;
+}
+
+/* 총 업체수 */
+.total {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 25px 20px;
+}
+
+/* 업체 리스트 */
+.company-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 30px 5px 60px 5px;
+}
+
+.company-card {
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 500px;
+    height: 195px;
+    margin: 0 10px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 3px rgb(180, 180, 180);
+
+}
+
+.company-img img{
+    width: 180px;
+    height: 160px;
+    margin: 20px;
+}
+
+.company-info {
+    position: relative;
+    width: 250px;
+    padding: 25px 10px;
+}
+
+.company-info h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.company-info p {
+    font-size: 13px;
+    color: #667085;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.company-info h6 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+#star-icon {
+    position: absolute;
+    left: 5px;
+    bottom: 30px;
+    width: 21px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#review-link {
+    position: absolute;
+    left: 31px;
+    bottom: 31px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #667085;
+    text-decoration-line: none;
+}
+
+/* 페이지네이션 */
+
+
+/* 선택 목록 */
+.select-list {
+    margin: 60px 0;
+    padding: 10px; 
+    background-color: #fff;
+    position: sticky;
+    bottom: 0px;
+
+}   
+
+.select-title {
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+.select-title > h1 {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 17px;
+}
+
+.options-container {
+    display: flex;
+}
+
+#company-images{
+    width: 180px;
+    height: 160px;
+    margin: 10px 10px;
+}
+
+.select-company-title {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.select-purpose {
+    font-size: 13px;
+    color: #667085;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.options {
+    flex: grid;
+    grid-template-rows: repeat(1, auto);
+}
+
+/* 다음 단계 버튼 */
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.btn-pre {
+    padding: 10px 100px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.btn-nxt {
+    padding: 10px 120px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.btn-pre:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.btn-nxt {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn-nxt:hover {
+    background-color: #717171;
+    border: 1px solid #717171;
+}
