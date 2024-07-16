@@ -5,211 +5,337 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>partnersTopPicks</title>
     <link rel="stylesheet" href="../../css/myPage/partnersTopPicks.css" />
+
     <script defer src="../../js/main/main.js"></script>
     <script defer src="../../js/myPage/partnersTopPicks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
   </head>
   <div id="header-placeholder"></div>
   <body>
+    <!-- 1.헤더 설명 -->
+    <section class="partnersTopPicks-header" id="partnersTopPicks-section1">
+      <h3>우리가 원하는 우리만의 목록</h3>
+      <h1>너와 나의 Like List</h1>
+      <img src="" alt="" />
+    </section>
     <div class="hd__inner1100">
-      <!-- 1.헤더 설명 -->
-      <section class="partnersTopPicks-header" id="partnersTopPicks-section1">
-        <h5>우리가 원하는 우리만의 목록</h5>
-        <h3>너 찜 내 찜</h3>
-      </section>
-
-      <!-- 2.서치 바 기능 -->
-      <section class="partnersTopPicks-search" id="partnersTopPicks-section2">
-        <label for="partnersTopPicks-search-bar">
-          <img src="" alt="목록" />
-        </label>
-        <input
-          type="search"
-          class="search-bar"
-          id="partnersTopPicks-search-bar"
-        />
-        <button id="List-searh-button">Search</button>
-      </section>
-      <!-- 3.신랑 Like , 신부 Like-->
-      <section class="partnersTopPicks-Like" id="partnersTopPicks-section3">
-        <div>
-          <p>신랑 Like</p>
-          <p>신부 Like</p>
+      <!-- 2.  팔로우 리스트  -->
+      <section
+        class="pzartnersTopPicks-followList"
+        id="partnersTopPicks-section2"
+      >
+        <div class="recent">
+          <img src="../../assets/images/BestPackage4.png" alt="이미지" />
+          <h2>Recent Studio</h2>
+          <ul>
+            <li>Num: <span class="bold">4</span></li>
+            <li>
+              팔로우한 사람:
+              <span class="male bold"> 오강철</span>
+            </li>
+            <li>
+              옵션:
+              <ul class="option">
+                <li>옵션1</li>
+                <li>옵션1</li>
+                <li>옵션1</li>
+                <li>옵션1</li>
+                <li>옵션1</li>
+              </ul>
+            </li>
+            <li>날짜: <span class="bold">2024-07-20</span></li>
+            <li class="menu">메뉴(hide)</li>
+          </ul>
+        </div>
+        <div class="followListCover">
+          <h2>Couple Follow List</h2>
+          <div class="followList">
+            <ul>
+              <li class="ListIndex">1.</li>
+              <img
+                src="../../assets/images/BestPackage3.png"
+                alt="우측 리스트-이미지"
+              />
+              <div class="followList-content">
+                <a href=""
+                  ><li><h4>Studio1</h4></li></a
+                >
+                <li>날짜</li>
+                <li class="female">헤이즈</li>
+              </div>
+              <a
+                ><img src="../../assets/images/menu.png" alt="메뉴 아이콘"
+              /></a>
+            </ul>
+          </div>
+          <div class="followList">
+            <ul>
+              <li class="ListIndex">2.</li>
+              <img
+                src="../../assets/images/BestPackage2.png"
+                alt="우측 리스트-이미지"
+              />
+              <div class="followList-content">
+                <a href=""
+                  ><li><h4>Studio2</h4></li></a
+                >
+                <li>2024-07-16</li>
+                <li class="male">박종원(남)</li>
+              </div>
+              <a
+                ><img src="../../assets/images/menu.png" alt="메뉴 아이콘"
+              /></a>
+            </ul>
+          </div>
+          <div class="followList">
+            <ul>
+              <li class="ListIndex">3.</li>
+              <img
+                src="../../assets/images/BestPackage1.png"
+                alt="우측 리스트-이미지"
+              />
+              <div class="followList-content">
+                <a href=""
+                  ><li><h4>Studio3</h4></li></a
+                >
+                <li>2024-07-26</li>
+                <li class="female">아이유(여)</li>
+              </div>
+              <a
+                ><img src="../../assets/images/menu.png" alt="메뉴 아이콘"
+              /></a>
+            </ul>
+          </div>
         </div>
       </section>
-      <!-- 4. 카드 리스트 -->
-      <section class="partnersTopPicks-cardList" id="partnersTopPicks-section4">
-        <div class="Card-List">
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
+      <!-- 3. 추천 리스트(슬라이드) -->
+      <section class="partnersTopPicks-slide" id="partnersTopPicks-section3">
+        <h3>추천 팔로우 리스트</h3>
+        <div class="slider-box-1">
+          <!-- 슬라이더 메인 컨테이너 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- 슬라이드 -->
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+                <div>
+                  <img
+                    src="../../assets/images/BestPackage1.png"
+                    alt="테스트 이미지"
+                  />
+                  <ul>
+                    <li>설명1</li>
+                    <li>설명2</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <!-- 슬라이드 페이지 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 화살표 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          <div class="Card">
-            <img
-              src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png"
-              alt="이미지"
-            />
-            <div class="Card-hover">
-              <h3>로이 스튜디오</h3>
-              <h5>Roi studio</h5>
-              <p><b>주소: </b>서울 특별시 강남구</p>
-              <p><b>촬영비: </b>679,000원</p>
-              <p><b>최소 보증: </b>150명</p>
-              <p><b>전화번호: </b>010-XXXX-XXXX</p>
-            </div>
-          </div>
-          
+        </div>
       </section>
-      <!-- 5. slide -->
     </div>
   </body>
   <div id="footer-placeholder"></div>
