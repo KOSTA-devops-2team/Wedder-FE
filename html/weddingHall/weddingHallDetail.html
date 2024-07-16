@@ -9,21 +9,55 @@
             rel="stylesheet"
             href="../../css/weddingHall/weddingHallDetail.css"
         />
+        <link rel="stylesheet" href="../../css/weddingHall/reviewSearchModal.css" />
         <script defer src="../../js/main/main.js"></script>
         <script defer src="../../js/weddingHall/weddingHallDetail.js"></script>
     </head>
     <body>
         <div id="header-placeholder"></div>
         <div class="hd__inner1100">
-            <!-- 1. 업체 설명 + 이미지 슬라이드 -->
-            <section class="description"></section>
+            <!-- 1. 업체 설명 + 이미지 캐러셀 -->
+            <section class="description">
+                <div class="main-title-container">
+                    <h1>[강남] 마리아쥬스퀘어</h1>
+                    <div id="tags-container">
+                        <!-- 태그 -->
+                    </div>
+                    <p>싱그러움 속 우아하고 세련된 더 프렌치 카든 웨딩
+                        합리적인 가격으로 호텔 웨딩을 오릴 수 있어요.
+                        250~300명 규모의 샴페인 홀, 소규모 스몰웨딩이 가능한 보르도홀 입니다.</p>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-inner">
+                        <div class="company-image-item">
+                            <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/wedding/weddingdetail1.jpg" alt="웨딩홀 메인 이미지1"/>
+                        </div>
+                        <div class="company-image-item">
+                            <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/wedding/weddingdetail2.jpg"  alt="웨딩홀 메인 이미지2"/>
+                        </div>
+                        <div class="company-image-item">
+                            <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/wedding/weddingdetail3.jpg"  alt="웨딩홀 메인 이미지3"/>
+                        </div>
+                        <div class="company-image-item">
+                            <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/wedding/weddingdetail4.jpg"  alt="웨딩홀 메인 이미지4"/>
+                        </div>
+                        <div class="company-image-item">
+                            <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/wedding/weddingdetail5.jpg"  alt="웨딩홀 메인 이미지5"/>
+                        </div>
+                        <div class="company-image-item">
+                            <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/wedding/weddingdetail6.jpg"  alt="웨딩홀 메인 이미지6"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- 2. 업체 정보 + 지도-->
             <section class="information">
                 <div class="title-container">
                     <h2>Information</h2>
-                    <a href="#">후기 보러가기 >>></a>
+                    <a href="#" id="review-link">후기 보러가기 >>></a>
                 </div>
+                <div id="modal-container"></div>
 
                 <div class="info-container">
                     <!-- 왼쪽 정보 -->
@@ -537,5 +571,7 @@
         </section>
         </div>
         <div id="footer-placeholder"></div>
+        <script src="../../js/weddingHall/reviewSearchModal.js"></script>
+
     </body>
 </html>

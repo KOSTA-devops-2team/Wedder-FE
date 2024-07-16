@@ -6,7 +6,7 @@ header {
     top: 0;
     z-index: 100000;
     background-color: white;
-    border-bottom: 1px solid #d4d4d4 !important;
+    /* border-bottom: 1px solid #d4d4d4 !important; */
 }
 
 .header-container {
@@ -55,23 +55,35 @@ header {
 }
 
 /* 네비게이션 바 */
-
 .header-cate ul {
     display: flex;
     justify-content: center;
     padding-top: 35px;
+    position: relative;
 }
 
-.header-cate li:not(:last-of-type) {
+.header-cate li {
     list-style-type: none;
     font-size: 17px;
     margin-right: 50px;
 }
 
-.header-cate li:hover {
-    color: #ca1a5a;
+.header-cate li a {
+    text-decoration: none;
+    padding-bottom: 8px;
 }
 
 .header-cate .grey {
     color: gray;
+}
+
+#horizontal-underline {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 0;
+    border-radius: 3px;
+    transition: 0.5s;
+    background-color: #b76e79;
+    top: 0px;
 }
