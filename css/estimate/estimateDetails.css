@@ -18,10 +18,8 @@
 .tabs {
     display: flex;  
     justify-content:center;
-    margin: 10px 0;
-    padding: 10px 180px; 
-    border-top: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    margin: 5px 0;
+    padding: 10px 180px;
     justify-content: space-between;
 }
 .tab {
@@ -63,10 +61,9 @@
 .main-img {
     width: 50px;
     height: 50px;
-    float: left;
 }
-.main {
-    text-align: right;
+.container {
+    display: flex;
     vertical-align: middle;
 }
 .left-panel p {
@@ -77,7 +74,7 @@
     font-size: 20px;
     margin-bottom: 12px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #000;  
+    border-bottom: 1px solid #000;
 }
 .list-main img {
     display: flex;
@@ -85,8 +82,7 @@
 }
 .item-main {
     display: flex;
-    justify-content: space-between;
-    clear: both;
+    justify-content: space-between; 
 }
 .option {
     display: flex;
@@ -110,6 +106,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+}
+.price {
+    display: inline-bl;
+    justify-items: end;
+    width: auto;
+    height: 100px;
 }
 .total {
     font-weight: bold;
