@@ -26,27 +26,30 @@ p {
     background: linear-gradient(
             to top,
             rgba(255, 255, 255, 0) 10%,
-            rgba(255, 255, 255, 0.25) 25%,
+            rgba(255, 255, 255, 0.3) 25%,
             rgba(255, 255, 255, 0.5) 50%,
             rgba(255, 255, 255, 0.75) 75%,
             rgb(255, 255, 255) 100%
         ),
-        url(/assets/images/main0.png) no-repeat center center/cover;
+        url(https://wdrtest1.s3.ap-northeast-2.amazonaws.com/main/main0.png)
+            no-repeat center center/cover;
     color: white;
     text-align: center;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 180px);
     display: flex;
     justify-content: center;
 }
 
 .main-content {
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 .main h1 {
     font-size: 50px;
     margin-bottom: 30px;
     color: black;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 .main h3 {
@@ -134,7 +137,6 @@ p {
     color: white;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none;
 }
 
 .main-button:hover {

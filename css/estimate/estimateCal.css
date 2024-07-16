@@ -1,0 +1,136 @@
+.banner {
+    background-image: url(../../assets/images/estimateBanner.png);
+    height: 150px;
+    padding: 45px 40px;
+    text-align: left;
+}
+.banner h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 10px;
+}
+.outer-par {
+    padding: 10px;
+    text-align: left;
+    color: #000;
+}
+.tabs {
+    display: flex;  
+    justify-content:center;
+    margin: 10px 0;
+    padding: 10px 180px; 
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    justify-content: space-between;
+}
+.tab {
+    padding: 10px 20px;
+    margin : 0px 30px;
+    font-weight: bold   ;
+    cursor: pointer;
+}
+.tab.active {
+    border-bottom: 2px solid #f00;
+    font-weight: bold;
+}
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filters select, .filters input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+.search-container input {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+.search-button {
+    background-color: #CA1A5A;
+    color : white;
+    margin-left: 10px;  
+    padding: 10px;
+    border: 1px solid #CA1A5A;
+    border-radius: 5px;
+    flex: 1;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(14, 1fr);
+}
+.item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+
+    width: 70%;
+    box-sizing: border-box;
+}
+.image {
+    margin-right: 15px;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.address {
+    margin: 5px 0;
+}
+.link {
+    color: rgb(97, 97, 109);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.selection-list {
+    position: fixed;
+    right: 10px;
+    width: calc(33.333% - 20px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.note {
+    border: 1px solid #ccc;
+    width: calc(33.333% - 20px);
+    padding: 1em;
+    float: right;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
