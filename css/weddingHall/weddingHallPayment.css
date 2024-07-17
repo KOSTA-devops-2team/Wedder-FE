@@ -86,3 +86,123 @@ td select {
 }
 
 /* 3. 결제 */
+.payment {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    gap: 0 30px;
+}
+
+.title {
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.option1,
+.option2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.option1 button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    background-color: #f9f9f9;
+    padding: 0;
+}
+
+.option1 button:not(:last-child),
+.option2 button:not(:last-child) {
+    margin-right: 7px;
+}
+.option2 button {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #cccccc;
+    padding: 0;
+}
+
+.option2 img {
+    width: 80px;
+}
+
+.promotion h3 {
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.promotion-summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.promotion-summary span {
+    border: 1px solid #cccccc;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding: 7px 0;
+}
+
+.promotion-details {
+    font-size: 10px;
+    margin: 20px 0;
+}
+.promotion-summary {
+    font-size: 10px;
+}
+
+.promotion-details h4,
+.promotion-summary h4 {
+    margin-bottom: 10px;
+}
+
+.cost-summary p {
+    margin: 5px 0;
+    font-size: 8px;
+}
+
+.cost {
+    border: 1px solid #cccccc;
+    /* padding: 20px 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cost-total {
+    background-color: #eee;
+    height: 100px;
+}
+
+.agree-terms {
+    font-size: 10px;
+    margin: 10px 0 0 10px;
+}
+
+.payment-button button {
+    border: none;
+    background-color: #ca1a5a;
+    color: white;
+    width: 90%;
+    padding: 10px 40px;
+    margin: 0 auto;
+}
+
+.card-use {
+    padding: 15px 30px;
+    background-color: #eee;
+    font-size: 10px;
+}
+
+.card-use h4 {
+    margin-bottom: 10px;
+}
+
+.card-use p {
+    margin-bottom: 3px;
+    font-size: 8px;
+}
