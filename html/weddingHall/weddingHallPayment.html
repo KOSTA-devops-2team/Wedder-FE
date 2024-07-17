@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>weddingHallList</title>
+        <link rel="stylesheet" href="../../css/common/reset.css" />
+        <link
+            rel="stylesheet"
+            href="../../css/weddingHall/weddingHallPayment.css"
+        />
+        <script defer src="../../js/main/main.js"></script>
+    </head>
+    <body>
+        <div id="header-placeholder"></div>
+        <div class="hd__inner960">
+            <!-- 메인 타이틀 문구 -->
+            <section>
+                <div class="main-title">웨딩홀 결제</div>
+            </section>
+
+            <!-- 1. 이용자 정보 -->
+            <section class="user-info">
+                <h1>이용자 정보</h1>
+                <h3>원활한 서비스 이용을 위해 꼭 필요한 정보입니다.</h3>
+
+                <div class="self">
+                    <h2>본인</h2>
+                    <div class="choose">
+                        <div>
+                            <input type="radio" name="bride" />
+                            <label for="bride">신부</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="groom" />
+                            <label for="groom">신랑</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="family" />
+                            <label for="family">가족</label>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th><label for="partner-name">성함</label></th>
+                            <td>
+                                <input type="text" name="partner-name" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="partner-phone">연락처</label>
+                            </th>
+                            <td>
+                                <div class="phone-container">
+                                    <select name="phone">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                    <input
+                                        type="text"
+                                        name="partner-phone2"
+                                        maxlength="4"
+                                    />
+                                    <input
+                                        type="text"
+                                        name="partner-phone3"
+                                        maxlength="4"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="partner">
+                    <h2>배우자</h2>
+                    <div class="choose">
+                        <div>
+                            <input type="radio" name="bride" />
+                            <label for="bride">신부</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="groom" />
+                            <label for="groom">신랑</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="family" />
+                            <label for="family">가족</label>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th><label for="partner-name">성함</label></th>
+                            <td>
+                                <input type="text" name="partner-name" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="partner-phone">연락처</label>
+                            </th>
+                            <td>
+                                <div class="phone-container">
+                                    <select name="phone">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                    <input
+                                        type="text"
+                                        name="partner-phone2"
+                                        maxlength="4"
+                                    />
+                                    <input
+                                        type="text"
+                                        name="partner-phone3"
+                                        maxlength="4"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="dotLine"></div>
+
+                <div class="request">
+                    <textarea
+                        type="text"
+                        placeholder="업체에 요청하실 내용을 적어주세요"
+                    ></textarea>
+                    <p>
+                        예) 혼주 헤어 메이크업 구매 시, 메이크업을 받으실
+                        가족분들의 관계 (어머니 2분, 언니, 남동생 등) 와 대료포
+                        연락이 가능하신 한 분의 이름과 연락처를 남겨주세요.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 2. 주문 상품 -->
+            <section></section>
+
+            <!-- 3. 결제 -->
+            <section class="paymanet">
+                <div class="payment-method"></div>
+                <div class="cost"></div>
+            </section>
+        </div>
+
+        <!-- <div id="footer-placeholder"></div> -->
+    </body>
+</html>

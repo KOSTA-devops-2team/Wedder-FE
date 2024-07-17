@@ -1,0 +1,88 @@
+.main-title {
+    color: #ca1a5a;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*  1. 이용자 정보  */
+
+.user-info h1 {
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+.user-info h3 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.self,
+.partner {
+    margin: 20px 0;
+}
+
+.self h2,
+.partner h2 {
+    font-size: 17px;
+    color: #ca1a5a;
+}
+
+.choose {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px auto;
+}
+
+.choose div {
+    margin-right: 30px;
+    font-size: 17px;
+}
+
+.table {
+    margin: 30px 0;
+    border: 1px solid #eee;
+}
+
+th {
+    width: 120px;
+    background-color: #eee;
+}
+
+td {
+    padding: 15px 20px;
+    width: 980px;
+}
+
+td input {
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #eee;
+}
+
+td select {
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #eee;
+}
+
+.dotLine {
+    border: 1px dotted #eee;
+}
+
+.request textarea {
+    width: 100%;
+    min-height: 130px;
+    /* padding-left: 30px; */
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.request p {
+    color: #757575;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+/* 3. 결제 */
