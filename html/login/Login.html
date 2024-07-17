@@ -4,99 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"  href="css/Login.css">
-
+    <link rel="stylesheet"  href="../../css/login/login.css">
+    
     
 </head>
 <body>
-    <div class ="header">
-        111
-    </div>
     <div class = "login-wrapper">
-    <!--로그이미지-->
-    <div class = "logo">
-         <a href="C:\Users\WD\Downloads\test (2)\main.html"><img src="C:\Users\82107\Desktop\test\.vs\Image\캡처-removebg-preview.png" / id="Mylogo"></a>
-    </div>
-
-    <div>
-        <h2>Login</h2>
-        <p style="color:#64748B" id="Enter">Welcome back. Enter your credentials to access your account</p>
-    </div>
-    <br />
-
-    <!--로그인창-->
-    <div class = "Loging">
-        <label for ="EmailID">
-        <span>Email Address<br /></span>
-            <input type ="email"  id ="EmailID"/>
-        <br /><br />      
-        <div id="drop_the_text">
-        <label for = "Password">
-        <span>Password</span>
-            Forgot Password <br />
-        <input type="password" id ="Password">
-        <img src="Image/캡처-removebg-preview.png" class="btn">
-        </label>
+        <!--로그이미지-->
+        <div class = "logo">
+            <a href="../../html/main/main.html"><img src="#"  id="Mylogo" /></a>
         </div>
-    </div>
-    <br />
 
-    <!--로그인 유지 체크-->
-    <div class ="check">
-            <input type ="checkbox" id = "checkIn"/>
-            <label for ="checkIn">
-            keep me signed in
+        <div>
+            <h2>Login</h2>
+            <p style="color:#64748B" id="Enter">Welcome back. Enter your credentials to access your account</p>
+        </div>
+        <br />
+
+        <!--로그인창-->
+        <div class = "Loging">
+            <label for ="EmailID">
+                Email Address<br />
             </label>
-    </div>
-    </frome>
+            <div id="drop_the_text">
+            <input type ="email"  id ="EmailID"/>
+            </div>
+            <br /><br />      
+            <label for = "Password">
+            Password
+            </label>
+            <div id="forgotin" style="display:inline;">
+            <button id = "forgot" > Forgot Password</button>
+            </div>
+            <div class="passwordSet">
+                <input type="password" id="Password" maxlength="20" min="8">
+                <img src="#" class="btn">
+            </div>
+            <div class="false">Please enter correct password</div>
+        </div>
+        <br /><br/>
 
-    <!--로그인 확인-->
-    <br />
-    <div class = "Continue">
-        <input type="button" value="Continue" />
-    </div>
-    <br />
+        <!--로그인 유지 체크-->
+        <div class ="check">
+                <input type ="checkbox" id = "checkIn"/>
+                <label for ="checkIn">
+                keep me signed in
+                </label>
+        </div>
+        <!--로그인 확인-->
+        <br />
+        <div class = "Continue">
+            <input type="button" value="Continue" id="continue" />
+        </div>
+        <br />
+        <!--다른방식의 로그인-->
+        <div class="sign"> 
+                or sign up withv
+        </div>
+        <br />
+        <div class ="ChangeButton">
+            <button class ="chg">
+                    <img src ="#" width="11px" height="11px" class="Clogo">
+                    &nbsp; Google
+            </button>
+            <button class ="chg" href="#">
+                    <img src ="#"  width="10px" height="10px" class="Clogo">
+                    &nbsp; Apple
+            </button>
+            <button class ="chg">
+                    <img src ="#"  width="10px" height="10px" class="Clogo">
+                    &nbsp; Facebook
+            </button>
+            <br /> 
+        </div>
 
+        <br />
+        <div class="Singup">
+        <label>Don`t have an Account?</label>
+        <a onclick="window.open('agreement.html')" id ="LoginButton"> Sing up here</a>
+        </div>
 
-    <!--다른방식의 로그인-->
-    <div class="sign"> 
-            or sign up withv
+        <!--법적--> 
+        <div class = "law">
+            <ul>
+                <button id ="use" onclick="window.open('uselaw.html')">이용약관</button>&emsp;
+                <button id ="privacy" onclick="window.open('privacy.html')">개인정보처리방침</button>&emsp;
+                <button id = "marketing" onclick="window.open('marketing.html')">마케팅 목적의 개인정보 수집 및 이용 동의</button>&emsp;
+            </ul>
+        </div>
+
+        <div class="modal">
+            <div class="modal_body">
+                <h3>인증 이메일을 입력해주세요!</h3>
+                <p>이 작업을 수행하려면 이메일 인증이 필요합니다. 
+                    <br>받은 편지함을 확인하시고 제공된 지시에 따라주십시오. 
+                    <br>이메일이 발송된 주소는 아래 칸에 입력해주세요.</p>
+                <input type="email" id="email"/><br/>
+                <button class="checkPoint">닫기</button><br/>
+                <button class="checkTime">이메일 전송</button><br/>
+            </div>
+        </div>
+
     </div>
+    <script defer src ="../../js/login/login.js"></script>
     
-    <br />
-    <div class ="ChangeButton">
-        <button class ="chg">
-                <img src ="C:\Users\82107\Desktop\test\.vs\Image\구글이미지-removebg-preview.png" width="11px" height="11px" class="Clogo">
-                &nbsp; Google
-        </button>
-        <button class ="chg">
-                <img src ="C:\Users\82107\Desktop\test\.vs\Image\애플이미지-removebg-preview.png"  width="10px" height="10px" class="Clogo">
-                &nbsp; Apple
-        </button>
-        <button class ="chg">
-                <img src ="C:\Users\82107\Desktop\test\.vs\Image\페이스북이미지-removebg-preview.png"  width="10px" height="10px" class="Clogo">
-                &nbsp; Facebook
-        </button>
-        <br /> 
-    </div>
-
-    <br />
-
-    <div class="Singup">
-    <label>Don`t have an Account?</label>
-    <a href = "" id ="LoginButton"> Sing up here</a>
-    </div>
-
-    <!--법적-->
-    
-  
-    <div class = "law">
-        <ul>
-            <a>이용약관</a>&emsp;
-            <a>개인정보처리방침</a>&emsp;
-            <a>책임의 한계와 법적고지</a>&emsp;
-            <a>회원정보 고객센터</a>
-        </ul>
-    </div>
 </body>
 </html>
