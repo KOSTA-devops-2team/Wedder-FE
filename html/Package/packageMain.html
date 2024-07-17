@@ -6,30 +6,54 @@
         <title>Wedding Package</title>
         <link rel="stylesheet" href="../../css/common/reset.css" />
         <link rel="stylesheet" href="../../css/package/packageMain.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css"> -->
+        <link rel="stylesheet" href="../../css/package/swiper.css">
         <script src="../../js/main/main.js"></script>
+        <script defer src="../../js/package/packageMain.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script> -->
+        <script src="../../js/package/swiper.js"></script>
     </head>
     <body>
         <div id="header-placeholder"></div>
-        <div class="banner">
-            <div class="content">
-                <div class="paragraph">
-                    <h1>웨딩 카페보다<br>웨딩 박람회보다 더 싸게<br>결혼준비를 할 수 있어요.</h1>
-                    <div class="par1">
-                        <p>'스드메 상품'은 어디서 계약하시더라도 동일한 구성입니다.</p>
-                        <p>단지 '플래너 수수료'를 얼마나 책정하느냐에 따라 소비자 가격이 달라질 뿐이죠.</p>
+        <div class="slider-box">
+            <!-- 슬라이더 메인 컨테이너 -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- 슬라이드 -->
+                    <div class="swiper-slide">
+                        <div class="banner-slide">
+                            <div class="paragraph">
+                                <div class="title-bold">
+                                    웨딩 카페보다<br>웨딩 박람회보다 더 싸게<br>결혼준비를 할 수 있어요.
+                                </div>
+                                <div class="par1">
+                                    <p>'스드메 상품'은 어디서 계약하시더라도 동일한 구성입니다.</p>
+                                    <p>단지 '플래너 수수료'를 얼마나 책정하느냐에 따라 소비자 가격이 달라질 뿐이죠.</p>
+                                </div>
+                                <div class="par2">
+                                    <p>wedder는 기존 '웨딩플래너 역할'은 그대로 제공해드리면서</p>
+                                    <p><span>투명한 정찰제</span>로 업계 <span>최저가격</span>을 선보입니다.</span>
+                                </div>
+                                <div class="par3">
+                                    <p>이제 결혼준비 시장도 투명하게 바뀔 때가 되지 않았나요? Wedder가 앞장섭니다!</p>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <img class="gift" src="../../assets/images/gift.png">
+                                <img class="coin" src="../../assets/images/coin.png">
+                            </div>
+                        </div>
                     </div>
-                    <div class="par2">
-                        <p>wedder는 기존 '웨딩플래너 역할'은 그대로 제공해드리면서</p>
-                    <p><span>투명한 정찰제</span>로 업계 <span>최저가격</span>을 선보입니다.</span>
-                    </div>
-                    <div class="par3">
-                        <p>이제 결혼준비 시장도 투명하게 바뀔 때가 되지 않았나요? Wedder가 앞장섭니다!</p>
-                    </div>
+                    <div class="swiper-slide">Slide2</div>
+                    <div class="swiper-slide">Slide3</div>
+                    <div class="swiper-slide">Slide4</div>
                 </div>
-                <div class="icon">
-                    <img class="gift" src="../../assets/images/gift.png">
-                    <img class="coin" src="../../assets/images/coin.png">
-                </div>
+            <!-- 슬라이드 페이지 -->
+                <div class="swiper-pagination"></div>
+    
+            <!-- 화살표 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>   
             </div>
         </div>
         <div class="container">

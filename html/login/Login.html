@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet"  href="../../css/login/login.css">
-    <script defer src="../../js/main/main.js"></script>
+    
     
 </head>
 <body>
@@ -24,7 +24,7 @@
         <!--로그인창-->
         <div class = "Loging">
             <label for ="EmailID">
-            Email Address<br />
+                Email Address<br />
             </label>
             <div id="drop_the_text">
             <input type ="email"  id ="EmailID"/>
@@ -33,14 +33,16 @@
             <label for = "Password">
             Password
             </label>
-            <button id = "forgot"> Forgot Password</button>
+            <div id="forgotin" style="display:inline;">
+            <button id = "forgot" > Forgot Password</button>
+            </div>
             <div class="passwordSet">
                 <input type="password" id="Password" maxlength="20" min="8">
                 <img src="#" class="btn">
             </div>
             <div class="false">Please enter correct password</div>
         </div>
-        <br />
+        <br /><br/>
 
         <!--로그인 유지 체크-->
         <div class ="check">
@@ -79,30 +81,32 @@
         <br />
         <div class="Singup">
         <label>Don`t have an Account?</label>
-        <a href = "#" id ="LoginButton"> Sing up here</a>
+        <a onclick="window.open('agreement.html')" id ="LoginButton"> Sing up here</a>
         </div>
 
-        <!--법적-->
+        <!--법적--> 
         <div class = "law">
             <ul>
-                <button>이용약관</button>&emsp;
-                <button>개인정보처리방침</button>&emsp;
-                <button>마케팅 목적의 개인정보 수집 및 이용 동의</button>&emsp;
+                <button id ="use" onclick="window.open('uselaw.html')">이용약관</button>&emsp;
+                <button id ="privacy" onclick="window.open('privacy.html')">개인정보처리방침</button>&emsp;
+                <button id = "marketing" onclick="window.open('marketing.html')">마케팅 목적의 개인정보 수집 및 이용 동의</button>&emsp;
             </ul>
         </div>
 
         <div class="modal">
             <div class="modal_body">
-                <h3>인증 이메일이 발송되었습니다!</h3>
+                <h3>인증 이메일을 입력해주세요!</h3>
                 <p>이 작업을 수행하려면 이메일 인증이 필요합니다. 
                     <br>받은 편지함을 확인하시고 제공된 지시에 따라주십시오. 
-                    <br>이메일이 발송된 주소는 다음과 같습니다.</p>
+                    <br>이메일이 발송된 주소는 아래 칸에 입력해주세요.</p>
                 <input type="email" id="email"/><br/>
-                <button class="checkPoint">확인</button><br/>
-                <button class="checkTime">이메일 재전송</button><br/>
+                <button class="checkPoint">닫기</button><br/>
+                <button class="checkTime">이메일 전송</button><br/>
             </div>
         </div>
 
     </div>
+    <script defer src ="../../js/login/login.js"></script>
+    
 </body>
 </html>

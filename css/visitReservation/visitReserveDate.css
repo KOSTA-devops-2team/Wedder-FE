@@ -1,0 +1,202 @@
+/* 배너 */
+.banner {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner-background img {
+    width: 100%;
+}
+
+#icon {
+    position: absolute;
+    top: 27px;
+    left: 110px;
+    width: 160px;
+    height: 120px;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50px;
+    left: 310px;
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 60px;
+    left: 310px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* 방문 일자 선택 */
+.reserve-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 20px;
+}
+
+.calendar img {
+    width: 600px;
+    height: 550px;
+    margin-bottom: 10px;
+}
+
+.reserve-date h1 {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    padding: 15px 0 30px 20px;
+
+}
+
+.calendar-select {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #CA1A5A;
+    border-radius: 5px;
+    background-color: rgba(255, 203, 222, 0.3);
+    color: #CA1A5A;
+}
+
+/* 예약 참고사항 */
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 20px;
+    margin-left: 60px;
+}
+
+.reserve-guide {
+    margin-top: 70px;
+    padding: 24px;
+    padding-left: 30px;
+    border: 1px solid #CA1A5A;
+    border-radius: 8px;
+}
+
+.reserve-guide h2 {
+    font-size: 17px;
+    color: #CA1A5A;
+}
+
+.guide {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* 예약 정보 */
+.reserve-infobox {
+    margin-bottom: 50px;
+    padding: 25px 40px;
+    align-content: space-between;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.info-table {
+    width: 100%;
+}
+
+.info-table caption {
+    font-size: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.info-table th, .info-table td {
+    font-size: 15px;
+    line-height: 2.5;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.info-table tr:nth-of-type(2), 
+.info-table tr:nth-of-type(3) {
+    color: #CA1A5A;
+}
+
+/* 방문 시간 */
+.container {
+    display: grid;
+    grid-template-columns: 650px 400px;
+}
+.reserve-time {
+    margin: 30px 25px;
+}
+
+.reserve-time h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.ampm {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 5px;
+    padding-top: 23px;
+}
+
+.reserve-time button {
+    font-weight: 500;
+    padding: 13px 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.reserve-time button:hover {
+    border: 1px solid #CA1A5A;
+    background-color: #CA1A5A;
+    color: #fff;
+}
+
+.reserve-timeAM button {
+    border: 1px solid #888;
+    color: #b4b4b4;
+}
+
+/* 버튼 */
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.btn-pre {
+    padding: 10px 100px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.btn-nxt {
+    padding: 10px 120px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.btn-pre:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+.btn-nxt {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn-nxt:hover {
+    background-color: #717171;
+    border: 1px solid #717171;
+}

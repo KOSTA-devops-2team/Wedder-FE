@@ -121,6 +121,11 @@
     font-size: 13px;
 }
 
+.recommended-buttons {
+    display: flex;
+    justify-content: center;
+}
+
 .slide-button {
     transform: translateY(-50%); /* 자신 높이의 -50%  */
     top: 50%; /* 부모 요소의 50% 위치로 */
