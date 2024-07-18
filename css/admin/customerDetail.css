@@ -1,0 +1,219 @@
+/* 관리자페이지 구조 */
+.admin-container {
+    display: flex;
+    justify-content: space-between;
+}
+.admin-sidebar {
+    width: 240px;
+}
+
+.admin-content {
+    width: 960px;
+    min-height: 500px;
+}
+
+/* 1. 상단 요약 섹션 */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #303033;
+    height: 100px;
+}
+
+.summary h1 {
+    font-size: 24px;
+    padding-left: 40px;
+}
+.summary-lists {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-right: 30px;
+    border-left: 1px solid white;
+    padding-left: 13px;
+}
+
+.summary-title {
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.summary-count {
+    display: flex;
+    align-items: baseline;
+}
+
+.summary-count .number {
+    font-size: 26px;
+}
+
+.summary-count .unit {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/* 2. 고객 정보  + step 섹션 */
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.user-info-inner {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-info-inner img {
+    width: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: flex-start;
+}
+.step {
+    background-color: #eee;
+    padding: 3px 15px 15px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.step h2 {
+    font-size: 16px;
+}
+
+.step div {
+    font-size: 14px;
+}
+
+/* 3. 웨딩홀 방문 예약 일정 */
+
+/* 4. 결제 현황 */
+
+.payment-status h2 {
+    margin-bottom: 10px;
+}
+
+.payment-status p {
+    font-size: 14px;
+    color: #333;
+}
+
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.quote-button {
+    background-color: #858585;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    height: 35px;
+}
+.email-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.quote-button:hover,
+.email-button:hover {
+    opacity: 0.8;
+}
+
+.payment-body {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.payment-status {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-status-not {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 90px;
+    height: 33px;
+    text-align: center;
+    padding: 4px 10px;
+}
+
+.payment-table {
+    width: 100%;
+    margin-left: 40px;
+}
+
+table th,
+table td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* 5. 예식(본식) 정보 */
+.wedding h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.wedding-container {
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #eee;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.wedding-container img {
+    width: 120px;
+    height: auto;
+    margin: 0 20px 0 30px;
+}
+
+.status-not {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 90px;
+    height: 33px;
+    text-align: center;
+    padding: 4px 10px;
+}
