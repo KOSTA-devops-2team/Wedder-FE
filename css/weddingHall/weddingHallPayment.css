@@ -21,10 +21,14 @@
     margin: 20px 0;
 }
 
-.self h2,
-.partner h2 {
+.self h2 {
     font-size: 17px;
     color: #ca1a5a;
+}
+
+.partner h2 {
+    font-size: 17px;
+    color: #1a81ca;
 }
 
 .choose {
@@ -97,13 +101,18 @@ td select {
     color: #333333;
     font-size: 20px;
     margin-bottom: 15px;
+    font-weight: bold;
+    border-top: 2px solid black;
+    padding-top: 17px;
 }
+
 .option1,
 .option2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
 .option1 button {
     width: 100%;
     height: 55px;
@@ -124,12 +133,13 @@ td select {
 }
 
 .option2 img {
-    width: 80px;
+    width: auto;
+    height: 13px;
 }
 
 .promotion h3 {
     font-size: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .promotion-summary {
@@ -148,9 +158,9 @@ td select {
 }
 
 .promotion-details {
-    font-size: 10px;
     margin: 20px 0;
 }
+
 .promotion-summary {
     font-size: 10px;
 }
@@ -158,40 +168,111 @@ td select {
 .promotion-details h4,
 .promotion-summary h4 {
     margin-bottom: 10px;
+    font-size: 12px;
 }
 
+.promotion-details p,
 .cost-summary p {
     margin: 5px 0;
     font-size: 8px;
 }
 
-.cost {
+/* 최종결제금액 부분 */
+
+.final-cost {
     border: 1px solid #cccccc;
-    /* padding: 20px 20px; */
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 300px;
 }
 
-.cost-total {
-    background-color: #eee;
-    height: 100px;
+.final-cost-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.final-cost-details {
+    margin-bottom: 10px;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.amount {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cost-amount {
+    font-weight: bold;
+}
+
+.currency {
+    margin-left: 5px;
+}
+
+.final-cost-total {
+    background-color: #f9f9f9;
+    padding: 17px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.final-cost-total h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.total-amount {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d9534f;
+    margin-top: 7px;
 }
 
 .agree-terms {
-    font-size: 10px;
-    margin: 10px 0 0 10px;
+    font-size: 12px;
+    margin: 15px 0 3px 0;
+}
+
+.term-item {
+    margin-bottom: 5px;
+    word-break: keep-all;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.term-item input {
+    margin: 0;
+}
+
+.term-item label {
+    margin-left: 10px;
+}
+
+.payment-button {
+    text-align: center;
 }
 
 .payment-button button {
     border: none;
     background-color: #ca1a5a;
     color: white;
-    width: 90%;
-    padding: 10px 40px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0;
+    margin: 7px 0 0 0;
+    cursor: pointer;
+    font-size: 16px;
 }
 
+/* 신용카드 이용안내 */
 .card-use {
     padding: 15px 30px;
     background-color: #eee;

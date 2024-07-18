@@ -158,31 +158,31 @@
                     <div class="option2">
                         <button>
                             <img
-                                src="../../assets/images/appstore.png"
+                                src="../../assets/images/naver.png"
                                 alt="N Pay"
                             />
                         </button>
                         <button>
                             <img
-                                src="../../assets/images/appstore.png"
+                                src="../../assets/images/samsung.png"
                                 alt="Samsung Pay"
                             />
                         </button>
                         <button>
                             <img
-                                src="../../assets/images/appstore.png"
-                                alt="Pay"
+                                src="../../assets/images/kakao.png"
+                                alt="Kakao Pay"
                             />
                         </button>
                         <button>
                             <img
-                                src="../../assets/images/appstore.png"
+                                src="../../assets/images/toss.png"
                                 alt="Toss Pay"
                             />
                         </button>
                         <button>
                             <img
-                                src="../../assets/images/appstore.png"
+                                src="../../assets/images/payco.png"
                                 alt="Payco"
                             />
                         </button>
@@ -206,47 +206,58 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="cost">
-                    <div class="title">최종결제금액</div>
-                    <div class="cost-details">
-                        <div>
+                <!-- 최종결제금액 부분 -->
+                <div class="final-cost">
+                    <div class="final-cost-title">최종결제금액</div>
+                    <div class="final-cost-details">
+                        <div class="cost-item">
                             <span>총 판매가</span>
-                            <span>70,000</span>
-                            <span>원</span>
+                            <div class="amount">
+                                <span class="cost-amount">70,000</span>
+                                <span class="currency">원</span>
+                            </div>
                         </div>
-                        <div>
+                        <div class="cost-item">
                             <span>판매가</span>
-                            <span>68,000</span>
-                            <span>원</span>
+                            <div class="amount">
+                                <span class="cost-amount">68,000</span>
+                                <span class="currency">원</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="cost-total">
+                    <div class="final-cost-total">
                         <h3>최종결제금액</h3>
-                        <div>276,000,000원</div>
+                        <div class="total-amount">276,000,000원</div>
                     </div>
                     <div class="agree-terms">
-                        <input type="checkbox" id="terms1" />
-                        <label for="terms1"
-                            >주문 내용을 확인했으며, 아래 내용에 모두
-                            동의합니다.</label
-                        ><br />
-                        <input type="checkbox" id="terms2" />
-                        <label for="terms2"
-                            >[필수] 개인정보 수집/이용 동의</label
-                        >
-                        <a href="#">보기</a><br />
-                        <input type="checkbox" id="terms3" />
-                        <label for="terms3"
-                            >[필수] 전자금융거래 이용 약관 동의</label
-                        >
-                        <a href="#">보기</a>
+                        <div class="term-item">
+                            <input type="checkbox" id="terms1" />
+                            <label for="terms1"
+                                >주문 내용을 확인했으며, 아래 내용에 모두
+                                동의합니다.</label
+                            >
+                        </div>
+                        <div class="term-item">
+                            <input type="checkbox" id="terms2" />
+                            <label for="terms2"
+                                >[필수] 개인정보 수집/이용 동의</label
+                            >
+                            <a href="#">보기</a>
+                        </div>
+                        <div class="term-item">
+                            <input type="checkbox" id="terms3" />
+                            <label for="terms3"
+                                >[필수] 전자금융거래 이용 약관 동의</label
+                            >
+                            <a href="#">보기</a>
+                        </div>
                     </div>
                     <div class="payment-button">
                         <button>결제하기</button>
                     </div>
                 </div>
 
+                <!-- 신용카드이용안내 -->
                 <div class="card-use">
                     <h4>신용카드 이용안내</h4>
                     <p>
