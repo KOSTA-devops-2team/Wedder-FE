@@ -21,7 +21,7 @@
 
             <!-- 1. 이용자 정보 -->
             <section class="user-info">
-                <h1>이용자 정보</h1>
+                <h1>1. 이용자 정보</h1>
                 <h3>원활한 서비스 이용을 위해 꼭 필요한 정보입니다.</h3>
 
                 <div class="self">
@@ -40,7 +40,7 @@
                             <label for="family">가족</label>
                         </div>
                     </div>
-                    <table class="table">
+                    <table class="user-table">
                         <tr>
                             <th><label for="partner-name">성함</label></th>
                             <td>
@@ -92,7 +92,7 @@
                             <label for="family">가족</label>
                         </div>
                     </div>
-                    <table class="table">
+                    <table class="user-table">
                         <tr>
                             <th><label for="partner-name">성함</label></th>
                             <td>
@@ -143,13 +143,60 @@
             </section>
 
             <!-- 2. 주문 상품 -->
-            <section></section>
+            <section class="weddinghall-order">
+                <h1>2. 주문 상품</h1>
+                <div class="order-container">
+                    <img
+                        src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/list/weddinghall3.jpg"
+                        alt="Venue Image"
+                    />
+                    <div class="order-info">
+                        <h2>[강남] 마리아주스퀘어</h2>
+                        <div class="event-info">
+                            본식 일시: 2024년 11월 17일 (일), 오후14:00~15:00
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="order-detail-title">홀 기본 사용료</h2>
+                <table class="detail-table" id="hall-table">
+                    <tr>
+                        <th>예도홀</th>
+                        <td>7,000,000원</td>
+                    </tr>
+                </table>
+
+                <h2 class="order-detail-title">식사</h2>
+                <table class="detail-table" id="food-table">
+                    <tr>
+                        <th>한식(코스 B)</th>
+                        <td>300명</td>
+                        <td>70,000원</td>
+                        <td>21,000,000원</td>
+                    </tr>
+                </table>
+
+                <h2 class="order-detail-title">기타 옵션</h2>
+                <table class="detail-table" id="option-table">
+                    <tr>
+                        <th>웨딩 디렉팅</th>
+                        <td>600,000원</td>
+                    </tr>
+                    <tr>
+                        <th>사회자</th>
+                        <td>200,000원</td>
+                    </tr>
+                    <tr>
+                        <th>꽃장식</th>
+                        <td>4,500,000원</td>
+                    </tr>
+                </table>
+            </section>
 
             <!-- 3. 결제 -->
-            <!-- 결제 -->
             <section class="payment">
                 <div class="payment-method">
-                    <div class="title">결제수단선택</div>
+                    <div class="payment-title">3. 결제수단선택</div>
                     <div class="option1">
                         <button>신용카드</button>
                         <button>실시간 계좌이체</button>
@@ -205,29 +252,44 @@
                             <p>• 간편결제는 즉시할인 대상에서 제외됩니다.</p>
                         </div>
                     </div>
+                    <!-- 신용카드이용안내 -->
+                    <div class="card-use">
+                        <h4>신용카드 이용안내</h4>
+                        <p>
+                            • KB국민, BC, 우리카드는 ISP 어플리케이션이
+                            필요합니다.
+                        </p>
+                        <p>
+                            • 30만원 이상, 사용가든 결제 시 공인인증서를 반드시
+                            사용하도록 정하고 있습니다.
+                        </p>
+                    </div>
                 </div>
                 <!-- 최종결제금액 부분 -->
                 <div class="final-cost">
                     <div class="final-cost-title">최종결제금액</div>
                     <div class="final-cost-details">
                         <div class="cost-item">
-                            <span>총 판매가</span>
+                            <span>총 금액</span>
                             <div class="amount">
-                                <span class="cost-amount">70,000</span>
+                                <span class="cost-amount">33,300,000</span>
                                 <span class="currency">원</span>
                             </div>
                         </div>
                         <div class="cost-item">
-                            <span>판매가</span>
+                            <span>식대</span>
                             <div class="amount">
-                                <span class="cost-amount">68,000</span>
+                                <span class="cost-amount">21,000,000</span>
                                 <span class="currency">원</span>
                             </div>
                         </div>
                     </div>
                     <div class="final-cost-total">
                         <h3>최종결제금액</h3>
-                        <div class="total-amount">276,000,000원</div>
+                        <div class="total-amount">
+                            <span class="total-amount-num">12,300,000</span>
+                            <span class="currency">원</span>
+                        </div>
                     </div>
                     <div class="agree-terms">
                         <div class="term-item">
@@ -255,18 +317,6 @@
                     <div class="payment-button">
                         <button>결제하기</button>
                     </div>
-                </div>
-
-                <!-- 신용카드이용안내 -->
-                <div class="card-use">
-                    <h4>신용카드 이용안내</h4>
-                    <p>
-                        • KB국민, BC, 우리카드는 ISP 어플리케이션이 필요합니다.
-                    </p>
-                    <p>
-                        • 30만원 이상, 사용가든 결제 시 공인인증서를 반드시
-                        사용하도록 정하고 있습니다.
-                    </p>
                 </div>
             </section>
         </div>

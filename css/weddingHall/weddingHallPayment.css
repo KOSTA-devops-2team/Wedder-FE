@@ -5,10 +5,11 @@
 }
 
 /*  1. 이용자 정보  */
-
 .user-info h1 {
     font-size: 21px;
     margin-top: 20px;
+    border-top: 2px solid black;
+    padding-top: 17px;
 }
 
 .user-info h3 {
@@ -42,29 +43,29 @@
     font-size: 17px;
 }
 
-.table {
+.user-table {
     margin: 30px 0;
     border: 1px solid #eee;
 }
 
-th {
-    width: 120px;
+.user-table th {
+    width: 300px;
     background-color: #eee;
 }
 
-td {
+.user-table td {
     padding: 15px 20px;
     width: 980px;
 }
 
-td input {
+.user-table td input {
     width: 200px;
     height: 40px;
     margin-right: 10px;
     border: 1px solid #eee;
 }
 
-td select {
+.user-table td select {
     width: 150px;
     height: 40px;
     margin-right: 10px;
@@ -78,7 +79,6 @@ td select {
 .request textarea {
     width: 100%;
     min-height: 130px;
-    /* padding-left: 30px; */
     padding: 15px 20px;
     box-sizing: border-box;
 }
@@ -89,20 +89,83 @@ td select {
     margin-top: 7px;
 }
 
+/* 2. 주문 상품 */
+.weddinghall-order h1 {
+    font-size: 21px;
+    margin-top: 70px;
+    border-top: 2px solid black;
+    padding-top: 17px;
+}
+
+.order-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 40px 0;
+}
+
+.order-container img {
+    max-width: 280px;
+    object-fit: cover;
+}
+
+.order-info {
+    margin-left: 30px;
+}
+
+.event-info {
+    margin-top: 10px;
+}
+
+.order-detail-title {
+    color: #ca1a5a;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0 12px 0;
+}
+
+.detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.detail-table tr {
+    background-color: #eee;
+    height: 40px;
+}
+
+.detail-table th,
+.detail-table td {
+    border: 1px solid #ccc;
+    text-align: left;
+    background-color: #f9f9f9;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.detail-table th {
+    width: 200px;
+}
+
+.detail-table td {
+    text-align: right;
+    padding-right: 20px;
+}
+
 /* 3. 결제 */
 .payment {
-    margin-top: 60px;
+    margin-top: 70px;
     display: grid;
     grid-template-columns: 2.3fr 1fr;
     gap: 0 30px;
+    border-top: 2px solid black;
 }
 
-.title {
+.payment-title {
     color: #333333;
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: bold;
-    border-top: 2px solid black;
     padding-top: 17px;
 }
 
@@ -178,18 +241,17 @@ td select {
 }
 
 /* 최종결제금액 부분 */
-
 .final-cost {
+    margin-top: 56px;
     border: 1px solid #cccccc;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 300px;
 }
 
 .final-cost-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -233,12 +295,12 @@ td select {
     font-size: 22px;
     font-weight: bold;
     color: #d9534f;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 .agree-terms {
     font-size: 12px;
-    margin: 15px 0 3px 0;
+    margin: 15px 0 3px 5px;
 }
 
 .term-item {
