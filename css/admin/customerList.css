@@ -60,43 +60,7 @@
     margin-left: 5px;
 }
 
-/* 2. 신규 방문 예약  */
-.new-visit-reservation {
-    margin-top: 50px;
-    min-height: 300px;
-}
-.new-visit-reservation h2 {
-    font-size: 24px;
-}
-
-.new-visit-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0 15px 0;
-}
-
-.new-visit-header span {
-    color: #ca1a5a;
-}
-
-table {
-    width: 100%;
-    border-top: 2px solid #000000;
-    /* border-collapse: collapse; */
-}
-
-table th,
-table td {
-    text-align: center;
-    height: 50px;
-}
-
-table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-/* 3. 고객 방문 일정 */
+/* 1. 고객 예약 관리 */
 .today-visit {
     margin-top: 50px;
 }
