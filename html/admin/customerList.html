@@ -20,6 +20,7 @@
             <aside class="admin-sidebar">
                 <div id="admin-sidebar-placeholder"></div>
             </aside>
+
             <main class="admin-content">
                 <!-- 1. 상단 요약 섹션 -->
                 <section class="summary">
@@ -42,19 +43,34 @@
                     </div>
                 </section>
 
-                <!-- 1. 고객 예약 관리 -->
+                <!-- 2. 고객 예약 관리 -->
                 <section class="customer-management">
                     <h2>고객 예약 관리</h2>
-                    <div class="today-visit-header">
-                        <p>
-                            ✔️ 날짜, 예약자명 전화번호를 통해 1년 간의 예약
-                            현황을 확인할 수 있습니다.
-                        </p>
-                    </div>
+                    <p class="customer-management-info">
+                        ✔️ 날짜, 예약자명 전화번호를 통해 1년 간의 예약 현황을
+                        확인할 수 있습니다.
+                    </p>
+
+                    <!-- 2-1. 고객 검색 -->
+                    <section class="customer-search">
+                        <div class="calendar">
+                            <span>선택한 날짜가 표시됩니다.</span>
+                            <img src="../../assets/images/calendar-color.png" />
+                        </div>
+                        <div class="name-phone">
+                            <span>예약자명, 전화번호를 입력해주세요</span>
+                            <img
+                                src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/search-icon.png"
+                            />
+                        </div>
+                    </section>
+
+                    <!-- 2-2. 방문 고객 리스트 -->
                     <div class="visit-detail-container">
                         <div class="visit-details">
                             <div class="visit-time">
-                                <div>12:00</div>
+                                <div>하우스홀</div>
+                                <div class="visit-true">12:00</div>
                             </div>
                             <div class="visit-customer-info">
                                 <div class="customer-1">
@@ -64,6 +80,9 @@
                                 <div class="customer-2">
                                     🤵🏻 <span class="name">이정원</span>
                                     <span class="phone">010-5454-9395</span>
+                                </div>
+                                <div class="payment-email-true">
+                                    결제 안내 메일 발송 완료
                                 </div>
                             </div>
                             <div class="wedding-info">
@@ -89,10 +108,43 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="visit-details">
+                            <div class="visit-time">
+                                <div>채플홀</div>
+                                <div class="visit-false">12:00</div>
+                            </div>
+                            <div class="visit-customer-info">
+                                <div class="customer-1">
+                                    👰🏻‍♀️ <span class="name">사임당</span>
+                                    <span class="phone">010-1224-5678</span>
+                                </div>
+                                <div class="customer-2">
+                                    🤵🏻 <span class="name">이순신</span>
+                                    <span class="phone">010-2222-2222</span>
+                                </div>
+                                <div class="payment-email-false">
+                                    결제 안내 메일 미발송
+                                </div>
+                            </div>
+                            <div class="wedding-info">
+                                <div>
+                                    <span>예상 하객수</span>
+                                    <span>200명 ~ 300명</span>
+                                </div>
+                                <div>
+                                    <span>희망 예식일</span>
+                                    <span>2024-11-23 토요일</span>
+                                </div>
+                                <div class="message">
+                                    <span>전달 사항</span>
+                                    <p class="message-summary">없음</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
         </div>
-        <!-- <footer id="footer-placeholder"></footer> -->
+        <footer id="footer-placeholder"></footer>
     </body>
 </html>
