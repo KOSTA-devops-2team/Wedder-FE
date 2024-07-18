@@ -222,6 +222,7 @@
     border: 1px solid #eee;
     padding: 20px 30px;
     border-radius: 5px;
+    box-shadow: 5px 5px 7px #eeeeee;
 }
 
 .payment-status {
@@ -269,6 +270,7 @@ table th {
     border: 1px solid #eee;
     padding: 20px 30px;
     border-radius: 5px;
+    box-shadow: 5px 5px 7px #eeeeee;
 }
 
 .wedding-container img {
