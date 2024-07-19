@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function includeHTML() {
-    fetch("../../components/header/header.html")
+    fetch("../../components/header/headerV2.html")
         .then((response) => response.text())
         .then((data) => {
             document.getElementById("header-placeholder").innerHTML = data;
-//             loadScript("../../js/header/header.js");
+            //             loadScript("../../js/header/header.js");
             loadCSS("../../css/common/header/header.css");
             initializeHeader();
         });
@@ -17,13 +17,6 @@ function includeHTML() {
         .then((data) => {
             document.getElementById("footer-placeholder").innerHTML = data;
         });
-
-    // fetch("../../components/sidebar/sidebarAdmin.html")
-    //     .then((response) => response.text())
-    //     .then((data) => {
-    //         document.getElementById("admin-sidebar-placeholder").innerHTML =
-    //             data;
-    //     });
 }
 
 function loadScript(url, callback) {

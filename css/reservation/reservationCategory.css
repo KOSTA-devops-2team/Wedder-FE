@@ -1,57 +1,58 @@
 /* 타이틀 */
 .title {
-    text-align: left;
-    color: #CA1A5A;
+  text-align: left;
+  color: #ca1a5a;
 }
 
 .title-sub {
-    font-size: 13px;
-    font-weight: normal;
-    letter-spacing: -0.5px;
-    margin-top: 50px;
-    margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 
 .title-main {
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* 스텝 Bar */
 .steps-bar {
-    font-size: 13px;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    align-content: space-between;
-    width: 100%;
-    /* margin: 50px auto; */
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  align-content: space-between;
+  width: 100%;
+  /* margin: 50px auto; */
 }
 
 .step {
-    color: #737373;
-    position: relative;
-    flex: 1;
-    padding: 13px 20px;
-    text-align: center;
-    background: #f3f3f3;
+  color: #737373;
+  position: relative;
+  flex: 1;
+  padding: 13px 20px;
+  text-align: center;
+  background: #f3f3f3;
 }
 
 .step::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #f3f3f3;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #f3f3f3;
+  z-index: 1;
 }
 
 .step:not(:last-child)::before {
+<<<<<<< HEAD
     content: "";
     position: absolute;
     right: -20px;
@@ -60,25 +61,37 @@
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     z-index: 2;
+=======
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  /* border-left: 20px solid #f1f1f1; */
+  z-index: 2;
+>>>>>>> 00e92076db22ac2913c1cc607c83751a6f3e7477
 }
 
 .step.active::after {
-    border-left-color: #000;
+  border-left-color: #000;
 }
 
 .step.active {
-    background: #000;
-    color: #fff;
+  background: #000;
+  color: #fff;
 }
 
 /* 안내멘트 */
 .guide {
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .guide-step {
+<<<<<<< HEAD
     font-size: 22px;
     font-weight: bold;
     padding-left: 20px;
@@ -94,21 +107,35 @@
     padding-top: 3px;
     padding-left: 11px;
 
+=======
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.guide-addition {
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  padding-top: 5px;
+  padding-left: 13px;
+>>>>>>> 00e92076db22ac2913c1cc607c83751a6f3e7477
 }
 
 
 /* 카테고리 리스트 */
 .category-all {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 30px;
-    margin: 50px 75px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  margin: 50px 75px;
 }
 
 .category {
-   /* width: 25vw;
+  /* width: 25vw;
    height: 45vh; */
+<<<<<<< HEAD
    width: 450px;
    height: 480px;
    margin: 0;
@@ -120,30 +147,47 @@
     height: 100%;
     z-index: 2;
     box-shadow: 2px 2px 2px rgb(185, 185, 185);
+=======
+  width: 400px;
+  height: 450px;
+  margin: 0;
+  position: relative;
+}
+
+.category img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+>>>>>>> 00e92076db22ac2913c1cc607c83751a6f3e7477
 }
 
 .category-text {
-    font-size: 40px;
-    position: absolute;
-    bottom: 45px;
-    left: 10%;
+  font-size: 40px;
+  position: absolute;
+  bottom: 45px;
+  left: 10%;
 }
 
 .category-text2 {
-    font-size: 40px;
-    position: absolute;
-    bottom: 30px;
-    left: 10%;
+  font-size: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
 }
 
 .category:nth-of-type(1) {
+<<<<<<< HEAD
     color: #fff;
+=======
+  color: #fff;
+>>>>>>> 00e92076db22ac2913c1cc607c83751a6f3e7477
 }
 
 .category:nth-of-type(3) {
-    color: #442400;
+  color: #442400;
 }
 
+<<<<<<< HEAD
 /* 다음 단계 버튼 */
 .btn {
     display: flex;
@@ -166,4 +210,24 @@
 .btn-nxt:hover {
     background-color: #717171;
     border: 1px solid #717171;
+=======
+.category-btn {
+  width: 310px;
+  height: 40px;
+  text-align: center;
+  background-color: #000;
+  padding-top: 6px;
+  margin-right: 124px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  float: right;
+}
+
+.category-nxt-btn {
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration-line: none;
+  justify-content: flex-end;
+>>>>>>> 00e92076db22ac2913c1cc607c83751a6f3e7477
 }
