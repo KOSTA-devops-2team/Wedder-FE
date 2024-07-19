@@ -1,33 +1,33 @@
 /* 타이틀 */
 .title {
-  text-align: left;
-  color: #ca1a5a;
+    text-align: left;
+    color: #CA1A5A;
 }
 
 .title-sub {
-  font-size: 13px;
-  font-weight: normal;
-  letter-spacing: -0.5px;
-  margin-top: 50px;
-  margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    margin-top: 50px;
+    margin-bottom: 5px;
 }
 
 .title-main {
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* 스텝 Bar */
 .steps-bar {
-  font-size: 13px;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-  align-content: space-between;
-  width: 100%;
-  /* margin: 50px auto; */
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    align-content: space-between;
+    width: 100%;
+    /* margin: 50px auto; */
 }
 
 .step {
@@ -52,15 +52,15 @@
 }
 
 .step:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  /* border-left: 20px solid #f1f1f1; */
-  z-index: 2;
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    /* border-left: 20px solid #f1f1f1; */
+    z-index: 2;
 }
 
 .step.active::after {
@@ -103,12 +103,12 @@
 }
 
 .category {
-  /* width: 25vw;
+   /* width: 25vw;
    height: 45vh; */
-  width: 400px;
-  height: 450px;
-  margin: 0;
-  position: relative;
+   width: 400px;
+   height: 450px;
+   margin: 0;
+   position: relative;
 }
 
 .category img {
@@ -131,12 +131,12 @@
   left: 10%;
 }
 
-.category:nth-of-type(1) {
-  color: #fff;
+.category:nth-of-type(1){
+    color: #fff;
 }
 
 .category:nth-of-type(3) {
-  color: #442400;
+    color: #442400;
 }
 
 .category-btn {
@@ -152,9 +152,9 @@
 }
 
 .category-nxt-btn {
-  font-size: 13px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration-line: none;
-  justify-content: flex-end;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration-line: none;
+    justify-content: flex-end;
 }
