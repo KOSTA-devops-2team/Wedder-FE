@@ -3,10 +3,21 @@
 
 
 #Mylogo{
-    position: relative;
+    
     width :100px;
-    left: 40% ; 
-    top: 45%
+    height: 100px;
+  
+}
+
+.Wedder{
+    position: relative;
+     text-decoration-line: none;
+     color :inherit;
+     font-size: 30px;
+     top: 25%;
+     left:20%;
+     
+      
 }
 
 
