@@ -75,7 +75,9 @@
     font-size: 22px;
     font-weight: bold;
     padding-left: 20px;
+    margin: 0;
     margin-right: 5px;
+
 }
 
 .guide-explain {
@@ -83,7 +85,8 @@
     font-weight: normal;
     letter-spacing: -0.5px;
     padding-top: 3px;
-    padding-left: 13px;
+    padding-left: 11px;
+
 }
 
 /* 검색 필터 분류 */
@@ -132,7 +135,7 @@
 
 #search-icon {
     position: absolute; 
-    top: 15px; 
+    top: 16px; 
     right: 120px; 
     width: 17px;
     height: 17px;
@@ -211,8 +214,21 @@
 
 /* 스케줄로 검색 */
 .schedule-container {
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
 }
+
+.filters > label {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 0 0 45px
+}
+
+
+input {
+    accent-color: #ca1a5a;
+}
+
 
 /* 총 업체수 */
 .total {
@@ -232,7 +248,6 @@
 
 .company-card {
     display: flex;
-    /* justify-content: space-evenly; */
     width: 500px;
     height: 195px;
     margin: 0 10px;
@@ -295,7 +310,7 @@
 
 /* 선택 목록 */
 .select-list {
-    margin: 30px 0;
+    /* margin: 30px 0; */
     padding: 10px; 
     background-color: #fff;
     position: sticky;
@@ -311,10 +326,11 @@
 .select-title > h1 {
     font-size: 19px;
     font-weight: 600;
-    padding: 5px 17px;
+    margin: 0;
+    padding: 7px 17px;
 }
 
-.options-container {
+.select-container {
     display: flex;
 }
 
@@ -327,6 +343,7 @@
 .select-company-title {
     font-size: 17px;
     font-weight: 600;
+    margin: 0;
     padding: 0 10px;
 }
 
@@ -338,7 +355,7 @@
 }
 
 .options {
-    flex: grid;
+    display: grid;
     grid-template-rows: repeat(1, auto);
 }
 
@@ -353,22 +370,21 @@
     padding: 10px 100px;
     border: 1px solid #000;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn-nxt {
     padding: 10px 120px;
     border: 1px solid #000;
     border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
 }
 
 .btn-pre:hover {
     background-color: #ddd;
     color: #000;
-}
-
-.btn-nxt {
-    color: #fff;
-    background-color: #000;
 }
 
 .btn-nxt:hover {

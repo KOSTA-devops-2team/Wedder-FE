@@ -75,14 +75,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px 20px;
-    /* margin-left: 60px; */
+    margin: 20px 15px;
 }
 
 .reserve-guide {
-    margin-top: 70px;
-    padding: 24px;
-    padding-left: 30px;
+    margin-top: 85px;
+    padding: 25px;
+    /* padding-left: 30px; */
     border: 1px solid #CA1A5A;
     border-radius: 8px;   
 }
@@ -90,6 +89,7 @@
 .reserve-guide h2 {
     font-size: 17px;
     color: #CA1A5A;
+    margin: 0;
 }
 
 .guide {
@@ -182,6 +182,7 @@
     padding: 10px 100px;
     border: 1px solid #000;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn-pre:hover {
@@ -195,6 +196,7 @@
     border-radius: 5px;
     color: #fff;
     background-color: #000;
+    cursor: pointer;
 }
 
 .btn-nxt:hover {

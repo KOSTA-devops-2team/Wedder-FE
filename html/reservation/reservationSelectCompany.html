@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/common/reset.css" />
     <link rel="stylesheet" href="../../css/reservation/reservationSelectCompany.css" />
     <script src="../../js/main/main.js"></script>
-    <script src="../../js/reservation/reservationSelectCompany.js"></script>
+
 </head>
 <body>
     <div id="header-placeholder"></div>
@@ -48,7 +48,7 @@
 
     <section class="container">
         <!-- 태그로 검색 --> 
-        <section id="tag-search" class="tag-container">
+        <section id="tab-contents" class="tag-container">
             <div class="search-bar">
                 <input type="search" placeholder="카테고리 내 검색">
                 <img id="search-icon" src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/search-icon.png" />
@@ -89,7 +89,7 @@
          </section>
 
         <!-- 스케줄로 검색 -->
-        <section id="schedule-search" class="schedule-container">
+        <section id="tab-contents" class="schedule-container">
             <div class="filters hope-date">
                 <label>이용 희망일</label>
                 <div class="options">
@@ -143,27 +143,6 @@
             </div>
         </section>
     </section>
-        <!-- 선택목록 테스트1 -->
-        <!-- <section class="select-list">
-            <div class="select-title">
-                <h1>선택하신 목록</h1>
-            </div>
-            <div class="options-container">
-                <div class="company">
-                    <div>
-                        <img id="company-images" src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
-                    </div>
-                    <div>
-                        <h4 class="select-company-title">빌링스 스튜디오</h4>
-                        <p  class="select-purpose">[웨딩촬영]</p>
-                    </div>
-                </div>
-                <div class="options">
-                    <div>a</div>
-                    <div>a</div>
-                </div>
-            </div>
-        </section> -->
 
         <!-- 총 업체수, 선택 필터 -->
         <section>
@@ -270,7 +249,7 @@
             <div class="select-title">
                 <h1>선택하신 목록</h1>
             </div>
-            <div class="options-container">
+            <div class="select-container">
                 <div class="company">
                     <div>
                         <img id="company-images" src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
@@ -289,11 +268,12 @@
 
         <!-- 다음 단계 버튼 -->
         <section class="btn">
-            <button class="btn-pre">이전</button>
-            <button class="btn-nxt">다음 단계로</button>
+            <button class="btn-pre"><a href="../../html/reservation/reservationCategory.html">이전</a></button>
+            <button class="btn-nxt"><a href="../../html/reservation/reservationSelectOptions.html">다음 단계로</a></button>
         </section>
   
     </div>
     <div id="footer-placeholder"></div>
+    <script defer src="../../js/reservation/reservationSelectCompany.js"></script>
 </body>
 </html>
