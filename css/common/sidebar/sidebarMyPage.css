@@ -15,3 +15,7 @@
   color: #5d5d5d;
   margin: 10px 0;
 }
+
+.nav-bar {
+  position: sticky;
+}
