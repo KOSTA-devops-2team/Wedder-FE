@@ -92,6 +92,10 @@
     margin: 0;
 }
 
+.reserve-guide input {
+    accent-color: #CA1A5A;
+}
+
 .guide {
     font-size: 14px;
     line-height: 1.9;
