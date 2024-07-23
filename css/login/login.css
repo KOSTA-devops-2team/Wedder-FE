@@ -3,10 +3,21 @@
 
 
 #Mylogo{
-    position: relative;
-    width :100px;
-    left: 40% ; 
-    top: 45%
+    
+    width :160px;
+    height: 100px;
+    margin-bottom: 50% ;
+  
+}
+
+.Wedder{
+     position: relative;
+     text-decoration-line: none;
+     color :inherit;
+     font-size: 45px;
+     left:40%;
+     
+      
 }
 
 
@@ -17,9 +28,25 @@
   width: 450px;
   background-color: #fff;
   border-radius: 5px;
-  top: 55%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -45%);
+  
+}
+
+.Log{
+    
+    
+    box-shadow: 5px 5px 7px #c8c8c8c8;
+    width:98%;
+    align-items: center;
+    font-family: arial;
+    height: 400px;
+    justify-content: center;
+    margin:0px;
+    padding: 40px;
+    border-radius: 4px;
+    
 }
 
 button{

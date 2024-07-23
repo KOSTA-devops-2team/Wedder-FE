@@ -1,20 +1,26 @@
-let pass = document.getElementById(".passSet1").value;
-const pas = pass.length;
-const up = document.getElementById("#upper");
+let pass1 = document.querySelector(".pass > #passSet1");
+const eg = /^[a-zA-Z]+$/;
+const sp = /[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi;
+const su = /[0-9]+$/;
 
-console.log(`${pas}`);
-pass.addEventListener('keyup',(e)=>{
-    
-    if(pas > 8)
+
+pass1.addEventListener('keyup',()=>{
+    if(pass1.value.length >= 8)
     {
-       up.addEventListener("",()=>{
-            document.body.style.color = "blue";
-       })
+        document.querySelector("#up1").style.color="black";
+        document.querySelector("#upper").style.color="black";
     }
-    else
+
+    if(eg.test(pass1.value))
     {
-        up.addEventListener("",()=>{
-            document.body.style.color = "RED";
-       })
+        console.log("대소문자성공");
     }
-})
+    if(sp.test(pass1.value))
+    {
+        console.log("특수문자성공");
+    }
+    if(su.test(pass1.value))
+    {
+        console.log("숫자문자성공");
+    }
+});
