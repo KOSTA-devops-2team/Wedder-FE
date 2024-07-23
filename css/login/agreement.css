@@ -7,9 +7,10 @@
     width: 450px;
     background-color: #fff;
     border-radius: 5px;
-    top: 55%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -45%);
+    box-shadow: 5px 5px 7px #c8c8c8c8;
   }
 
 #h{
@@ -24,6 +25,14 @@ hr{
     border: 3px solid;
     margin-left: 0;
 }
+td{
+      border:1px solid black;
+      width: 200px;
+      height: 5px;
+}
+#a1{
+      color:black;
+}
 /* 체크박스설정 */
 .check input[type="checkbox"]
 {
@@ -34,6 +43,7 @@ hr{
       display: inline-block;
       position: relative;
       padding-left:30px;
+      
 }
   
 .check input[type="checkbox"] + label::before{
@@ -56,8 +66,8 @@ hr{
 .check input[type="checkbox"]:checked + label::before{
       content:'✔';
       font-weight: 1px;
-      background-color: white;
-      color:blue;
+      background-color: black;
+      color:white;
       
 }
 
@@ -86,15 +96,15 @@ hr{
     left: 0;
     top:0;
     background-color: white;
-
+    border: 1px solid #959da8;
 }
 
 
 .checkin input[type="checkbox"]:checked + label::before{
       content:'✔';
       font-weight: 1px;
-      background-color: blue;
-      color:#fff;
+      background-color: black;
+      color:white;
 }
 
 
@@ -103,6 +113,6 @@ hr{
     width: 450px;
     height: 50px;
     color : #fff;
-    background-color: #CA1A5A;
+    background-color: #959da8;
     border: none;
 }
