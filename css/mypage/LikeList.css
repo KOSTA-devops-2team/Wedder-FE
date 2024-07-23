@@ -5,6 +5,15 @@ body {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
 }
+.likeList-structure {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.likeList-structure div {
+  width: 200px;
+}
+/*  */
 ::-webkit-scrollbar {
   display: none;
 }
@@ -23,39 +32,37 @@ h3 {
 .List-content h3 {
   font-size: 20px;
 }
-/* Search-bar */
+/* 2. 서치 바 기능 Search-bar */
 .search-bar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   text-align: center;
 }
+.List-search-bar img {
+  width: 20px;
+}
 /* LikeList-Card */
 .LikeList-Card {
-  border: 2px solid #eeeeee;
-  width: 240px;
+  width: 220px;
   border-radius: 5%;
   text-align: left;
-  margin: 20px;
+  margin: 5px;
 }
 .LikeList-Card h5 {
-  font-size: 13px;
+  margin: 0px;
 }
-.LikeList-Card ul {
-  margin-left: 40px;
-}
+
 .LikeList-Card li {
-  margin-top: 5px;
+  margin-top: 3px;
   font-size: 11px;
 }
 .LikeList-Card img {
-  margin: 20px;
   width: 200px;
-  border-radius: 7%;
 }
 .LikeList-Card-List {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 10px;
 }

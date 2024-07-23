@@ -1,14 +1,15 @@
 .banner {
     background-image: url(../../assets/images/estimateBanner.png);
-    height: 150px;
-    padding: 45px 40px;
+    height: 170px;
+    padding: 53px 45px;
     text-align: left;
+    font-size: 15px;
 }
-.banner h1 {
-    font-size: 20px;
+.banner .bold {
+    font-size: 22px;
     font-weight: bold;
     color: #000;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 .outer-par {
     padding: 10px;
@@ -35,8 +36,7 @@
 .main-grid {
     display: grid;
     grid-template-columns: 650px auto;
-    grid-template-rows: 500px auto;
-    grid-gap: 40px;
+    grid-gap: 10px;
 }
 .left-panel {
     grid-row-start: 1;
@@ -46,6 +46,7 @@
     padding: 10px 30px;
 }
 .right-panel {
+    height: 700px;
     border: 1px solid #757575;
     border-radius: 10px;
     padding: 30px 20px;
@@ -57,18 +58,41 @@
     grid-row-end: 3;
     border: 1px solid #757575;
     border-radius: 5px;
+    height: 150px;
+    color: #666;
+    font-size: 12px;
 }
-.main-img {
-    width: 50px;
-    height: 50px;
+.main img {
+    width: 250px;
+    height:250px;
+    float: left;
+    margin-right: 20px;
+}
+.content-bold {
+    font-weight: 600;
+    font-size: 20px;
+}
+.selected {
+    margin: 10px;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.content-main {
+    text-align: left;
+}
+.basic-option {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+.basicOptionParagraph {
+    font-size: 10px;    
 }
 .container {
     display: flex;
     vertical-align: middle;
-}
-.left-panel p {
-    font-size: 20px;
-    margin-bottom: 10px;
 }
 .right-panel h2 {
     font-size: 20px;
@@ -107,11 +131,9 @@
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.price {
-    display: inline-bl;
-    justify-items: end;
-    width: auto;
-    height: 100px;
+.item total {
+    display: flex;
+    justify-content: space-between;
 }
 .total {
     font-weight: bold;
@@ -145,11 +167,6 @@
 .option span {
     display: block;
     margin-bottom: 5px;
-}
-.note {
-    margin-top: 20px;
-    color: #666;
-    font-size: 14px;
 }
 .buttons {
     display: flex;
