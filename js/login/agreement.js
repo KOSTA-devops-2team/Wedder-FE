@@ -21,12 +21,17 @@ document.addEventListener('DOMContentLoaded',()=>{
         if(check1.checked && check2.checked && check3.checked)
         {
           
-          btn.style.backgroundColor="#CA1A5A";
+          btn.style.backgroundColor="black";
           btn.style.cursor = "pointer";
           link ='IDJoin.html';
-          btn.addEventListener("click",()=>{
-            location.href=link;
-          })
+          console.log("3개 확인");
+          btn.disabled = false;
+          btn.onclick = function(){
+            location.href=link; 
+          }
+          // btn.addEventListener("click",()=>{
+          //   location.href=link;
+          // })
 
         }
         if (!check1.checked || !check2.checked || !check3.checked) {
@@ -40,45 +45,59 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
     check1.addEventListener('click', (event) => {
+     
+      
       if(event.currentTarget.checked == false){
         checkall.checked = false;
         
       }
 
       if(check1.checked && check2.checked && check3.checked)
-        {
-          
-          btn.style.backgroundColor="#CA1A5A";
-          btn.style.cursor = "pointer";
-          link ='IDJoin.html';
-          btn.addEventListener("click",()=>{
-            location.href=link;
-          })
+      {
+        
+        btn.style.backgroundColor="black";
+        btn.style.cursor = "pointer";
+        link ='IDJoin.html';
+        console.log("3개 확인");
+        btn.disabled = false;
+        btn.onclick = function(){
+          location.href=link; 
+        }
+        // btn.addEventListener("click",()=>{
+        //   location.href=link;
+        // })
 
-        }
-        if (!check1.checked || !check2.checked || !check3.checked) {
-         
-          btn.style.backgroundColor="#959da8";
-          btn.style.cursor = "default";
-          link ='IDJoin.html';
-          btn.disabled = true;
-        }
+      }
+      if (!check1.checked || !check2.checked || !check3.checked) {
+        
+        btn.style.backgroundColor="#959da8";
+        btn.style.cursor = "default";
+        link ='IDJoin.html';
+        btn.disabled = true;
+      }
     
     });
 
     check2.addEventListener('click', (event) => {
+      
+      
       if(event.currentTarget.checked == false){
         checkall.checked = false;
       }
       if(check1.checked && check2.checked && check3.checked)
         {
           
-          btn.style.backgroundColor="#CA1A5A";
+          btn.style.backgroundColor="black";
           btn.style.cursor = "pointer";
           link ='IDJoin.html';
-          btn.addEventListener("click",()=>{
-            location.href=link;
-          })
+          console.log("3개 확인");
+          btn.disabled = false;
+          btn.onclick = function(){
+            location.href=link; 
+          }
+          // btn.addEventListener("click",()=>{
+          //   location.href=link;
+          // });
 
         }
         if (!check1.checked || !check2.checked || !check3.checked) {
@@ -91,18 +110,22 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
 
     check3.addEventListener('click', (event) => {
+      
+     
       if(event.currentTarget.checked == false){
         checkall.checked = false;
       }
       if(check1.checked && check2.checked && check3.checked)
         {
           
-          btn.style.backgroundColor="#CA1A5A";
+          btn.style.backgroundColor="black";
           btn.style.cursor = "pointer";
           link ='IDJoin.html';
+          console.log("3개 확인");
+          btn.disabled = false;
           btn.addEventListener("click",()=>{
             location.href=link;
-          })
+          });
 
         }
         if (!check1.checked || !check2.checked || !check3.checked) {
@@ -124,15 +147,21 @@ document.addEventListener('DOMContentLoaded',()=>{
       if(event.currentTarget.checked == false){
         checkall.checked = false;
       }
-    });
-
-    
-  
-  
-
-  
-  
+    });  
 });
-
+function usePopup() {
+  window.open("uselaw.html", "a", "width=710, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
+  }
+  
+  
+  function privacyPopup() {
+  window.open("privacy.html", "a", "width=710, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
+  }
+  
+  
+  function marketingPopup() {
+  window.open("marketing.html", "a", "width=710, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
+  }
+      
 
   
