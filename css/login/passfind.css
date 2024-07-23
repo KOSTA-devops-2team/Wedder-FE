@@ -1,59 +1,13 @@
-@charset "utf-8";
-
-/* 모양맞추기 */
-.join{
-    position: absolute;
-    padding: 50px;
-    width: 500px;
-    background-color: #fff;
-    border-radius: 5px;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    box-shadow: 5px 5px 7px #c8c8c8c8;
+*{
+    margin: 30px auto;
 }
-
-h1{
-    font-size: 40px;
-    text-align: center;
+html{
+    overflow:hidden;
 }
-
-.bol{
-    font-size: 25px;
-}
-
-td{
-    border:1px solid black;
-    width: 200px;
-    height: 5px;
-}
-
-hr{
-    width: 370px;
-    border: 3px solid;
-    margin-left: 0;
-}
-
-.img{
-    height: 16px;
-    margin: 5px;
-    vertical-align: -30%;
-}
-
-.bt{
-
-    width: 450px;
-    height: 50px;
-    color : #fff;
-    background-color: #CA1A5A;
-    border: none;
-}
-
 
 
 .modal{
     position:absolute;
-    display:none;
     
     justify-content: center;
     top:0;
@@ -64,15 +18,17 @@ hr{
 
     
 
-    background-color: rgba(0,0,0,0.4);
+   
 }
 .modal .modal_body{
     position: absolute;
     width: 500px;
-    height: 1200px;
+    height: 600px;
     background-color: white;
     text-align: center;
     top : 10px;
+    box-shadow: 5px 5px 7px #c8c8c8c8;
+   
 }
 
 .modal .modal_body #email{
@@ -84,6 +40,7 @@ hr{
     top : 10px;
     margin-bottom: 20px;
     border-radius: 4px;
+    box-shadow: 5px 5px 7px #eeeeee;
 }
 
 .modal .modal_body #email:focus{
@@ -113,11 +70,11 @@ hr{
     
     width: 300px;
     height: 50px;
-    background-color: #fff;
+    background-color: #c8c8c8;
     text-align: center;
     top : 10px;
     margin-bottom: 20px;
     border-radius: 4px;
-    color: #AFAFAF;
+    color: #dbdbdb;
     border: none;
 }
