@@ -1,15 +1,30 @@
 @charset "UTF-8";
-
+/* 0. 구조 설정 */
+.myPage-container {
+  display: flex;
+  justify-content: space-between;
+}
+.myPage-sidebar {
+  width: 240px;
+}
+.myPage-content {
+  width: 960px;
+  min-height: 1000px;
+}
+/* 기본 설정 */
 .p {
   text-align: center;
 }
-
+/* 1.마이페이지 메인페이지 */
 .sub-title {
-  font-size: 20px;
+  font-size: 24px;
   color: #ca1a5a;
   font-weight: bold;
+  margin-top: 30px;
 }
-
+.sub-title-header {
+  border-bottom: 2px solid #000000;
+}
 .body-header {
   width: 100%;
   height: 100px;
@@ -25,7 +40,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 10px;
+  margin: 10px 100px;
 }
 .body-header-footer {
   display: flex;
@@ -62,8 +77,9 @@
 .out {
   display: flex;
   justify-content: flex-end;
-  color: blue;
-  font-size: 10px;
+  color: #858585;
+  font-size: 12px;
+  margin-top: 10px;
 }
 .profile-main {
   display: flex;
@@ -87,9 +103,10 @@
 }
 
 .profile-body img {
-  width: 10%;
-  height: 10%;
+  width: 20px;
+  height: 20px;
   margin: 10px;
+  margin-top: 25px;
 }
 .profile-main-image img {
   width: 270px;
@@ -97,37 +114,34 @@
   margin: 100px;
   margin-right: 130px;
 }
-#EA {
-  color: #ca1a5a;
-}
+
+/* 3. 금일 방문 일정 */
 .ReservationMange-go {
-  font-size: 10px;
-  color: blue;
+  font-size: 14px;
+  color: #858585;
+  position: relative;
+  margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
 }
-/* drop down 기능쪽 css */
-.dropdown {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 20px;
+/* 4. 현재 예약 현황 */
+.category {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px 10px;
+  padding: 10px;
+  text-align: center;
 }
-/* ------- */
 .table {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  margin: 20px 60px;
-  border: 1px solid #eeeeee;
-  width: 420px;
+  width: 200px;
   border-radius: 5%;
 }
 .table img {
-  width: 100px;
-  height: 100px;
-  border-radius: 7%;
-  margin: 10px;
+  width: 200px;
+  height: 200px;
 }
 .table div .img {
   width: 50px;
@@ -138,14 +152,19 @@
 }
 .table-divide {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .table div :nth-of-type(1) {
   font-size: 20px;
   font-weight: bold;
 }
-/*  */
+.table div :nth-of-type(2) {
+  font-size: 12px;
+  font-weight: 100;
+  color: #858585;
+}
+/*3. 금일 방문 일정  */
 .table-VSplan {
   border-collapse: collapse;
   font-size: 1rem;
@@ -186,28 +205,76 @@ td {
   height: 20px;
   margin: 0px;
 }
-/* proposal */
-.proposal-cardpackage {
-  display: inline-flex;
+
+/* 4. 스드메 탭*/
+.tabs {
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin: 10px;
-  margin-left: 90px;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  margin: 20px;
+  padding-top: 100px;
 }
-.proposal-card {
-  border: 1px solid rgb(158, 158, 158);
-  border-radius: 5%;
-  margin: 10px;
-  width: 200px;
-  height: 300px;
+.tab {
+  padding: 10px 20px;
+  margin: 0px 30px 0px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
-.proposal-card img {
-  margin: 10px;
-  width: 180px;
-  height: 180px;
+.tab_Active {
+  /* 탭 활성화 시 다른 내용 하이드 */
+  display: flex;
 }
-.proposal-card div {
-  display: inline-flex;
+.content {
+  margin-top: 20px;
+}
+
+/* 콘텐트 내용 */
+.studio,
+.makeUp,
+.dress {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.active {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#mail {
+  width: 25px;
+  height: 25px;
+  margin: -2px 4px 6px 0px;
+  background-image: url(../../assets/images/mail.png);
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.heart {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url("../../assets/images/empty-heart.png");
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.liked {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url("../../assets/images/full-heart.png");
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.button-list {
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: end;
+  margin-top: 15px;
 }
