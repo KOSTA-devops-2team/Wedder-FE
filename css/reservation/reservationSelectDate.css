@@ -90,7 +90,7 @@
 }
 
 /* 방문 일자 선택 */
-.select-date {
+.select {
     margin: 15px 25px;
 }
 
@@ -200,8 +200,8 @@
 }
 
 .time-slot:nth-of-type(3) {
-    border: 1px solid #ddd;
-    color: #ddd;
+    border: 1px solid #ccc;
+    color: #ccc;
     cursor: default;
 }
 
@@ -265,7 +265,7 @@
 
 .select-option {
     display: grid;
-    grid-template-columns: 90px 700px 150px;
+    grid-template-columns: 90px 700px 100px;
     border-bottom: 1px solid #757575;
     width: 900px;
     padding: 10px 0;

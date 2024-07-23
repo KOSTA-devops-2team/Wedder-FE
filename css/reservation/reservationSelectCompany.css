@@ -187,9 +187,15 @@
     padding-bottom: 10px;
 }
 
-.filters.possible-filter {
-    /* display: none; */
+.purpose-btn-selected {
+    color: #fff;
+    background-color: #000;
 }
+
+.tag-btn-selected {
+    color: #ca1a5a;
+}
+
 
 /* 더 많은 검색 필터 */
 
@@ -305,6 +311,11 @@ input {
     margin-left: 23px;
 }
 
+.company-card-selected {
+    border: 1px solid #ca1a5a;
+    background-color: rgba(255, 203, 222, 0.3);
+}
+
 /* 페이지네이션 */
 
 
@@ -333,9 +344,9 @@ input {
     display: flex;
 }
 
-.select-company {
+/* .select-company {
     display: none;
-}
+} */
 
 .appear-select-comapny {
     display: block;
