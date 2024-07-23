@@ -70,21 +70,21 @@
 }
 .content-bold {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
 }
 .selected {
     margin: 10px;
     justify-content: space-between;
+    padding-top: 30px;
 }
 .content-main {
     text-align: left;
-    padding-top: 20px;
-    padding-bottom: 40px;
 }
 .basic-option {
     display: flex;
     justify-content: space-between;
     vertical-align: center;
+    margin-top: 20px;
     margin-bottom: 200px;
 }
 .basicOptionParagraph {

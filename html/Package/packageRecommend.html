@@ -8,10 +8,15 @@
         <link rel="stylesheet" href="../../css/package/packageRecommend.css">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css"> -->
         <link rel="stylesheet" href="../../css/package/swiper.css">
+        <link
+            rel="stylesheet"
+            href="../../css/common/pagination/pagination.css"
+        />
         <script src="../../js/main/main.js"></script>
         <script defer src="../../js/package/packageMain.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script> -->
         <script src="../../js/package/swiper.js"></script>
+        <script defer src="../../js/pagination/pagination.js"></script>
     </head>
     <body>
         <div id="header-placeholder"></div>
@@ -56,107 +61,213 @@
                 <div class="swiper-button-next"></div>   
             </div>
         </div>
-        <div class="container">
-            <div class="middle">
-                <div class="pack-title">
-                    <p>금액대별 추천</p>
+        <div class="hd__inner1100">
+            <div class="container-pack">
+                <div class="top">
+                    <div class="pack-title">
+                        <p>Best Package</p>
+                    </div>
+                    <div class="top-grid">
+                        <div class="grid">
+                            <div class="package-picture">
+                                <img src="../../assets/images/basicPack.png" alt="Basic Pack">
+                            </div>
+                            <div class="top-con">
+                                <div class="con">
+                                    <img src="../../assets/images/weddingThumbnail.png" alt="스튜디오">
+                                    <div class="con-par">
+                                        <p class="up">스튜디오    |    테오그라피</p>
+                                        <p class="down">[웨딩촬영] 베이직 20P</p>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <img src="../../assets/images/dressThumbnail.png" alt="드레스">
+                                    <div class="con-par">
+                                        <p class="up">드레스    |    브라이덜수지</p>
+                                        <p class="down">[촬영+본식] 드레스 4벌</p>
+                                    </div>
+                                </div>
+                                <div class="con-non">
+                                    <img src="../../assets/images/makeupThumbnail.png" alt="메이크업">
+                                    <div class="con-par">
+                                        <p class="up">헤어/메이크업    |    고센&끌림뷰티</p>
+                                        <p class="down">[촬영+본식] 신부신랑 헤어메이크업</p>
+                                    </div>
+                                </div>
+                                <a class="detail" href="#">상품 자세히 보기 &#62;</a>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="package-picture">
+                                <img src="../../assets/images/standardPack.png" alt="Basic Pack">
+                            </div>
+                            <div class="top-con">
+                                <div class="con">
+                                    <img src="../../assets/images/weddingThumbnail.png" alt="스튜디오">
+                                    <div class="con-par">
+                                        <p class="up">스튜디오    |    테오그라피</p>
+                                        <p class="down">[웨딩촬영] 베이직 20P</p>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <img src="../../assets/images/dressThumbnail.png" alt="드레스">
+                                    <div class="con-par">
+                                        <p class="up">드레스    |    브라이덜수지</p>
+                                        <p class="down">[촬영+본식] 드레스 4벌</p>
+                                    </div>
+                                </div>
+                                <div class="con-non">
+                                    <img src="../../assets/images/makeupThumbnail.png" alt="메이크업">
+                                    <div class="con-par">
+                                        <p class="up">헤어/메이크업    |    고센&끌림뷰티</p>
+                                        <p class="down">[촬영+본식] 신부신랑 헤어메이크업</p>
+                                    </div>
+                                </div>
+                                <a class="detail" href="#">상품 자세히 보기 &#62;</a>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="package-picture">
+                                <img src="../../assets/images/PremiumPack.png" alt="Basic Pack">
+                            </div>
+                            <div class="top-con">
+                                <div class="con">
+                                    <img src="../../assets/images/weddingThumbnail.png" alt="스튜디오">
+                                    <div class="con-par">
+                                        <p class="up">스튜디오    |    테오그라피</p>
+                                        <p class="down">[웨딩촬영] 베이직 20P</p>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <img src="../../assets/images/dressThumbnail.png" alt="드레스">
+                                    <div class="con-par">
+                                        <p class="up">드레스    |    브라이덜수지</p>
+                                        <p class="down">[촬영+본식] 드레스 4벌</p>
+                                    </div>
+                                </div>
+                                <div class="con-non">
+                                    <img src="../../assets/images/makeupThumbnail.png" alt="메이크업">
+                                    <div class="con-par">
+                                        <p class="up">헤어/메이크업    |    고센&끌림뷰티</p>
+                                        <p class="down">[촬영+본식] 신부신랑 헤어메이크업</p>
+                                    </div>
+                                </div>
+                                <a class="detail" href="#">상품 자세히 보기 &#62;</a>
+                            </div>
+                        </div>   
+                        <div class="grid">
+                            <div class="package-picture">
+                                <img src="../../assets/images/High-endPack.png" alt="Basic Pack">
+                            </div>
+                            <div class="top-con">
+                                <div class="con">
+                                    <img src="../../assets/images/weddingThumbnail.png" alt="스튜디오">
+                                    <div class="con-par">
+                                        <p class="up">스튜디오    |    테오그라피</p>
+                                        <p class="down">[웨딩촬영] 베이직 20P</p>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <img src="../../assets/images/dressThumbnail.png" alt="드레스">
+                                    <div class="con-par">
+                                        <p class="up">드레스    |    브라이덜수지</p>
+                                        <p class="down">[촬영+본식] 드레스 4벌</p>
+                                    </div>
+                                </div>
+                                <div class="con-non">
+                                    <img src="../../assets/images/makeupThumbnail.png" alt="메이크업">
+                                    <div class="con-par">
+                                        <p class="up">헤어/메이크업    |    고센&끌림뷰티</p>
+                                        <p class="down">[촬영+본식] 신부신랑 헤어메이크업</p>
+                                    </div>
+                                </div>
+                                <a class="detail" href="#">상품 자세히 보기 &#62;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="middle-grid">
-                    <div class="grid-1">
-                        <div class="package-picture">
-                            <img src="../../assets/images/basicPack.png" alt="Basic Pack">
-                        </div>
-                        <div class="mid-con">
-                            <div class="mid-con-studio">
-                                <img src="" alt="스튜디오">
-                                <p>스튜디오    |    테오그라피</p>
-                                <p>[웨딩촬영] 베이직 20P</p>
-                            </div>
-                            <div class="mid-con-dress">
-                                <img src="" alt="드레스">
-                                <p>드레스    |    브라이덜수지</p>
-                                <p>[촬영+본식] 드레스 4벌</p>
-                            </div>
-                            <div class="mid-con-makeup">
-                                <img src="" alt="메이크업">
-                                <p>헤어/메이크업    |    고센&끌림뷰티</p>
-                                <p>[촬영+본식] 신부신랑 헤어메이크업</p>
-                            </div>
-                            <a href="#">상품 자세히 보기</a>
+                <div class="bot">
+                    <div class="pack-title">
+                        <p>스드메 패키지</p>
+                    </div>
+                    <div class="range">
+                        <div class="range-title">금액대</div>
+                        <div class="price-range">
+                            <button class="button-price">
+                                <a href="">100만원↓</a>
+                            </button>
+                            <button class="button-price">
+                                <a href="">100만원~150만원</a>
+                            </button>
+                            <button class="button-price">
+                                <a href="">150만원~200만원</a>
+                            </button>
+                            <button class="button-price">
+                                <a href="">200만원~250만원</a>
+                            </button>
+                            <button class="button-price">
+                                <a href="">250만원~300만원</a>
+                            </button>
+                            <button class="button-price">
+                                <a href="">300만원~350만원</a>
+                            </button>
+                            <button class="button-price">
+                                <a href="">350만원~400만원</a>
+                            </button>
+                            <button class="button-price">
+                                <a href="">400만원↑</a>
+                            </button>
                         </div>
                     </div>
-                    <div class="grid-2">
-                        <div class="package-picture">
-                            <img src="../../assets/images/standardPack.png   " alt="Basic Pack">
+                    <div class="bot-gridd">
+                        <div class="gridd">
+                            <div class="gridd-pic">
+                                <img src="../../assets/images/BestPackage1.png" alt="">
+                            </div>
+                            <p class="name">라뮤즈(토탈)+브라이드벨라+비올</p>
+                            <p class="cost">169만원</p>
                         </div>
-                        <div class="mid-con">
-                            <div class="mid-con-studio">
-                                <img src="" alt="스튜디오">
-                                <p>스튜디오    |    테오그라피</p>
-                                <p>[웨딩촬영] 베이직 20P</p>
+                        <div class="gridd">
+                            <div class="gridd-pic">
+                                <img src="../../assets/images/BestPackage2.png" alt="">
                             </div>
-                            <div class="mid-con-dress">
-                                <img src="" alt="드레스">
-                                <p>드레스    |    브라이덜수지</p>
-                                <p>[촬영+본식] 드레스 4벌</p>
-                            </div>
-                            <div class="mid-con-makeup">
-                                <img src="" alt="메이크업">
-                                <p>헤어/메이크업    |    고센&끌림뷰티</p>
-                                <p>[촬영+본식] 신부신랑 헤어메이크업</p>
-                            </div>
-                            <a href="#">상품 자세히 보기</a>
+                            <p class="name">가을스튜디오+컬리트비+비올</p>
+                            <p class="cost">179만원</p>
                         </div>
-                    </div>
-                    <div class="grid-3">
-                        <div class="package-picture">
-                            <img src="../../assets/images/PremiumPack.png" alt="Basic Pack">
+                        <div class="gridd">
+                            <div class="gridd-pic">
+                                <img src="../../assets/images/BestPackage3.png" alt="">
+                            </div>
+                            <p class="name">메레스튜디오+레이첼+비올</p>
+                            <p class="cost">190만원</p>
                         </div>
-                        <div class="mid-con">
-                            <div class="mid-con-studio">
-                                <img src="" alt="스튜디오">
-                                <p>스튜디오    |    테오그라피</p>
-                                <p>[웨딩촬영] 베이직 20P</p>
+                        <div class="gridd">
+                            <div class="gridd-pic">
+                                <img src="../../assets/images/BestPackage1.png" alt="">
                             </div>
-                            <div class="mid-con-dress">
-                                <img src="" alt="드레스">
-                                <p>드레스    |    브라이덜수지</p>
-                                <p>[촬영+본식] 드레스 4벌</p>
-                            </div>
-                            <div class="mid-con-makeup">
-                                <img src="" alt="메이크업">
-                                <p>헤어/메이크업    |    고센&끌림뷰티</p>
-                                <p>[촬영+본식] 신부신랑 헤어메이크업</p>
-                            </div>
-                            <a href="#">상품 자세히 보기</a>
+                            <p class="name">ST정우(토탈)+디유드라포뎀+비올</p>
+                            <p class="cost">210만원</p>
                         </div>
-                    </div>
-                    <div class="grid-4">
-                        <div class="package-picture">
-                            <img src="../../assets/images/High-endPack.png" alt="Basic Pack">
+                        <div class="gridd">
+                            <div class="gridd-pic">
+                                <img src="../../assets/images/BestPackage2.png" alt="">
+                            </div>
+                            <p class="name">원규+누벨드블랑+알루</p>
+                            <p class="cost">245만원</p>
                         </div>
-                        <div class="mid-con">
-                            <div class="mid-con-studio">
-                                <img src="" alt="스튜디오">
-                                <p>스튜디오    |    테오그라피</p>
-                                <p>[웨딩촬영] 베이직 20P</p>
+                        <div class="gridd">
+                            <div class="gridd-pic">
+                                <img src="../../assets/images/BestPackage3.png" alt="">
                             </div>
-                            <div class="mid-con-dress">
-                                <img src="" alt="드레스">
-                                <p>드레스    |    브라이덜수지</p>
-                                <p>[촬영+본식] 드레스 4벌</p>
-                            </div>
-                            <div class="mid-con-makeup">
-                                <img src="" alt="메이크업">
-                                <p>헤어/메이크업    |    고센&끌림뷰티</p>
-                                <p>[촬영+본식] 신부신랑 헤어메이크업</p>
-                            </div>
-                            <a href="#">상품 자세히 보기</a>
+                            <p class="name">아키스튜디오+모니카블랑쉬+알루</p>
+                            <p class="cost">275만원</p>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
+        <div id="pagination-placeholder"></div>
+
         <div id="footer-placeholder"></div>
     </body>
 </html>
