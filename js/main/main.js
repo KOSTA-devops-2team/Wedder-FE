@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function includeHTML() {
-    fetch("../../components/header/header.html")
+    fetch("../../components/header/headerV2.html")
         .then((response) => response.text())
         .then((data) => {
             document.getElementById("header-placeholder").innerHTML = data;

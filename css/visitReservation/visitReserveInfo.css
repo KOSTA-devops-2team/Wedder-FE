@@ -36,37 +36,135 @@
     color: #fff;
 }
 
-/* 희망 예식일 선택 */
+/* 고객 정보 확인 */
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.customer-container {
     padding: 10px 20px;
 }
 
-.calendar img {
-    width: 600px;
-    height: 550px;
-    margin-bottom: 10px;
+.customer-info {
+    margin: 0 20px
 }
 
-.expect-date h1 {
+.customer-info h1 {
     font-size: 21px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    padding: 15px 0 20px 20px;
+}
+
+.myinfo h3 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin: 10px 20px;
+    color: #CA1A5A;
+    border-bottom: 2px solid #CA1A5A
+}
+
+.inputs {
+    display: grid;  
+    grid-template-columns: repeat(2, 120px 300px); 
+    padding: 15px 20px;
+}
+
+.inputs label {
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.5px;
-    padding: 15px 0 30px 20px;
+    padding: 8px 0 0 3px;
+    margin-right: 20px;
+}
+
+.inputs input {
+    width: 408px;
+    height: 40px;
+    padding: 5px 20px;
+    border: 1px solid #7f7f7f;
+    border-radius: 8px;
 
 }
 
-.calendar-select {
-    width: 600px;
-    font-size: 17px;
+.spouse-info h3 {
+    font-size: 18px;
     font-weight: 500;
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #CA1A5A;
+    padding-bottom: 10px;
+    margin: 40px 20px 10px 20px;
+    color: #0085FF;
+    border-bottom: 2px solid #0085FF
+}
+
+/* 선택 정보 수집 동의 */
+.consent-box {
+    position: relative;
+    padding: 15px 20px;
+    margin: 40px 20px;
+    border: 1px solid #7f7f7f;
     border-radius: 5px;
-    background-color: rgba(255, 203, 222, 0.3);
+    align-items: center;
+}
+
+#consent {
+    margin: 0;
+}
+
+.consent {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.consent-description {
+    font-size: 12px;
+    font-weight: 400;
+    color: #898989;
+    padding-top: 5px;
+    padding-left: 22px;
+}
+
+.consent-link {
+    position: absolute;
+    top: 13px;
+    right: 19px;
+    font-size: 14px;
+    font-weight: 600;
     color: #CA1A5A;
+    text-decoration: none;
+}
+
+/* 전달사항 */
+.message {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    position: relative;
+}
+
+.message-title {
+    font-size: 21px;
+    font-weight: 600;
+    border-top: 2px solid #000;
+    margin: 30px 20px 15px 20px;
+    padding-top: 20px;
+}
+
+#message {
+    height: 150px;
+    margin: 0 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.char-count {
+    position: absolute;
+    right: 33px;
+    bottom: 10px;
+    font-size: 13px;
+    color: #898989;
 }
 
 /* 예약 참고사항 */
@@ -74,14 +172,14 @@
 .info-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 20px 15px;
 }
 
 .reserve-guide {
     margin-top: 85px;
     padding: 25px;
-    /* padding-left: 30px; */
+    padding-left: 30px;
     border: 1px solid #CA1A5A;
     border-radius: 8px;   
 }
@@ -175,18 +273,18 @@
 .btn {
     display: flex;
     justify-content: space-between;
-    margin: 40px 20px;
+    margin: 40px;
 }
 
 .btn-pre {
-    padding: 10px 100px;
+    padding: 10px 90px;
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn-pre:hover {
-    background-color: #eee;
+    background-color: #ddd;
     color: #000;
 }
 
