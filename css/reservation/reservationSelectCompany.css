@@ -187,9 +187,15 @@
     padding-bottom: 10px;
 }
 
-.filters.possible-filter {
-    /* display: none; */
+.purpose-btn-selected {
+    color: #fff;
+    background-color: #000;
 }
+
+.tag-btn-selected {
+    color: #ca1a5a;
+}
+
 
 /* 더 많은 검색 필터 */
 
@@ -234,75 +240,80 @@ input {
 .total {
     font-size: 16px;
     font-weight: 600;
-    margin: 25px 20px;
+    margin: 30px 95px;
 }
 
 /* 업체 리스트 */
 .company-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    margin: 30px 5px 60px 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+    margin: 40px 100px;
 }
 
 .company-card {
-    display: flex;
+/*  display: flex;
     width: 500px;
     height: 195px;
     margin: 0 10px;
-    box-shadow: 3px 3px 3px rgb(180, 180, 180);
+    border: 1px solid #000; 
+    box-shadow: 3px 3px 3px rgb(180, 180, 180); */
+    box-shadow: 5px 5px 7px #eeeeee;
 }
 
 .company-img img{
-    width: 180px;
-    height: 160px;
-    margin: 20px;
+    width:  100%;
+    height: 100%;
 }
 
 .company-info {
     position: relative;
-    width: 250px;
-    padding: 15px 10px;
+    padding: 15px;
 }
 
-.company-info h2 {
+.company-title {
     font-size: 18px;
     font-weight: 600;
     text-align: left;
+    margin: 0;
 }
 
-.company-info p {
+.company-subtitle {
     font-size: 13px;
     color: #667085;
     text-align: left;
-    padding: 5px 5px;
+    margin-top: 5px;
 }
 
-.company-info h6 {
-    margin-top: 10px;
+.company-price {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 #star-icon {
     position: absolute;
-    left: 5px;
-    bottom: 30px;
+    left: 12px;
+    bottom: 15px;
     width: 21px;
     height: 20px;
     margin-top: 10px;
 }
 
 #review-link {
-    position: absolute;
-    left: 31px;
-    bottom: 31px;
     font-size: 13px;
     font-weight: 400;
     color: #667085;
     text-decoration-line: none;
+    margin-left: 23px;
+}
+
+.company-card-selected {
+    border: 1px solid #ca1a5a;
+    background-color: rgba(255, 203, 222, 0.3);
 }
 
 /* 페이지네이션 */
@@ -310,7 +321,6 @@ input {
 
 /* 선택 목록 */
 .select-list {
-    /* margin: 30px 0; */
     padding: 10px; 
     background-color: #fff;
     position: sticky;
@@ -334,6 +344,14 @@ input {
     display: flex;
 }
 
+/* .select-company {
+    display: none;
+} */
+
+.appear-select-comapny {
+    display: block;
+}
+
 #company-images{
     width: 110px;
     height: 90px;
@@ -354,7 +372,7 @@ input {
     padding: 5px 10px;
 }
 
-.options {
+.select-options {
     display: grid;
     grid-template-rows: repeat(1, auto);
 }
@@ -363,7 +381,7 @@ input {
 .btn {
     display: flex;
     justify-content: space-between;
-    margin: 20px 30px;
+    margin: 25px 10px;
 }
 
 .btn-pre {

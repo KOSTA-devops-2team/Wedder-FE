@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../css/common/reset.css" />
     <link rel="stylesheet" href="../../css/reservation/reservationSelectCompany.css" />
     <script src="../../js/main/main.js"></script>
+    
 
 </head>
 <body>
@@ -38,11 +39,11 @@
 
         <!-- 검색 필터 분류 -->
         <section class="tabs">
-            <div class="tab active" onclick="openTab('tag-search')">
-                태그 검색
+            <div class="tab" onclick="openTab('tag-search')">
+                <a href=".tag-container" id="tab">태그 검색</a>
             </div>
             <div class="tab" onclick="openTab('schedule-search')">
-                스케줄 검색 
+               <a href=".schedule-container" id="tab">스케줄 검색 </a>
             </div>
         </section>
 
@@ -54,24 +55,24 @@
                 <img id="search-icon" src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/search-icon.png" />
             </div>
             <div class="filters purpose-filter">
-                <button>웨딩 촬영</button>
-                <button>토탈 촬영</button>
-                <button>세미 촬영</button>
-                <button>가봉 스냅</button>
-                <button>데이트 스냅</button>
+                <button class="purpose-btn">웨딩 촬영</button>
+                <button class="purpose-btn">토탈 촬영</button>
+                <button class="purpose-btn">세미 촬영</button>
+                <button class="purpose-btn">가봉 스냅</button>
+                <button class="purpose-btn">데이트 스냅</button>
             </div>
             <div class="filters style-filter">
                 <p>스타일</p>
-                <button>인물 중심</button>
-                <button>배경 조화</button>
-                <button>인물+배경</button>
+                <button class="tag-btn">인물 중심</button>
+                <button class="tag-btn">배경 조화</button>
+                <button class="tag-btn">인물+배경</button>
             </div>
             <div class="filters price-filter">
                 <p>금액대</p>
-                <button>Basic</button>
-                <button>Standard</button>
-                <button>Premium</button>
-                <button>High end</button>
+                <button class="tag-btn">Basic</button>
+                <button class="tag-btn">Standard</button>
+                <button class="tag-btn">Premium</button>
+                <button class="tag-btn">High end</button>
             </div>
             <!-- <div class="more-filter">
                 <span>더 많은 검색 필터
@@ -81,10 +82,10 @@
             </div> -->
             <div class="filters possible-filter">
                 <p>촬영가능</p>
-                <button>정원</button>
-                <button>야간</button>
-                <button>로드</button>
-                <button>반려동물</button>
+                <button class="tag-btn">정원</button>
+                <button class="tag-btn">야간</button>
+                <button class="tag-btn">로드</button>
+                <button class="tag-btn">반려동물</button>
             </div>
          </section>
 
@@ -157,9 +158,9 @@
                     <img src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
                 </div>
                 <div class="company-info">
-                    <h2>빌링스 스튜디오</h2>
-                    <p>[웨딩촬영]</p>
-                    <h6>810,000원</h6>
+                    <h2 class="company-title">빌링스 스튜디오</h2>
+                    <p class="company-subtitle">[웨딩촬영]</p>
+                    <h6 class="company-price">810,000원</h6>
                     <span>
                         <img id="star-icon" src="../../assets/images/review-star.png" alt="리뷰 별">
                         <a id="review-link" href="#">9.8/10 (48개의 후기)</a>
@@ -171,9 +172,9 @@
                     <img src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
                 </div>
                 <div class="company-info">
-                    <h2>빌링스 스튜디오</h2>
-                    <p>[웨딩촬영]</p>
-                    <h6>810,000원</h6>
+                    <h2 class="company-title">빌링스 스튜디오</h2>
+                    <p class="company-subtitle">[웨딩촬영]</p>
+                    <h6 class="company-price">810,000원</h6>
                     <span>
                         <img id="star-icon" src="../../assets/images/review-star.png" alt="리뷰 별">
                         <a id="review-link" href="#">9.8/10 (48개의 후기)</a>
@@ -185,9 +186,9 @@
                     <img src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
                 </div>
                 <div class="company-info">
-                    <h2>빌링스 스튜디오</h2>
-                    <p>[웨딩촬영]</p>
-                    <h6>810,000원</h6>
+                    <h2 class="company-title">빌링스 스튜디오</h2>
+                    <p class="company-subtitle">[웨딩촬영]</p>
+                    <h6 class="company-price">810,000원</h6>
                     <span>
                         <img id="star-icon" src="../../assets/images/review-star.png" alt="리뷰 별">
                         <a id="review-link" href="#">9.8/10 (48개의 후기)</a>
@@ -199,9 +200,9 @@
                     <img src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
                 </div>
                 <div class="company-info">
-                    <h2>빌링스 스튜디오</h2>
-                    <p>[웨딩촬영]</p>
-                    <h6>810,000원</h6>
+                    <h2 class="company-title">빌링스 스튜디오</h2>
+                    <p class="company-subtitle">[웨딩촬영]</p>
+                    <h6 class="company-price">810,000원</h6>
                     <span>
                         <img id="star-icon" src="../../assets/images/review-star.png" alt="리뷰 별">
                         <a id="review-link" href="#">9.8/10 (48개의 후기)</a>
@@ -213,9 +214,9 @@
                     <img src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
                 </div>
                 <div class="company-info">
-                    <h2>빌링스 스튜디오</h2>
-                    <p>[웨딩촬영]</p>
-                    <h6>810,000원</h6>
+                    <h2 class="company-title">빌링스 스튜디오</h2>
+                    <p class="company-subtitle">[웨딩촬영]</p>
+                    <h6 class="company-price">810,000원</h6>
                     <span>
                         <img id="star-icon" src="../../assets/images/review-star.png" alt="리뷰 별">
                         <a id="review-link" href="#">9.8/10 (48개의 후기)</a>
@@ -227,9 +228,9 @@
                     <img src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
                 </div>
                 <div class="company-info">
-                    <h2>빌링스 스튜디오</h2>
-                    <p>[웨딩촬영]</p>
-                    <h6>810,000원</h6>
+                    <h2 class="company-title">빌링스 스튜디오</h2>
+                    <p class="company-subtitle">[웨딩촬영]</p>
+                    <h6 class="company-price">810,000원</h6>
                     <span>
                         <img id="star-icon" src="../../assets/images/review-star.png" alt="리뷰 별">
                         <a id="review-link" href="#">9.8/10 (48개의 후기)</a>
@@ -250,7 +251,7 @@
                 <h1>선택하신 목록</h1>
             </div>
             <div class="select-container">
-                <div class="company">
+                <div class="select-company">
                     <div>
                         <img id="company-images" src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
                     </div>
@@ -259,7 +260,7 @@
                         <p  class="select-purpose">[웨딩촬영]</p>
                     </div>
                 </div>
-                <div class="options">
+                <div class="select-options">
                     <div></div>
                     <div></div>
                 </div>
@@ -268,12 +269,11 @@
 
         <!-- 다음 단계 버튼 -->
         <section class="btn">
-            <button class="btn-pre"><a href="../../html/reservation/reservationCategory.html">이전</a></button>
-            <button class="btn-nxt"><a href="../../html/reservation/reservationSelectOptions.html">다음 단계로</a></button>
+            <a href="../../html/reservation/reservationCategory.html"><button class="btn-pre">이전</button></a>
+            <a href="../../html/reservation/reservationSelectOptions.html"><button class="btn-nxt">다음 단계로</button></a>
         </section>
-  
     </div>
     <div id="footer-placeholder"></div>
-    <script defer src="../../js/reservation/reservationSelectCompany.js"></script>
+    <script src="../../js/reservation/reservationSelectCompany.js"></script>
 </body>
 </html>

@@ -6,7 +6,9 @@
         <title>Wedder</title>
         <link rel="stylesheet" href="../../css/common/reset.css" />
         <link rel="stylesheet" href="../../css/visitReservation/visitReserveInfo.css" />
+        <link rel="stylesheet" href="../../css/visitReservation/reservationModal.css" />
         <script src="../../js/main/main.js"></script>
+        <script src="../../js/visitReservation/visitReserveInfo.js"></script>
     </head>
     <body>
         <div id="header-placeholder"></div>
@@ -74,9 +76,11 @@
 
                     <!-- 버튼 -->
                     <section class="btn">
-                        <button class="btn-pre"><a href="../../html/visitReservation/visitReserveExpectancy.html">이전</a></button>
-                        <button class="btn-nxt"><a href="">예약 신청</a></button>
+                        <a href="../../html/visitReservation/visitReserveExpectancy.html"><button class="btn-pre">이전</button></a>
+                        <a href=""><button id="modal-btn" class="btn-nxt">예약 신청</button></a>
+                        
                     </section>
+                        <div id="modal-container"></div>
                 </div>
 
                 <div class="info-container">

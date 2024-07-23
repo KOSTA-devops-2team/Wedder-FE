@@ -1,37 +1,33 @@
-import "../../css/reservation/reservationSelectCompany.css"
+/* 태그 */
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".purpose-btn").forEach((item) => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("purpose-btn-selected");
+    });
+});
+    document.querySelectorAll(".tag-btn").forEach((item) => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("tag-btn-selected");
+        });
+    });
+    document.querySelectorAll(".company-card").forEach((item) => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("company-card-selected");
+        })
+    })
 
-const btn = document.querySelectorAll(".tabs")
-const contents = document.querySelectorAll("#tab-contents")
-let activeCont = '';
-/* const tagSearch = document.querySelector("#tag-search")
-const scheduleSearch = document.querySelector("#schedule-search") */
+});
 
-/* actBtn.addEventListener("click", () => {
-    tagSearch.style.display = "block";
-    scheduleSearch.style.display = "none";
-    btn.classList.remvove("tab.active")
-    actBtn.classList.add("tab.active") 
+
+
+
+/* 선택 목록 */
+document.addEventListener("DOMContentLoaded", function() {
+    const card = document.querySelectorAll(".company-card");
+    const selectCompany = document.querySelector(".select-company");
+
+    card.addEventListener("click", function() {
+        selectCompany.classList.toggle(".appear-select-comapny");
+    })
 })
 
-btn.addEventListener("click", () => {
-    tagSearch.style.display = "none";
-    scheduleSearch.style.display = "block";
-    btn.style.color = "#CA1A5A";
-    btn.style.borderBottom = "2px solid #CA1A5A";  
-    btn.classList.add("tab.active")
-    actBtn.classList.remove("tab.active")
-}) */
-
-for(var i = 0; i < btn.length; i++) {
-    btn[i].querySelector('.tab').addEventListener('click', function(e){
-        e.preventDefault();
-        for(var j = 0; j < btn.length; j++) {
-            btn[j].classList.remove('.tab.active')
-
-            contents[j].style.display = 'none';
-        }
-        this.parentNode.classList.add('.tab.active');
-
-        activeCont = this.getAttribute('div');
-        document.querySelector(activeCont).style.display = 'block';
-})}

@@ -83,14 +83,16 @@
   font-size: 22px;
   font-weight: bold;
   padding-left: 20px;
+  margin: 0;
+  margin-right: 5px;
 }
 
 .guide-addition {
   font-size: 15px;
   font-weight: normal;
   letter-spacing: -0.5px;
-  padding-top: 5px;
-  padding-left: 13px;
+  padding-top: 3px;
+  padding-left: 11px;
 }
 
 /* 카테고리 리스트 */
@@ -103,10 +105,8 @@
 }
 
 .category {
-   /* width: 25vw;
-   height: 45vh; */
-   width: 400px;
-   height: 450px;
+   width: 450px;
+   height: 500px;
    margin: 0;
    position: relative;
 }
@@ -139,7 +139,7 @@
     color: #442400;
 }
 
-.category-btn {
+/* .category-btn {
   width: 310px;
   height: 40px;
   text-align: center;
@@ -149,12 +149,22 @@
   margin-bottom: 20px;
   border-radius: 5px;
   float: right;
+} */
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
 }
 
-.category-nxt-btn {
+.btn-nxt {
     font-size: 13px;
     font-weight: bold;
+    padding: 10px 120px;
+    border-radius: 5px;
     color: #fff;
+    background-color: #000;
+    cursor: pointer;
     text-decoration-line: none;
-    justify-content: flex-end;
+
 }

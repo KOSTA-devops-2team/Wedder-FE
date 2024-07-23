@@ -110,6 +110,7 @@
 
 #consent {
     margin: 0;
+    accent-color: #CA1A5A;
 }
 
 .consent {
@@ -188,6 +189,10 @@
     font-size: 17px;
     color: #CA1A5A;
     margin: 0;
+}
+
+.reserve-guide input {
+    accent-color: #CA1A5A;
 }
 
 .guide {
