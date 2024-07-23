@@ -109,8 +109,8 @@
     color: #000000;
 }
 .discount-box {
-    margin: 50px 100px 100px;
-    padding: 40px;
+    margin: 50px 130px 100px;
+    padding: 30px;
     background-color: #ffffff;
     color: #ca1a5a;
     border: 1px solid #ca1a5a;
@@ -119,12 +119,13 @@
 }
 .saving {
     padding: 10px 10px;
-    font-weight: bold;  
-    font-size: 20px;
+    font-weight: 700;  
+    font-size: 25px;
+    margin-bottom: 30px;
 }
 .notice {
     color: #2c3245;
-    font-size: 15px;
+    font-size: 18px;
 }
 .buttons {
     display: flex;
@@ -146,7 +147,7 @@
     padding: 10px 20px;
     font-size: 16px;
     color: #757575;
-    background-color: #e5e5e5;
+    background-color: #fff;
     border: 1px solid;
     border-radius: 5px;
     cursor: pointer;

@@ -47,56 +47,114 @@ span.color {
     color: red;
     vertical-align: text-bottom;
 }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* 상단 그리드 */
+.top-grid {
+    display: flex;
 }
-.packages {
-    text-align: center;
+.top {
+    margin-top: 60px;
 }
 .pack-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #000;
-}
-.bestpackage {
-    font-size: 24px;
-    color: #333;
-    font-weight: bolder;
-}
-.look-aroud {
-    font-size: 14px;
-}
-.look-aroud a {
-    text-decoration-line: none;
-}
-.package-list {
-    display: flex;
-    justify-content: space-around;
-}
-.package {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 20px;
-    width: 30%;
-    text-align: center;
-}
-.package img {
-    width: 100%;
-    border-radius: 8px;
+    border-bottom: 2px solid #000;
+    font-size: 35px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
-.package h3 {
-    font-size: 18px;
-    color: #333;
+.grid {
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px #eeeeee;
+    padding: 10px;
 }
-.package p {
-    color: #666;
+.package-picture img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 10px;
 }
-
-
-
+.con {
+    display: flex;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #757575;
+}
+.con img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    object-fit: cover;
+    float: left;
+}
+.con-non {
+    display: flex;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+.con-non img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    object-fit: cover;
+    float: left;
+}
+.con-par {
+    padding: 5px;
+}
+.detail {
+    display: flex;
+    justify-content: right;
+    font-size: 10px;
+    font-weight: 700;
+}
+.con-par .up {
+    color: #757575;
+    font-size: 9px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.con-par .down{
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+}
+/* 하단 그리드 */
+.bot {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.range {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.range-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.price-range .button-price {
+    border: none;
+    font-size: 14px;
+    color: #757575;
+}
+.bot-gridd {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+}
+.gridd {
+    margin-top: 30px;
+}
+.gridd-pic img {
+    border-radius: 5px;
+}
+.gridd .name {
+    font-size: 14px;
+    font-weight: 700;
+}
+.gridd .cost {
+    color: #ca1a5a;
+    font-size: 14px;
+}

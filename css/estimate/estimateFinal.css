@@ -22,7 +22,6 @@
     color: #ca1a5a;
     font-weight: 700;
 }
-
 .grid {
     display: grid;
     grid-row-gap: 25px;
@@ -144,7 +143,7 @@
 .buttons {
     display: flex;
     justify-content: space-between;
-    margin: 70px 0px 30px;
+    margin: 40px 0px 10px;
 }
 .buttons .add {
     width: 270px;
