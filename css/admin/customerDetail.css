@@ -64,9 +64,9 @@
 .user-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 35px;
     border-bottom: 2px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 13px;
 }
 
 .user-info-container {
@@ -289,14 +289,14 @@
     margin-left: 40px;
 }
 
-table th,
-table td {
+.payment-table th,
+.payment-table td {
     border: 1px solid #fff;
     padding: 10px;
     text-align: left;
 }
 
-table th {
+.payment-table th {
     background-color: #f2f2f2;
 }
 
