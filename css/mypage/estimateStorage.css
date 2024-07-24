@@ -1,0 +1,105 @@
+/* 0. 구조 설정 */
+.myPage-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .myPage-sidebar {
+    width: 240px;
+  }
+  .myPage-content {
+    width: 960px;
+    min-height: 1000px;
+  }
+
+/* 1. 견적함 제목 */
+.estimate-title {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.category {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-myestimate {
+    font-size: 21px;
+    font-weight: 600;
+    color: #CA1A5A;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.total {
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-top: 7px;
+}
+
+/* 2. 견적함 박스 */
+.estimate-storage {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin: 20px 10px;
+
+}
+
+.storage {
+    position: relative;
+    height: 185px;
+    border: 1px solid #757575;
+    padding: 20px;
+}
+
+.storage-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.total-price {
+    font-size: 13px;
+    font-weight: 600;
+    color: #CA1A5A;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.total-product {
+    font-size: 12px;
+    font-weight: 400;
+    color: #757575;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+}   
+
+.arrow img {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    right: 25px;
+    top: 23px;
+}
+
+.company-list {
+    display: flex;
+}
+
+.company-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
