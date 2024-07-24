@@ -53,3 +53,11 @@ document.querySelectorAll(".heart").forEach((item) => {
       item.classList.toggle("liked");
   })
 });
+
+$(document).ready(function($){
+  $(".").click(function(event){
+    console.log("");
+    event.preventDefault();
+    $('').animate({scrollTop:$(this.hash).offset().top},500);
+  })
+})
