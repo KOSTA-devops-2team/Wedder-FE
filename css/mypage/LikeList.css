@@ -54,12 +54,33 @@ body {
   align-self: center;
 }
 .test {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  border-bottom: 1px solid black;
 }
-.List-search-bar {
-  margin-top: 35px;
+
+.company-kind .List-search-bar {
+  margin-left: 250px;
+  padding-right: 0px;
+}
+.company-kind .List-search-bar input {
+  height: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+.company-kind .List-search-bar button {
+  background-color: #eeeeee;
+  cursor: pointer;
+  height: 25px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+.company-kind .List-search-bar button:hover {
+  background-color: black;
+  cursor: pointer;
+  height: 25px;
+  color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
 }
 /*  */
 ::-webkit-scrollbar {
@@ -71,11 +92,44 @@ h2,
 h3 {
   color: #ca1a5a;
 }
+h2 {
+  margin: 15px 5px 5px;
+}
 h3 {
   margin: 5px 0px;
 }
 .List-content p {
   font-size: 10px;
+}
+
+.company-kind {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  height: 60px;
+  margin: 10px 0px 20px;
+
+  background-color: black;
+  border-radius: 4px;
+}
+
+.company-kind div {
+  padding: 10px 20px;
+  margin: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.company-kind div:nth-of-type(1):hover {
+  background-color: #eeeeee;
+}
+.company-kind div:nth-of-type(2):hover {
+  background-color: #eeeeee;
+}
+.company-kind div:nth-of-type(3):hover {
+  background-color: #eeeeee;
 }
 
 /* 2. 서치 바 기능 Search-bar */
@@ -89,9 +143,10 @@ h3 {
 /* LikeList-Card */
 .LikeList-Card {
   width: 200px;
-  border-radius: 5%;
   text-align: left;
   margin: 5px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .LikeList-Card h5 {
   margin: 0px;
