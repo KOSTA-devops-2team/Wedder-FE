@@ -56,6 +56,25 @@ body {
 .test {
   border-bottom: 1px solid black;
 }
+/*  */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.List-content p,
+h2,
+h3 {
+  color: #ca1a5a;
+}
+h2 {
+  margin: 15px 5px 5px;
+}
+h3 {
+  margin: 5px 0px;
+}
+.List-content p {
+  font-size: 10px;
+}
 
 .company-kind .List-search-bar {
   margin-left: 250px;
@@ -82,26 +101,6 @@ body {
   border: 1px solid #eeeeee;
   border-radius: 5px;
 }
-/*  */
-::-webkit-scrollbar {
-  display: none;
-}
-
-.List-content p,
-h2,
-h3 {
-  color: #ca1a5a;
-}
-h2 {
-  margin: 15px 5px 5px;
-}
-h3 {
-  margin: 5px 0px;
-}
-.List-content p {
-  font-size: 10px;
-}
-
 .company-kind {
   display: flex;
   flex-direction: row;
