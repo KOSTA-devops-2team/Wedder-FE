@@ -31,7 +31,6 @@
                                     type="text"
                                     id="search_word"
                                     class="textfield"
-                                    placeholder="검색어를 입력하세요"
                                 />
                             </div>
                             <button type="submit" class="btn_search">
@@ -64,7 +63,7 @@
                             <li>
                                 <a href="../../html/admin/adminMain.html"
                                     ><img
-                                        class="heart"
+                                        class="header-heart"
                                         src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/heart-bold.png"
                                         alt="Like"
                                 /></a>
@@ -117,25 +116,5 @@
                 </nav>
             </div>
         </header>
-        <main class="content">
-            <!-- 페이지 컨텐츠 -->
-        </main>
-        <script>
-            function keywordSearch() {
-                var searchKeyword =
-                    document.getElementById("search_word").value;
-                if (searchKeyword) {
-                    searchProcess(searchKeyword);
-                } else {
-                    alert("검색어를 입력해주세요");
-                }
-            }
-
-            function searchProcess(keyword) {
-                keyword = encodeURIComponent(keyword);
-                window.location.href =
-                    "https://www.hago.kr/search?keyword=" + keyword;
-            }
-        </script>
     </body>
 </html>

@@ -61,7 +61,7 @@ header {
     width: 100%;
     border: none;
     outline: none;
-    text-align: center;
+    text-align: left;
 }
 
 .btn_search {
@@ -103,11 +103,13 @@ header {
 
 .header-user img {
     width: 17px;
+    height: 21px;
     height: auto;
 }
 
-.header-user .heart {
-    width: 21px;
+.header-user .header-heart {
+    width: 17px;
+    height: 17px;
 }
 
 .header-user li div {
