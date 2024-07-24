@@ -72,38 +72,40 @@ span.color {
     height: auto;
 }
 .recommendation {
-    background-color: #fff;
+    background-color: rgba(202, 26, 90, 0.1);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border: 1px solid #000;
-    padding: 10px;
+    padding: 40px;
     height: 300px;
     text-align: center;
-    
-}
-.circle {
-    width: 20px;
-    height: 20px;
-    background-color: #ca1a5a;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 13px;
-    position: relative;
-    left: 105px;
-    top: 24px;
 }
 .recommendation h2 {
-    font-size: 18px;
+    font-size: 25px;
     color: #ca1a5a;
 
 }
 .recommendpar {
     color: #666;
     font-size: 15px;
+    font-weight: 600;
 }
+.recommendpar-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #ca1a5a;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-right: 7px;
+}
+
 .steps {
     display: flex;
     justify-content: space-around;
@@ -146,8 +148,8 @@ span.color {
 .pack-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
+    align-items: flex-end;
+    padding-bottom: 20px;
     border-bottom: 1px solid #000;
 }
 .bestpackage {
