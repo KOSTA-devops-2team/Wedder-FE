@@ -113,6 +113,41 @@
     background-color: rgba(255, 203, 222, 0.3);
 }
 
+/* 3-1. 전달사항 더보기 & 줄이기 */
+.announcement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-wrapper {
+    width: 310px;
+    background-color: #eeeeee;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.text {
+    word-break: keep-all;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.more-text,
+.less-text {
+    font-size: 14px;
+    color: #858585;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: end;
+}
+
+.less-text {
+    display: none;
+}
+
 /* 3. 웨딩홀 방문 일정 */
 .visit-schedule {
     margin-top: 30px;
@@ -169,41 +204,6 @@
 .visit-customer-info span:nth-of-type(1),
 .wedding-info span:nth-of-type(1) {
     margin-right: 22px;
-}
-
-/* 3-1. 전달사항 더보기 & 줄이기 */
-.announcement {
-    display: flex;
-    justify-content: space-between;
-}
-
-.text-wrapper {
-    width: 310px;
-    background-color: #eeeeee;
-    padding: 10px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.text {
-    word-break: keep-all;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-}
-
-.more-text,
-.less-text {
-    font-size: 14px;
-    color: #858585;
-    cursor: pointer;
-    margin-top: 5px;
-    text-align: end;
-}
-
-.less-text {
-    display: none;
 }
 
 /* 4. 결제 현황 */

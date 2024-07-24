@@ -49,21 +49,26 @@ function loadQuoteModal() {
 }
 
 // 전달사항 더보기 & 줄이기
-const textWrapper = document.querySelector(".text-wrapper");
-const text = document.querySelector(".text");
-const moreText = document.querySelector(".more-text");
-const lessText = document.querySelector(".less-text");
+document.querySelectorAll(".text-wrapper").forEach((wrapper) => {
+    const text = wrapper.querySelector(".text");
+    const moreText = wrapper.querySelector(".more-text");
+    const lessText = wrapper.querySelector(".less-text");
 
-// 더보기 클릭 시
-moreText.addEventListener("click", () => {
-    moreText.style.display = "none";
-    lessText.style.display = "block";
-    text.style.display = "inline-block";
-});
+    // 더보기 클릭 시
+    moreText.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        moreText.style.display = "none";
+        lessText.style.display = "block";
+        text.style.display = "inline-block";
+    });
 
-// 줄이기 클릭 시
-lessText.addEventListener("click", () => {
-    lessText.style.display = "none";
-    moreText.style.display = "block";
-    text.style.display = "-webkit-box";
+    // 줄이기 클릭 시
+    lessText.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        lessText.style.display = "none";
+        moreText.style.display = "block";
+        text.style.display = "-webkit-box";
+    });
 });
