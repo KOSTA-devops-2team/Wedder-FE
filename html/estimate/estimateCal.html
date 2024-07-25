@@ -6,6 +6,7 @@
         <title>Estimate Calculator</title>
         <link rel="stylesheet" href="../../css/common/reset.css">
         <link rel="stylesheet" href="../../css/estimate/estimateCal.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <script src="../../js/main/main.js"></script>
     </head>
     <body>
@@ -208,7 +209,11 @@
                                 <div class="total3">
                                     <span>최종 금액</span><span>330,000원</span>
                                 </div>
-                                <a href="#" class="button">다음으로</a>
+                                <div class="replay">
+                                    <a href=""><span class="material-symbols-outlined">
+                                        replay
+                                        </span>업체 다시 선택</a>
+                                </div>
                             </div>
                         </div>
                         <div class="note">
@@ -221,7 +226,7 @@
                 </div>
                 <div class="buttons">
                     <button class="back">이전</button>
-                    <button class="next">다음으로</button>
+                    <button onclick="location.href='estimateDetails.html'" class="next">다음으로</button>
                 </div>
             </div>
         </div>    
