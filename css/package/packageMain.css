@@ -66,6 +66,7 @@ span.color {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 100px;
     grid-column-gap: 100px;
+    margin-bottom: 150px;
 }
 .recommendation img {
     width: 100px;
@@ -104,38 +105,44 @@ span.color {
     justify-content: center;
     margin-right: 7px;
 }
-.steps {
-    display: flex;
-    justify-content: space-around;
+.steps-title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
 }
-.step-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #000;
+.steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 100px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding: 50px;
 }
 .how-to-use {
-    font-size: 24px;
-    color: #333;
-    font-weight: bolder;
-}
-.steps {
-    margin-top: 60px;
-    padding-bottom: 100px;
+    font-size: 30px;
+    color: #ca1a5a;
+    font-weight: 700;
 }
 .step {
-    text-align: center;
-    width: 23%;
-    font-size: 18px;
+    display: flex;
+    font-size: 14px;
+    color: #6B7684;
+    margin-left: 50px;
+}
+.step .title {
+    font-size: 26px;
+    color: #000;
 }
 .step img {
-    width: 160px;
+    width: 120px;
     height: auto;   
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.step-par {
+    margin-top: 20px;
 }
 .title {
     font-weight: bolder;
