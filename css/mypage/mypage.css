@@ -220,12 +220,15 @@ td {
   font-weight: bold;
   cursor: pointer;
 }
-.tab_Active {
-  /* 탭 활성화 시 다른 내용 하이드 */
-  display: flex;
-}
+
 .content {
   margin-top: 20px;
+}
+.content {
+  display: grid;
+}
+.content div .is_on {
+  display: grid;
 }
 
 /* 콘텐트 내용 */

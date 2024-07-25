@@ -1,55 +1,153 @@
 @charset "UTF-8";
-
-/* 1. section 1 header */
-.couplePage-header {
-  background-color: black;
-  color: white;
-}
-.header-text {
+.hd__inner1100 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.header-text div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.couplePage-header {
+  height: 100px;
 }
-.header-text div p {
+.myPage-sidebar {
+  width: 240px;
+}
+/* 전체 */
+.sub-title {
+  font-size: 24px;
+  color: #ca1a5a;
   font-weight: bold;
 }
+.sub-title-header {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px;
+
+  padding: 5px;
+}
+.detail-view {
+  margin-top: 15px;
+  color: #858585;
+}
+.male {
+  color: skyblue;
+}
+.female {
+  color: pink;
+}
+
+/* 1. section 1 header */
+
 .v-line {
   border-left: 1px solid white;
   height: 60px;
-  margin: 10px;
-  margin-left: 80px;
   align-self: center;
 }
-/* 2. section2  profile picture */
-.couplePage-profile-package {
+.v-line:nth-of-type(1) {
+  margin-left: 130px;
+}
+.body-header #body-top {
+  font-size: 24px;
+  font-weight: bold;
+
+  padding: 33px;
+}
+.body-header-background {
+  background-color: black;
+  color: white;
+
+  width: 900px;
+  height: 100px;
+}
+.body-header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+.body-header-text {
+  margin-top: 10px;
+  padding: 15px;
   text-align: center;
 }
-.groom,
-.bride {
+
+/* 2. section 2 커플 방문 일정 */
+.couplePage-visitPlan table {
+  width: 100%;
+}
+.couplePage-visitPlan thead {
+  text-align: center;
+  background-color: #eeeeee;
+}
+.couplePage-visitPlan th {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.couplePage-visitPlan td {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 3.section 3 현재 예약 현황 */
+.company-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#mail {
+  width: 25px;
+  height: 25px;
+  margin: -2px 4px 6px 0px;
+  background-image: url(../../assets/images/mail.png);
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+#heart {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url(../../assets/images/empty-heart.png);
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.company-container img {
+  width: 200px;
+  height: 200px;
+}
+.brand-name {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+.brand-name:hover {
+  cursor: pointer;
+}
+.brand-sudume {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
-  text-align: start;
-  border: 1px dotted;
-  margin: 10px;
-  width: 60%;
+
+  border-bottom: 1px solid black;
+
+  margin-bottom: 10px;
 }
-.profile-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 100px;
+.brand-sudume .brand-name {
+  padding: 10px 5px;
 }
-.profile-img img {
-  width: 300px;
-  border-radius: 100%;
+/* 4.section 4 커플 결제 현황 */
+.couplePage-table-payment img {
+  width: 100px;
+}
+.couplePage-table-payment th,
+td {
+  border-bottom: 1px solid #eeeeee;
+  margin: 20px;
+  padding: 20px;
+}
+.couplePage-table-payment li {
+  display: none;
 }

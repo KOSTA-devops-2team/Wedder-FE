@@ -1,26 +1,26 @@
 .company-kind .List-search-bar {
-  margin-left: 250px;
+  margin-left: 300px;
   padding-right: 0px;
+  margin-top: 0px;
 }
 .company-kind .List-search-bar input {
-  height: 25px;
+  height: 20px;
   border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
+  padding: 0px;
 }
 .company-kind .List-search-bar button {
   background-color: #eeeeee;
   cursor: pointer;
-  height: 25px;
+  height: 20px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
 }
 .company-kind .List-search-bar button:hover {
-  background-color: black;
   cursor: pointer;
   height: 25px;
   color: white;
-  border: 1px solid #eeeeee;
+  border: 1px solid #ca1a5a;
+  background-color: #ca1a5a;
   border-radius: 5px;
 }
 .company-kind {
@@ -28,27 +28,27 @@
   flex-direction: row;
   justify-content: flex-start;
 
-  height: 60px;
+  height: 40px;
   margin: 10px 0px 20px;
 
-  background-color: black;
+  background-color: white;
   border-radius: 4px;
 }
 
 .company-kind div {
-  padding: 10px 20px;
+  padding: 5px 20px;
   margin: 5px;
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
 }
 .company-kind div:nth-of-type(1):hover {
-  background-color: #eeeeee;
+  border-bottom: 3px solid #ca1a5a;
 }
 .company-kind div:nth-of-type(2):hover {
-  background-color: #eeeeee;
+  border-bottom: 3px solid #ca1a5a;
 }
 .company-kind div:nth-of-type(3):hover {
-  background-color: #eeeeee;
+  border-bottom: 3px solid #ca1a5a;
 }
