@@ -31,24 +31,24 @@
 }
 
 .step {
-    color: #737373;
-    position: relative;
-    flex: 1;
-    padding: 13px 20px;
-    text-align: center;
-    background: #f3f3f3;
+  color: #737373;
+  position: relative;
+  flex: 1;
+  padding: 13px 20px;
+  text-align: center;
+  background: #f3f3f3;
 }
 
 .step::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #f3f3f3;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #f3f3f3;
+  z-index: 1;
 }
 
 .step:not(:last-child)::before {
@@ -64,71 +64,71 @@
 }
 
 .step.active::after {
-    border-left-color: #000;
+  border-left-color: #000;
 }
 
 .step.active {
-    background: #000;
-    color: #fff;
+  background: #000;
+  color: #fff;
 }
 
 /* 안내멘트 */
 .guide {
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .guide-step {
-    font-size: 22px;
-    font-weight: bold;
-    padding-left: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 20px;
+  margin: 0;
+  margin-right: 5px;
 }
 
 .guide-addition {
-    font-size: 15px;
-    font-weight: normal;
-    letter-spacing: -0.5px;
-    padding-top: 5px;
-    padding-left: 13px;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  padding-top: 3px;
+  padding-left: 11px;
 }
 
 /* 카테고리 리스트 */
 .category-all {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 30px;
-    margin: 50px 75px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  margin: 50px 75px;
 }
 
 .category {
-   /* width: 25vw;
-   height: 45vh; */
-   width: 400px;
-   height: 450px;
+   width: 450px;
+   height: 500px;
    margin: 0;
    position: relative;
 }
 
 .category img {
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .category-text {
-    font-size: 40px;
-    position: absolute;
-    bottom: 45px;
-    left: 10%;
+  font-size: 40px;
+  position: absolute;
+  bottom: 45px;
+  left: 10%;
 }
 
 .category-text2 {
-    font-size: 40px;
-    position: absolute;
-    bottom: 30px;
-    left: 10%;
+  font-size: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
 }
 
 .category:nth-of-type(1){
@@ -139,22 +139,31 @@
     color: #442400;
 }
 
-.category-btn {
-    width: 310px;
-    height: 40px;
-    text-align: center;
-    background-color: #000;
-    padding-top: 6px;
-    margin-right: 124px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    float: right;
+/* .category-btn {
+  width: 310px;
+  height: 40px;
+  text-align: center;
+  background-color: #000;
+  padding-top: 6px;
+  margin-right: 124px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  float: right;
+} */
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
 }
 
-.category-nxt-btn {
+.btn-nxt {
     font-size: 13px;
     font-weight: bold;
+    padding: 10px 120px;
+    border-radius: 5px;
     color: #fff;
+    background-color: #000;
+    cursor: pointer;
     text-decoration-line: none;
-    justify-content: flex-end;
 }
