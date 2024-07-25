@@ -198,7 +198,7 @@
     word-break: keep-all;
 }
 
-/* 2-3. 전달사항 더보기 & 줄이기 */
+/* 2-3. 전달사항 더보기 & 닫기 */
 .announcement {
     display: flex;
     justify-content: space-between;

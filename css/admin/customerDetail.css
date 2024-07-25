@@ -113,7 +113,7 @@
     background-color: rgba(255, 203, 222, 0.3);
 }
 
-/* 3-1. 전달사항 더보기 & 줄이기 */
+/* 3-1. 전달사항 더보기 & 닫기 */
 .announcement {
     display: flex;
     justify-content: space-between;

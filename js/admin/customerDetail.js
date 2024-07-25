@@ -48,7 +48,7 @@ function loadQuoteModal() {
         });
 }
 
-// 전달사항 더보기 & 줄이기
+// 전달사항 더보기 & 닫기
 document.querySelectorAll(".text-wrapper").forEach((wrapper) => {
     const text = wrapper.querySelector(".text");
     const moreText = wrapper.querySelector(".more-text");
@@ -63,7 +63,7 @@ document.querySelectorAll(".text-wrapper").forEach((wrapper) => {
         text.style.display = "inline-block";
     });
 
-    // 줄이기 클릭 시
+    // 닫기 클릭 시
     lessText.addEventListener("click", (event) => {
         event.preventDefault();
         event.stopPropagation();

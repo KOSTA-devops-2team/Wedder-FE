@@ -71,9 +71,9 @@ let observer = new IntersectionObserver((e) => {
     });
 });
 
-// document.querySelectorAll(".package-item").forEach((item) => {
-//     observer.observe(item); // html 요소가 화면에 등장하는지 감시
-// });
+document.querySelectorAll(".package-content").forEach((item) => {
+    observer.observe(item); // html 요소가 화면에 등장하는지 감시
+});
 
 document.querySelectorAll(".hall-subtitle-item").forEach((hall) => {
     observer.observe(hall);

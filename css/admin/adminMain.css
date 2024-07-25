@@ -165,7 +165,7 @@ table th {
     margin-right: 22px;
 }
 
-/* 3-1. 전달사항 더보기 & 줄이기 */
+/* 3-1. 전달사항 더보기 & 닫기 */
 .announcement {
     display: flex;
     justify-content: space-between;
