@@ -91,33 +91,35 @@
 
         <!-- 스케줄로 검색 -->
         <section id="tab-contents" class="schedule-container">
-            <div class="filters hope-date">
+            <div class="filter hope-date">
                 <label>이용 희망일</label>
-                <div class="options">
-                    <label><input type="radio" name="요일" checked> 요일</label>
-                    <label><input type="radio" name="날짜"> 날짜</label>
-                </div>
+                <div >
+                    <div class="options">
+                        <label><input type="radio" name="hope-date" checked> 요일</label>
+                        <label><input type="radio" name="hope-date"> 날짜</label>
+                    </div>
                 <div class="select-day">
-                <select name="요일" id="day">
-                    <option value="total">전체</option>
-                    <option value="monday">월요일</option>
-                    <option value="tuesday">화요일</option>
-                    <option value="wednesday">수요일</option>
-                    <option value="thursday">목요일</option>
-                    <option value="friday">금요일</option>
-                    <option value="saturday">토요일</option>
-                    <option value="sunday">일요일</option>
-                </select>
+                    <select name="요일" id="day">
+                        <option value="total">전체</option>
+                        <option value="monday">월요일</option>
+                        <option value="tuesday">화요일</option>
+                        <option value="wednesday">수요일</option>
+                        <option value="thursday">목요일</option>
+                        <option value="friday">금요일</option>
+                        <option value="saturday">토요일</option>
+                        <option value="sunday">일요일</option>
+                    </select>
                 </div>
                 <div class="select-date">
                     <input type="date" placeholder="전체">
                 </div>
+                </div>
             </div>
-            <div class="filters time">
+            <div class="filter time">
                 <label>시간</label>
                 <div class="options">
-                    <label><input type="radio" name="시간대" checked> 시간대</label>
-                    <label><input type="radio" name="특정시간"> 특정시간</label>
+                    <label><input type="radio" name="hope-time" checked> 시간대</label>
+                    <label><input type="radio" name="hope-time"> 특정시간</label>
                 </div>
                 <div class="select-timeslot">
                 <select name="시간대" id="timeslot">

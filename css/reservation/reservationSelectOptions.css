@@ -211,8 +211,12 @@
     margin-bottom: 0;
 }
 
-input {
+.option-img input {
     accent-color: #ca1a5a;
+}
+
+input:focus {
+    outline: none;
 }
 
 /* 선택 목록 */
