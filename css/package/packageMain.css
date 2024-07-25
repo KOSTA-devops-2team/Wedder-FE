@@ -82,7 +82,6 @@ span.color {
 .recommendation h2 {
     font-size: 25px;
     color: #ca1a5a;
-
 }
 .recommendpar {
     color: #666;
@@ -105,7 +104,6 @@ span.color {
     justify-content: center;
     margin-right: 7px;
 }
-
 .steps {
     display: flex;
     justify-content: space-around;
@@ -127,7 +125,7 @@ span.color {
 }
 .steps {
     margin-top: 60px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 .step {
     text-align: center;
@@ -135,7 +133,8 @@ span.color {
     font-size: 18px;
 }
 .step img {
-    width: auto;
+    width: 160px;
+    height: auto;   
     margin-bottom: 10px;    
 }
 .title {
