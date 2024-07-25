@@ -65,7 +65,7 @@
                             <h2>Step 1</h2>
                             <div>방문 예약</div>
                         </div>
-                        <div class="step" id="step2">
+                        <div class="step selected" id="step2">
                             <h2>Step 2</h2>
                             <div>방문 완료</div>
                         </div>
@@ -111,17 +111,22 @@
                                     <span>희망 예식일</span>
                                     <span>2024-11-23 토요일</span>
                                 </div>
-                                <div class="message">
+                                <!-- 3-1. 전달사항 더보기 & 닫기-->
+                                <div class="announcement">
                                     <span>전달 사항</span>
-                                    <p class="message-summary">
-                                        2024년 10월 15일 오후 2시에 예식을
-                                        진행하고자 합니다. 예상 인원은 250명
-                                        정도이며, 예산은 3000만원 내외로
-                                        생각하고 있습니다. 특별히 꽃장식과 사진
-                                        촬영을 부탁드리고 싶습니다. 예약 가능
-                                        여부와 세부사항, 추가 비용 등에 대해
-                                        상담하고 싶습니다.
-                                    </p>
+                                    <div class="text-wrapper">
+                                        <p class="text">
+                                            2024년 10월 15일 오후 2시에 예식을
+                                            진행하고자 합니다. 예상 인원은 250명
+                                            정도이며, 예산은 300만원 내외로
+                                            생각하고 있습니다. 특별히 꽃장식과
+                                            사진 촬영을 부탁드리고 싶습니다.
+                                            예약 가능 여부와 세부사항, 추가 비용
+                                            등에 대해 상담하고 싶습니다.
+                                        <div class="more-text">더보기</div>
+                                        <div class="less-text">닫기</div>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +156,7 @@
                     </div>
                     <div class="payment-body">
                         <div class="payment-status">
-                            <div>결제 날짜</div>
+                            <div class="payment-date">결제 날짜</div>
                             <div class="payment-status-not">결제 대기</div>
                         </div>
                         <table class="payment-table">
@@ -216,6 +221,6 @@
                 </section>
             </main>
         </div>
-        <footer id="footer-placeholder"></footer>
+        <div id="footer-placeholder"></div>
     </body>
 </html>
