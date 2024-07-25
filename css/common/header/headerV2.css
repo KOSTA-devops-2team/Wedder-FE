@@ -5,7 +5,7 @@ header {
     top: 0;
     z-index: 1000;
     background-color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -61,7 +61,7 @@ header {
     width: 100%;
     border: none;
     outline: none;
-    text-align: center;
+    text-align: left;
 }
 
 .btn_search {
@@ -103,11 +103,13 @@ header {
 
 .header-user img {
     width: 17px;
+    height: 21px;
     height: auto;
 }
 
-.header-user .heart {
-    width: 21px;
+.header-user .header-heart {
+    width: 17px;
+    height: 17px;
 }
 
 .header-user li div {
@@ -136,7 +138,7 @@ header {
 .header-cate li a {
     text-decoration: none;
     color: black;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
 }
 
 .header-cate .grey {

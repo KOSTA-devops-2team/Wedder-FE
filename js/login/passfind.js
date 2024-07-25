@@ -1,16 +1,17 @@
-let id = document.querySelector("#idjoin");
-let btn = document.querySelector(".bt")
+let id = document.querySelector("#email");
+const btn = document.querySelector(".checkTime")
 const fil = /[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*/gi;
 id.addEventListener("keyup",()=>{
-
     if(fil.test(id.value)){
         btn.style.backgroundColor ="black";
-        btn.disabled = true; 
         btn.style.cursor = "pointer";
-    
     }else if(!fil.test(id.value)) {
         btn.style.backgroundColor ="#b1b1b1";
-        btn.disabled = false;
         btn.style.cursor = "default";
     }
 });
+
+const close = document.querySelector(".checkPoint")
+{
+    window.close();
+}

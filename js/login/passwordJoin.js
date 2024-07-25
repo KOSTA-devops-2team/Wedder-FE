@@ -76,7 +76,7 @@ pass1.addEventListener('keyup',()=>{
         {
             document.querySelector(".check > #up5").style.color="black";
             up5.setAttribute("id","checkset2");
-                console.log("열려라 차원의 문");
+                console.log("오픈 비밀문");
                 btn.style.backgroundColor="black";
                 link ='joinPaly.html';
                 btn.style.cursor = "pointer";
@@ -104,7 +104,7 @@ pass2.addEventListener('keyup',()=>{
         e=true;
         document.querySelector(".check > #up5").style.color="black";
         up5.setAttribute("id","checkset2");
-            console.log("열려라 차원의 문");
+            console.log("오픈 비밀문");
             btn.style.backgroundColor="black";
             link ='joinPaly.html';
             btn.style.cursor = "pointer";
@@ -124,4 +124,22 @@ pass2.addEventListener('keyup',()=>{
         btn.disabled = true;
     
     }
+});
+
+//눈 클릭
+const bt = document.querySelector(".btn");
+let typecheck=false;
+bt.addEventListener("Click",()=>{
+    if(!typecheck){
+        pass1.prop("type","password");
+        pass2.prop("type","password");
+        bt.src="file:///C:/Users/WD/Downloads/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24%20(1).svg";
+        typecheck=true;
+    }else if(typecheck){
+        pass1.prop("type","text");
+        pass2.prop("type","text");
+        bt.src="file:///C:/Users/WD/Downloads/visibility_off_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+        typecheck=false;
+    }
+    
 });

@@ -64,13 +64,14 @@
 .user-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 35px;
     border-bottom: 2px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 13px;
 }
 
 .user-info-container {
     align-content: center;
+    margin-left: 50px;
 }
 
 .user-info-inner {
@@ -82,7 +83,8 @@
 }
 
 .user-info-inner img {
-    width: 30px;
+    width: 20px;
+    margin: 0px 5px;
 }
 
 .steps {
@@ -98,10 +100,52 @@
 
 .step h2 {
     font-size: 16px;
+    text-align: center;
 }
 
 .step div {
     font-size: 14px;
+}
+
+.selected {
+    border: 1px dotted #ca1a5a;
+    color: #ca1a5a;
+    background-color: rgba(255, 203, 222, 0.3);
+}
+
+/* 3-1. 전달사항 더보기 & 닫기 */
+.announcement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-wrapper {
+    width: 310px;
+    background-color: #eeeeee;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.text {
+    word-break: keep-all;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.more-text,
+.less-text {
+    font-size: 14px;
+    color: #858585;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: end;
+}
+
+.less-text {
+    display: none;
 }
 
 /* 3. 웨딩홀 방문 일정 */
@@ -126,9 +170,9 @@
 }
 
 .visit-true {
-    width: 90px;
+    width: 80px;
     text-align: center;
-    padding: 4px 10px;
+    padding: 8px 10px;
     border-radius: 5px;
     margin-top: 5px;
     background-color: #ca1a5a;
@@ -143,8 +187,13 @@
     color: #ca1a5a;
 }
 
+/* 5. 예식(본식) 정보 */
+.wedding {
+    min-height: 300px;
+}
+
 .wedding-info {
-    flex-grow: 1;
+    width: 400px;
 }
 
 .visit-customer-info div,
@@ -155,18 +204,6 @@
 .visit-customer-info span:nth-of-type(1),
 .wedding-info span:nth-of-type(1) {
     margin-right: 22px;
-}
-.message {
-    display: flex;
-    justify-content: space-between;
-}
-.message-summary {
-    width: 310px;
-    background-color: #eeeeee;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    word-break: keep-all;
 }
 
 /* 4. 결제 현황 */
@@ -188,9 +225,9 @@
 }
 
 .quote-button {
-    background-color: #858585;
-    color: #fff;
-    border: none;
+    background-color: white;
+    color: #858585;
+    border: 1px solid #858585;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -230,14 +267,20 @@
     flex-direction: column;
 }
 
+.payment-date {
+    text-align: center;
+}
+
 .payment-status-not {
     background-color: black;
     color: white;
     border-radius: 5px;
     width: 90px;
-    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 4px 10px;
+    padding: 8px 10px;
     margin-top: 5px;
 }
 
@@ -246,14 +289,14 @@
     margin-left: 40px;
 }
 
-table th,
-table td {
+.payment-table th,
+.payment-table td {
     border: 1px solid #fff;
     padding: 10px;
     text-align: left;
 }
 
-table th {
+.payment-table th {
     background-color: #f2f2f2;
 }
 
@@ -279,12 +322,15 @@ table th {
     margin: 0 20px 0 30px;
 }
 
-.status-not {
+.wedding-container .status-not {
     background-color: black;
     color: white;
     border-radius: 5px;
     width: 90px;
-    height: 33px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 4px 10px;
 }
