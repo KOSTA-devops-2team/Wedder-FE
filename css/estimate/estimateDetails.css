@@ -45,9 +45,6 @@
     border-radius: 10px;
     padding: 10px 30px;
 }
-.pic-right {
-    display: flex;
-}
 .right-panel {
     height: 700px;
     border: 1px solid #757575;
@@ -134,10 +131,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    font-weight: 500;
 }
-.item total {
+.item-title {
     display: flex;
     justify-content: space-between;
+    font-size: 16x;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 30px;
 }
 .items {
     margin-bottom: 200px;
