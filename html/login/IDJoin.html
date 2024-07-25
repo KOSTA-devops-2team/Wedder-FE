@@ -9,36 +9,39 @@
 <body>
     <div class = "join">
         <div>
-        <h1>간편가입</h1>
-            <div>
-                <table>
-                    <tr>
-                        <td style='background-color:black'></td>
-                        <td style='background-color:black'></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+            <h1>간편가입</h1>
+                <div>
+                    <table>
+                        <tr>
+                            <td style='background-color:black'></td>
+                            <td style='background-color:black'></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                
             </div>
-            
-        </div>
-        <br />
-        
-        <div>
-            <b>로그인에 사용할<br />아이디를 입력해주세요.</b>
-            <br /> 
-        </div>
-        <br />
-        <div class = "idset">
-            <input type = "email" placeholder="아이디 (이메일) 입력" onfocus="placeholder='' "onblur="placeholder='아이디 (이메일) 입력'" />
             <br />
-        </div>
-        <br><br/>
-        <div>
-            <button class ="bt">
+            
+            <div>
+                <b>로그인에 사용할<br />아이디를 입력해주세요.</b>
+                <br /> 
+            </div>
+                <br />
+            <form action = "../../html/login/passwordJoin.html" method="get">
+                <div class = "idset">
+                <input type = "email" id ="idjoin" placeholder='아이디 (이메일) 입력' required pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*" />
+                <br />
+            </div>
+            <br><br/>
+            <div>
+                <button type="submit" class ="bt">
                 다음
-            </button>
-        </div>
+                </button>
+            </div>
+            </form>
     </div>
+    <script defer src="../../js/login/IDJoin.js"></script>
 </body>
 </html>
