@@ -26,8 +26,9 @@
     margin: 20px 0px 20px;
     color: #666;
 }
-.par2 span {
+.color {
     color : red;
+    text-align: text-bottom;
 }
 .par3 {
     margin: 20px 0px 20px;
