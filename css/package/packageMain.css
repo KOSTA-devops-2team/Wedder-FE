@@ -86,7 +86,7 @@ span.color {
 }
 .recommendpar {
     color: #666;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 600;
 }
 .recommendpar-top {
@@ -127,7 +127,7 @@ span.color {
 }
 .step {
     display: flex;
-    font-size: 14px;
+    font-size: 22px;
     color: #6B7684;
     margin-left: 50px;
 }
