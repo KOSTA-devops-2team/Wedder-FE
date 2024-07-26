@@ -5,10 +5,9 @@
 }
 
 .title-sub {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     letter-spacing: -0.5px;
-    margin-top: 50px;
     margin-bottom: 5px;
 }
 
@@ -75,9 +74,7 @@
 /*  1. 이용자 정보  */
 .user-info h1 {
     font-size: 21px;
-    margin-top: 20px;
-    border-top: 2px solid black;
-    padding-top: 17px;
+    margin: 15px 0;
 }
 
 .user-info h3 {
@@ -200,6 +197,7 @@
 .weddinghall-search {
     width: 300px;
     height: 40px;
+    padding: 0px 10px;
 }
 
 .icon2-img {

@@ -7,31 +7,28 @@
     width :160px;
     height: 100px;
     margin-bottom: 50% ;
-  
 }
 
 .Wedder{
-     position: relative;
-     text-decoration-line: none;
-     color :inherit;
-     font-size: 45px;
-     left:40%;
-     
-      
+    position: relative;
+    text-decoration-line: none;
+    color :inherit;
+    font-size: 45px;
+    left:40%;
+    cursor: pointer; 
 }
 
 
 /* 모양맞추기 */
 .login-wrapper{
-  position: absolute;
-  padding: 50px;
-  width: 450px;
-  background-color: #fff;
-  border-radius: 5px;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -45%);
-  
+    position: absolute;
+    padding: 50px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
 }
 
 .Log{
@@ -46,7 +43,6 @@
     margin:0px;
     padding: 40px;
     border-radius: 4px;
-    
 }
 
 button{
@@ -76,14 +72,13 @@ input[type=button]{
 
 /* 비밀번호을 잊어버렸습니까? 버튼 */
 #forgot{
-   
-   text-align: center;
-   background-color: white;
-   border: none;
-   color:#CA1A5A;
-   position: relative;
-   left: 250px;
-   
+    text-align: center;
+    background-color: white;
+    border: none;
+    color:#CA1A5A;
+    position: relative;
+    left: 250px;
+    cursor: pointer; 
 }
 
 
@@ -129,8 +124,6 @@ input[type=button]{
 }
 
 .modal .modal_body #email:focus{
-    
-   
     border: 1px solid #CA1A5A;
     outline: none;
     line-height: 20px;

@@ -5,13 +5,17 @@
 }
 
 .title-sub {
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
 }
 
 .title-main {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
-    margin: 8px 0 20px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* 스텝 Bar */
@@ -232,7 +236,7 @@
     display: flex;
 }
 
-.company {
+.select-company {
     width: 200px;
 }
 
