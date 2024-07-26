@@ -96,7 +96,7 @@
 .card-info {
     display: flex;
     flex-direction: column;
-    font-size: 11px;
+    font-size: 13px;
     padding: 8px 0px;
 }
 
@@ -111,7 +111,12 @@
 .weddinghall-name {
     color: #ca1a5a;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
+}
+
+.instagram img {
+    width: 22px;
+    float: right;
 }
 
 .weddinghall-address {

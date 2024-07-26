@@ -5,10 +5,9 @@
 }
 
 .title-sub {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     letter-spacing: -0.5px;
-    margin-top: 50px;
     margin-bottom: 5px;
 }
 
@@ -21,13 +20,11 @@
 
 /* 스텝 Bar */
 .steps-bar {
-    font-size: 13px;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     align-content: space-between;
     width: 100%;
-    /* margin: 50px auto; */
 }
 
 .step {
@@ -83,14 +80,16 @@
   font-size: 22px;
   font-weight: bold;
   padding-left: 20px;
+  margin: 0;
+  margin-right: 5px;
 }
 
-.guide-addition {
-  font-size: 15px;
+.guide-explain {
+  font-size: 16px;
   font-weight: normal;
   letter-spacing: -0.5px;
-  padding-top: 5px;
-  padding-left: 13px;
+  padding-top: 3px;
+  padding-left: 11px;
 }
 
 /* 카테고리 리스트 */
@@ -103,12 +102,11 @@
 }
 
 .category {
-   /* width: 25vw;
-   height: 45vh; */
-   width: 400px;
-   height: 450px;
+   width: 450px;
+   height: 500px;
    margin: 0;
    position: relative;
+   cursor: pointer;
 }
 
 .category img {
@@ -120,15 +118,15 @@
 .category-text {
   font-size: 40px;
   position: absolute;
-  bottom: 45px;
-  left: 10%;
+  bottom: 35px;
+  left: 9%;
 }
 
 .category-text2 {
   font-size: 40px;
   position: absolute;
-  bottom: 30px;
-  left: 10%;
+  bottom: 0px;
+  left: 9%;
 }
 
 .category:nth-of-type(1){
@@ -139,22 +137,29 @@
     color: #442400;
 }
 
-.category-btn {
-  width: 310px;
-  height: 40px;
-  text-align: center;
-  background-color: #000;
-  padding-top: 6px;
-  margin-right: 124px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  float: right;
+.category-selected {
+  box-shadow: 5px 5px 7px #737373;
 }
 
-.category-nxt-btn {
+/* 다음 단계 버튼 */
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 72px;
+}
+
+.btn-nxt {
     font-size: 13px;
     font-weight: bold;
+    padding: 10px 120px;
+    border-radius: 5px;
     color: #fff;
-    text-decoration-line: none;
-    justify-content: flex-end;
+    background-color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.btn-nxt:hover {
+  background-color: #717171;
+  border: 1px solid #717171;
 }

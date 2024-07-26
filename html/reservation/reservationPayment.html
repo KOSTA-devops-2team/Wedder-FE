@@ -167,10 +167,10 @@
         <section class="event-info">
             <h1>2. 행사일 정보</h1>
             <div class="date-container">
-                <label for="hope-date" class="event-title">본식(희망) 일시</label>
+                <label for="hope-date1" class="event-title">본식(희망) 일시</label>
                 <div class="select-box">
                     <div>
-                        <input type="text" id="hope-date" placeholder="0000-00-00, 00:00">  
+                        <input type="text" class="hope-date" id="hope-date1" size="20" placeholder="0000-00-00, 00:00">  
                     </div>
                     <div>
                         <a href=""><img class="icon-img" src="../../assets/images/calendar-icon.png" alt="달력 아이콘"></a>
@@ -179,22 +179,22 @@
                 </div>
             </div>
             <div class="date-container">
-                <label for="hope-date" class="event-title">본식(희망) 일시</label>
+                <label for="hope-date2" class="event-title">본식(희망) 일시</label>
                 <div class="select-box">
                     <div>
-                        <input type="text" id="hope-date" placeholder="0000-00-00, 00:00">  
+                        <input type="text" class="hope-date" id="hope-date2" placeholder="0000-00-00, 00:00">  
                     </div>
                     <div>
                         <a href=""><img class="icon-img" src="../../assets/images/calendar-icon.png" alt="달력 아이콘"></a>
                     </div>
-                    <button class="non-select"><input type="checkbox">미정</button>
+                    <button class="non-select"><input id="non-select" type="checkbox">미정</button>
                 </div>
             </div>
             <div class="weddinghall-info">
                 <label class="search-title" for="weddinghall-search">웨딩홀 정보</label>
                 <div class="select-box">
                     <div>
-                        <input type="search" id="weddinghall-search" placeholder="웨딩홀을 선택하세요.">  
+                        <input type="search" class="weddinghall-search" id="weddinghall-search" placeholder="웨딩홀을 선택하세요.">  
                     </div>
                     <div class="search-icon">
                         <img class="icon2-img" src="../../assets/images/search-icon2.png" alt="검색 아이콘">
@@ -400,5 +400,6 @@
         </section>  
     </div>
     <div id="footer-placeholder"></div>
+    <script src="../../js/weddingHall/weddingHallPayment.js"></script>
 </body>
 </html>

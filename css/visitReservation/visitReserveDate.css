@@ -20,7 +20,7 @@
 
 .banner-title {
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 310px;
     font-size: 27px;
     font-weight: 600;
@@ -29,7 +29,7 @@
 
 .banner-text {
     position: absolute;
-    bottom: 60px;
+    bottom: 55px;
     left: 310px;
     font-size: 18px;
     font-weight: 500;
@@ -39,7 +39,7 @@
 /* 방문 일자 선택 */
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 650px 400px;
     padding: 10px 20px;
 }
 
@@ -76,6 +76,8 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 20px 15px;
+    position: sticky;
+    top: 200px;
 }
 
 .reserve-guide {
@@ -90,6 +92,10 @@
     font-size: 17px;
     color: #CA1A5A;
     margin: 0;
+}
+
+.reserve-guide input {
+    accent-color: #CA1A5A;
 }
 
 .guide {
@@ -129,10 +135,6 @@
 }
 
 /* 방문 시간 */
-.container {
-    display: grid;
-    grid-template-columns: 650px 400px;
-}
 .reserve-time {
     margin: 30px 25px;
 }
@@ -142,30 +144,43 @@
     margin-bottom: 10px;
 }
 
-.ampm {
+.time-title {
     font-size: 18px;
     font-weight: 600;
     padding: 10px 5px;
     padding-top: 23px;
 }
 
-.reserve-time button {
+.time-btn {
     font-weight: 500;
     padding: 13px 30px;
     border: 1px solid #000;
     border-radius: 10px;
     margin: 10px 10px;
+    cursor: pointer;
 }
 
-.reserve-time button:hover {
+.time-btn:hover {
     border: 1px solid #CA1A5A;
     background-color: #CA1A5A;
     color: #fff;
 }
 
-.reserve-timeAM button {
-    border: 1px solid #888;
+.time-btn-none {
+    font-weight: 500;
+    padding: 13px 30px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    border: 1px solid #b4b4b4;
     color: #b4b4b4;
+    background-color: #fff;
+    cursor: default;
+}
+
+.time-btn-selected {
+    border: 1px solid #CA1A5A;
+    background-color: #CA1A5A;
+    color: #fff;
 }
 
 /* 버튼 */

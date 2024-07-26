@@ -7,14 +7,52 @@ body {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
 }
-/* 1.폴더 위치 */
-.myPayment-location {
+/* 0. myP{ayment-body-header */
+.body-header {
+  background-color: black;
+  width: 880px;
+  height: 100px;
+  color: white;
+}
+.body-header div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  text-align: center;
+  margin-top: 20px;
 }
-.myPayment-location :nth-last-of-type(1) {
-  color: #ca1a5a;
+.body-header div h3 {
+  width: 520px;
+  margin-top: 35px;
+}
+.body-header div p {
+  margin-left: 20px;
+}
+.body-header div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+.v-line {
+  border-left: 1px solid white;
+  height: 60px;
+  margin: 10px;
+  margin-left: 20px;
+  align-self: center;
+}
+
+/* 1. myPage-sidebar */
+.myPage-container {
+  display: flex;
+  justify-content: space-between;
+}
+.myPage-sidebar {
+  width: 220px;
+}
+.myPage-content {
+  width: 960px;
+  min-height: 1000px;
 }
 /* 2.헤더 설명 */
 .myPayment-header h3 {

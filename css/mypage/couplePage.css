@@ -1,1 +1,55 @@
 @charset "UTF-8";
+
+/* 1. section 1 header */
+.couplePage-header {
+  background-color: black;
+  color: white;
+}
+.header-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-text div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.header-text div p {
+  font-weight: bold;
+}
+.v-line {
+  border-left: 1px solid white;
+  height: 60px;
+  margin: 10px;
+  margin-left: 80px;
+  align-self: center;
+}
+/* 2. section2  profile picture */
+.couplePage-profile-package {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+}
+.groom,
+.bride {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  border: 1px dotted;
+  margin: 10px;
+  width: 60%;
+}
+.profile-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px;
+}
+.profile-img img {
+  width: 300px;
+  border-radius: 100%;
+}

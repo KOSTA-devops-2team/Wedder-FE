@@ -31,20 +31,56 @@
 }
 
 /* 견적서 css */
-.order-container img {
-    width: 100%;
-    max-width: 500px;
+.order-container {
+    padding: 20px 50px;
 }
 
+.hall-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hall-image img {
+    width: 500px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 20px;
+}
 .cost-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin: 10px 0;
+    margin-top: 20px;
+}
+
+.cost-item h2 {
+    margin: 0;
 }
 
 .amount {
     font-size: 20px;
     color: #ca1a5a;
     font-weight: bold;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+table {
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+table th {
+    width: 30%;
+}
+
+table td {
+    text-align: end;
 }

@@ -5,10 +5,9 @@
 }
 
 .title-sub {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     letter-spacing: -0.5px;
-    margin-top: 50px;
     margin-bottom: 5px;
 }
 
@@ -75,9 +74,7 @@
 /*  1. 이용자 정보  */
 .user-info h1 {
     font-size: 21px;
-    margin-top: 20px;
-    border-top: 2px solid black;
-    padding-top: 17px;
+    margin: 15px 0;
 }
 
 .user-info h3 {
@@ -182,46 +179,63 @@
 
 .select-box {
     display: flex;
+    margin-top: 15px;
 }
 
-#hopd-date {
-    padding: 0px;
+
+.hope-date {
+    width: 300px;
+    height: 40px;
+    padding: 0px 10px;
 }
 
 .icon-img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.weddinghall-search {
+    width: 300px;
+    height: 40px;
+    padding: 0px 10px;
 }
 
 .icon2-img {
-    width: 17px;
-    height: 17px;
+    width: 19px;
+    height: 19px;
 }
 
 .non-select {
+    position: relative;
     border: 1px solid #cccccc;
     border-radius: 5px;
     color: #cccccc;
     margin: 0 20px;
+    padding: 10px 25px;
 }
 
-input[type="checkbox"] {
-    width: 13px;
-    height: 13px;
-    border: 1px solid #ccc;
-    appearance: none;
-    cursor: pointer;
-    transition: background 0.2s;
-    accent-color: #ca1a5a;
-  }
+.non-select > input {
+    position: absolute;
+    left: 5px;
+}
+
+
+input {
+    accent-color: #CA1A5A;
+}
 
 .search-icon {
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     justify-content: center;
     align-items: center;
     background-color: #CA1A5A;
+}
+
+.non-selected {
+    border: 1px solid #CA1A5A;
+    color: #CA1A5A;
 }
 
 /* 3. 주문상품 */
@@ -257,13 +271,13 @@ input[type="checkbox"] {
 .select-company, .select-suboption {
     display: grid;
     grid-template-columns: 110px 140px 600px 100px;
-    padding-top: 15px;
     border-bottom: 1px solid #757575;
 }
 
 .select-category {
-    padding-top: 20px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .select-category p {
@@ -272,12 +286,18 @@ input[type="checkbox"] {
     color: #333;
 }
 
+.company-img {
+    display: flex;
+    align-items: center;
+}
+
 .company-img img {
     width: 120px;
     height: 100px;
 }
 
 .option-img {
+    display: flex;
     align-items: center;
 }
 
@@ -287,7 +307,7 @@ input[type="checkbox"] {
 }
 
 .option-list {
-    padding: 5px 10px;
+    padding: 20px 10px;
 }
 
 .option-list h5 {
@@ -307,6 +327,11 @@ input[type="checkbox"] {
 .option-list p {
     font-size: 12px;
     margin-top: 5px;
+}
+
+.option-price {
+    display: flex;
+    align-items: center;
 }
 
 /* 4. 결제 */

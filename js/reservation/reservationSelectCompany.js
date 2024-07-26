@@ -1,37 +1,90 @@
-import "../../css/reservation/reservationSelectCompany.css"
+/* 필터 탭 */
+document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelectorAll(".tab");
+    const contents = document.querySelectorAll(".contents");
 
-const btn = document.querySelectorAll(".tabs")
-const contents = document.querySelectorAll("#tab-contents")
-let activeCont = '';
-/* const tagSearch = document.querySelector("#tag-search")
-const scheduleSearch = document.querySelector("#schedule-search") */
+    // 첫 번째 탭 활성화
+    if (tabs.length > 0 && contents.length > 0) {
+        tabs[0].classList.add("tab-selected");
+        contents[0].classList.add("contents-active");
+    }
 
-/* actBtn.addEventListener("click", () => {
-    tagSearch.style.display = "block";
-    scheduleSearch.style.display = "none";
-    btn.classList.remvove("tab.active")
-    actBtn.classList.add("tab.active") 
-})
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+            tabs.forEach((btn) => {
+                btn.classList.remove("tab-selected");
+            });
+            contents.forEach((content) => {
+                content.classList.remove("contents-active");
+            });
 
-btn.addEventListener("click", () => {
-    tagSearch.style.display = "none";
-    scheduleSearch.style.display = "block";
-    btn.style.color = "#CA1A5A";
-    btn.style.borderBottom = "2px solid #CA1A5A";  
-    btn.classList.add("tab.active")
-    actBtn.classList.remove("tab.active")
-}) */
+            tab.classList.add("tab-selected");
 
-for(var i = 0; i < btn.length; i++) {
-    btn[i].querySelector('.tab').addEventListener('click', function(e){
-        e.preventDefault();
-        for(var j = 0; j < btn.length; j++) {
-            btn[j].classList.remove('.tab.active')
+            contents[index].classList.add("contents-active");
+        });
+    });
+});
 
-            contents[j].style.display = 'none';
+/* 태그 검색 */
+document.querySelectorAll(".purpose-btn").forEach((item) => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("purpose-btn-selected");
+    });
+});
+    document.querySelectorAll(".tag-btn").forEach((item) => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("tag-btn-selected");
+        });
+    });
+
+/* 스케줄 검색 */
+/* const radioButtons = document.querySelectorAll(".options input[type='radio']");
+const selectDateDiv = document.querySelector(".select-date");
+const daySelect = document.querySelector("#day");
+const dateInput = document.querySelector("#date");
+
+radioButtons.forEach(radio => {
+    radio.addEventListener("change", () => {
+        if (radio.value === "day") {
+            daySelect.style.display = "block";
+            dateInput.style.display = "none";
+        } else if (radio.value === "date") {
+            daySelect.style.display = "none";
+            dateInput.style.display = "block";
         }
-        this.parentNode.classList.add('.tab.active');
+    });
+});
 
-        activeCont = this.getAttribute('div');
-        document.querySelector(activeCont).style.display = 'block';
-})}
+// 초기 상태 설정
+const checkedRadio = document.querySelector('input[name="hope-date"]:checked');
+if (checkedRadio) {
+    if (checkedRadio.value === "day") {
+        daySelect.style.display = "block";
+        dateInput.style.display = "none";
+    } else {
+        daySelect.style.display = "none";
+        dateInput.style.display = "block";
+    }
+}
+}); */
+
+/* 업체 카드 선택 */
+const cards = document.querySelectorAll(".company-card");
+const select = document.querySelector(".select-company");
+
+cards.forEach((card) => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("company-card-selected");
+
+        if (select.style.display === "block") {
+            select.style.display = "none";
+        } else {
+            select.style.display = "block";
+        }
+    });
+});
+
+
+
+
+

@@ -10,7 +10,7 @@ body {
 }
 
 /* 1. 헤더 설명 */
-.partnersTopPicks-header {
+.Wish_List-header {
   height: 200px;
   background-image: url(../../assets/images/estimateBanner.png);
   color: black;
@@ -19,11 +19,11 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.partnersTopPicks-header h1 {
+.Wish_List-header h1 {
   font-size: 2rem;
   color: blue;
 }
-#partnersTopPicks-section2 {
+#Wish_List-section2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
