@@ -5,13 +5,17 @@
 }
 
 .title-sub {
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
 }
 
 .title-main {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
-    margin: 8px 0 20px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* 스텝 Bar */
@@ -86,7 +90,6 @@
     letter-spacing: -0.5px;
     padding-top: 3px;
     padding-left: 11px;
-
 }
 
 /* 검색 필터 분류 */
@@ -94,7 +97,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .tab {
@@ -110,14 +113,19 @@
     cursor: pointer;
 }
 
-.tab.active {
+.tab > button {
+    all: unset;
+}
+
+.tab-selected {
     color: #ca1a5a;
     border-bottom: 2px solid #ca1a5a;
 }
 
+
 /* 태그로 검색 */
-.tag-container {
-    /* display: none; */
+.contents {
+    display: none;
 }
 
 .search-bar {
@@ -139,6 +147,10 @@
     right: 120px; 
     width: 17px;
     height: 17px;
+}
+
+.contents-active {
+    display: block;
 }
 
 /* 태그 검색의 태그들 */
@@ -219,26 +231,54 @@
 
 
 /* 스케줄로 검색 */
-.schedule-container {
-    display: inline-block;
-    /* display: none; */
+.filter-schedule {
+    display: grid;
+    grid-template-columns: 150px 240px;
+    margin: 0 100px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 }
 
-.filter {
-    margin: 12px 100px;
+.filter-schedule > label {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+}
+
+#schedule-list {
+    border-left: 1px solid #ccc;
+    padding: 3px 20px;
+    
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 .options > label {
-    display: flex;
     font-size: 15px;
     font-weight: 600;
-    justify-content: space-between;
-    padding: 5px 0 0 45px
+    padding: 5px 0;
 }
 
+.select-date, .select-time {
+    display: flex;
+    justify-content: center;
+}
 
 input {
     accent-color: #ca1a5a;
+}
+
+#date1, #time1 {
+    display: inline-block;
+}
+
+#date2, #time2 {
+    display: none;
 }
 
 
@@ -313,8 +353,9 @@ input {
 }
 
 .company-card-selected {
-    border: 1px solid #ca1a5a;
-    background-color: rgba(255, 203, 222, 0.3);
+    background-color: rgba(255, 203, 222, 0.1); 
+    border: 1px solid rgba(255, 203, 222, 1.2);
+    /* box-shadow: 5px 5px 7px rgba(255, 203, 222, 0.5); */
 }
 
 /* 페이지네이션 */
@@ -326,7 +367,6 @@ input {
     background-color: #fff;
     position: sticky;
     bottom: 0px;
-
 }   
 
 .select-title {
@@ -345,29 +385,29 @@ input {
     display: flex;
 }
 
-/* .select-company {
+.select-company {
     display: none;
-} */
-
-.appear-select-comapny {
-    display: block;
 }
 
+/* .select-comapny-appear {
+    display: block;
+} */
+
 #company-images{
-    width: 110px;
-    height: 90px;
+    width: 120px;
+    height: 100px;
     margin: 10px 10px;
 }
 
 .select-company-title {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     margin: 0;
     padding: 0 10px;
 }
 
 .select-purpose {
-    font-size: 13px;
+    font-size: 12px;
     color: #667085;
     text-align: left;
     padding: 5px 10px;

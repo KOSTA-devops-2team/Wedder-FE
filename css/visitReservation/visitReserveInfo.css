@@ -20,7 +20,7 @@
 
 .banner-title {
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 310px;
     font-size: 27px;
     font-weight: 600;
@@ -29,7 +29,7 @@
 
 .banner-text {
     position: absolute;
-    bottom: 60px;
+    bottom: 55px;
     left: 310px;
     font-size: 18px;
     font-weight: 500;
@@ -39,7 +39,7 @@
 /* 고객 정보 확인 */
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 650px 400px;
 }
 
 .customer-container {
@@ -109,6 +109,9 @@
 }
 
 #consent {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     margin: 0;
     accent-color: #CA1A5A;
 }
@@ -117,7 +120,7 @@
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 5px;
-    padding-left: 5px;
+    padding-left: 22px;
 }
 
 .consent-description {
@@ -169,7 +172,6 @@
 }
 
 /* 예약 참고사항 */
-
 .info-container {
     display: flex;
     flex-direction: column;
@@ -232,10 +234,6 @@
 }
 
 /* 예상하객수 */
-.container {
-    display: grid;
-    grid-template-columns: 650px 400px;
-}
 .expect {
     margin: 20px;
 }
@@ -330,7 +328,7 @@
 }
 
 .modal-q {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     text-align: center;
     margin: 0;
@@ -364,7 +362,7 @@
 
 .check-btn:hover {
     border: 1px solid rgba(202, 26, 90, 0.2);
-    background-color: rgba(202, 26, 90, 0.3);
+    background-color: rgba(202, 26, 90, 0.4);
 }
 
 .cancel-btn {
@@ -377,7 +375,7 @@
 }
 
 .cancel-btn:hover {
-    background-color: rgba(202, 26, 90, 0.2);
+    background-color: rgba(202, 26, 90, 0.1);
 }
 
 .modal.show { 
@@ -408,7 +406,7 @@
 }
 
 .modal-complete {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 600;
     text-align: center;
     color: #CA1A5A;
@@ -432,10 +430,10 @@
 
 .check-btn-suc:hover {
     border: 1px solid rgba(202, 26, 90, 0.2);
-    background-color: rgba(202, 26, 90, 0.3);
+    background-color: rgba(202, 26, 90, 0.4);
 }
 
-.modal.show { 
+.modal2.show2 { 
     display: block;
     position: fixed;
     top: 0;

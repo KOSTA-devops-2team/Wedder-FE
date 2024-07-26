@@ -40,16 +40,16 @@
         <!-- 검색 필터 분류 -->
         <section class="tabs">
             <div class="tab" onclick="openTab('tag-search')">
-                <a href=".tag-container" id="tab">태그 검색</a>
+                <button>태그 검색</button>
             </div>
             <div class="tab" onclick="openTab('schedule-search')">
-               <a href=".schedule-container" id="tab">스케줄 검색 </a>
+               <button>스케줄 검색 </button>
             </div>
         </section>
 
     <section class="container">
         <!-- 태그로 검색 --> 
-        <section id="tab-contents" class="tag-container">
+        <section id="tag-container" class="contents">
             <div class="search-bar">
                 <input type="search" placeholder="카테고리 내 검색">
                 <img id="search-icon" src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/search-icon.png" />
@@ -74,12 +74,6 @@
                 <button class="tag-btn">Premium</button>
                 <button class="tag-btn">High end</button>
             </div>
-            <!-- <div class="more-filter">
-                <span>더 많은 검색 필터
-                    <img id="more-icon"
-                     src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/down-arrow.png"/>
-                </span>
-            </div> -->
             <div class="filters possible-filter">
                 <p>촬영가능</p>
                 <button class="tag-btn">정원</button>
@@ -87,61 +81,69 @@
                 <button class="tag-btn">로드</button>
                 <button class="tag-btn">반려동물</button>
             </div>
+            <!-- <div class="more-filter">
+                <span>더 많은 검색 필터
+                    <img id="more-icon"
+                     src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/down-arrow.png"/>
+                </span>
+            </div> -->
          </section>
 
         <!-- 스케줄로 검색 -->
-        <section id="tab-contents" class="schedule-container">
-            <div class="filter hope-date">
+        <section id="schedule-container" class="contents">
+            <div class="filter-schedule">
                 <label>이용 희망일</label>
-                <div >
+                <div id="schedule-list">
                     <div class="options">
                         <label><input type="radio" name="hope-date" checked> 요일</label>
                         <label><input type="radio" name="hope-date"> 날짜</label>
                     </div>
-                <div class="select-day">
-                    <select name="요일" id="day">
-                        <option value="total">전체</option>
-                        <option value="monday">월요일</option>
-                        <option value="tuesday">화요일</option>
-                        <option value="wednesday">수요일</option>
-                        <option value="thursday">목요일</option>
-                        <option value="friday">금요일</option>
-                        <option value="saturday">토요일</option>
-                        <option value="sunday">일요일</option>
-                    </select>
-                </div>
-                <div class="select-date">
-                    <input type="date" placeholder="전체">
-                </div>
+                    <div class="select-date">
+                        <select id="date2" name="요일" id="day">
+                            <option value="total">전체</option>
+                            <option value="monday">월요일</option>
+                            <option value="tuesday">화요일</option>
+                            <option value="wednesday">수요일</option>
+                            <option value="thursday">목요일</option>
+                            <option value="friday">금요일</option>
+                            <option value="saturday">토요일</option>
+                            <option value="sunday">일요일</option>
+                        </select>
+                    </div> 
+                    <div class="select-date">
+                        <input id="date1" type="date" placeholder="전체">
+                    </div>
                 </div>
             </div>
-            <div class="filter time">
+            <div class="filter-schedule">
                 <label>시간</label>
-                <div class="options">
-                    <label><input type="radio" name="hope-time" checked> 시간대</label>
-                    <label><input type="radio" name="hope-time"> 특정시간</label>
-                </div>
-                <div class="select-timeslot">
-                <select name="시간대" id="timeslot">
-                    <option value="timeslot">전체</option>
-                    <option value="time-AM">오전(9:00~12:50)</option>
-                    <option value="time-PM">오후(13:00 이후)</option>
-                </select>
-                </div>
-                <div class="select-time">
-                <select name="특정시간" id="time">
-                    <option value="time">전체</option>
-                    <option value="9시">9:00</option>
-                    <option value="10시">10:00</option>
-                    <option value="11시">11:00</option>
-                    <option value="12시">12:00</option>
-                    <option value="13시">13:00</option>
-                    <option value="14시">14:00</option>
-                    <option value="15시">15:00</option>
-                    <option value="16시">16:00</option>
-                    <option value="17시">17:00</option>
-                    <option value="18시">18:00</option>
-                </select>
+                <div id="schedule-list">
+                    <div class="options">
+                        <label><input type="radio" name="hope-time" checked> 시간대</label>
+                        <label><input type="radio" name="hope-time"> 특정시간</label>
+                    </div>
+                    <div class="select-time">
+                        <select id="time1" name="시간대" id="timeslot">
+                            <option value="timeslot">전체</option>
+                            <option value="time-AM">오전(9:00~12:50)</option>
+                            <option value="time-PM">오후(13:00 이후)</option>
+                        </select>
+                    </div>
+                    <div class="select-time">
+                        <select id="time2" name="특정시간" id="time">
+                            <option value="time">전체</option>
+                            <option value="9시">9:00</option>
+                            <option value="10시">10:00</option>
+                            <option value="11시">11:00</option>
+                            <option value="12시">12:00</option>
+                            <option value="13시">13:00</option>
+                            <option value="14시">14:00</option>
+                            <option value="15시">15:00</option>
+                            <option value="16시">16:00</option>
+                            <option value="17시">17:00</option>
+                            <option value="18시">18:00</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </section>
@@ -262,7 +264,7 @@
                         <p  class="select-purpose">[웨딩촬영]</p>
                     </div>
                 </div>
-                <div class="select-options">
+                <div class="option-container">
                     <div></div>
                     <div></div>
                 </div>
