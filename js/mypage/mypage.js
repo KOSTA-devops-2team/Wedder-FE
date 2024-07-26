@@ -28,28 +28,25 @@ horizontalMenus.forEach((menu) =>
     horizontalIndicator(e);
   })
 );
-// 2. 탭 활성화 
-const studioActive = (e) =>{
-  sutdio.classList.add("active");
-  makeUp.classList.remove("active");
-  dress.classList.remove("active");
-} 
-const makeUpActive = (e) =>{
-  sutdio.classList.remove("active");
-  makeUp.classList.add("active");
-  dress.classList.remove("active");
-} 
-const dressActive = (e) =>{
-  sutdio.classList.remove("active");
-  makeUp.classList.remove("active");
-  dress.classList.add("active");
-} 
-sutdio.addEventListener("click",studioActive);
-makeUp.addEventListener("click",makeUpActive);
-dress.addEventListener("click",dressActive);
+// 2.스드메 탭 활성화 
+const tabList=document.querySelectorAll(".content #brand");
+const btns=document.querySelectorAll(".tabs .tab");
 
-document.querySelectorAll(".heart").forEach((item) => {
-  item.addEventListener("click", () => {
-      item.classList.toggle("liked");
-  })
-});
+for(let i =0; i<tabList.length; i++){
+  btns[i].addEventListener('click',function(){
+    tabList(i).classList.add('is_on');
+    if(!tabList(i)){
+      !tabList(i).classList.remove('is_on');
+    }
+  });
+}
+
+
+// 보류
+// $(document).ready(function($){
+//   $(".").click(function(event){
+//     console.log("");
+//     event.preventDefault();
+//     $('').animate({scrollTop:$(this.hash).offset().top},500);
+//   })
+// })

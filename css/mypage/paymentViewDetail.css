@@ -1,0 +1,40 @@
+.hd__inner1100 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.side-bar-flex {
+  width: 220px;
+}
+.body-header h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.brand-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+}
+.brand-filter h3 {
+  margin: 0px 10px;
+}
+.brand-filter h3:hover {
+  margin: 0px 10px;
+  font-size: 20px;
+  border-bottom: 3px solid pink;
+  cursor: pointer;
+}
+.calandar {
+  width: 550px;
+  height: 500px;
+  padding: 20px;
+}
+.calandars div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

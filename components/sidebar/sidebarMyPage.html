@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="../../js/myPage/myPageMain.js"></script>
     <title>마이페이지 사이드바</title>
   </head>
   <body>
@@ -12,17 +13,72 @@
           <span class="title"> <b>My Profile</b></span>
           <br />
           <ul class="list">
-            <li class="item"><a href="#">MyProfile</a></li>
+            <li class="item">
+              <a href="http://127.0.0.1:5500/Wedder-FE/html/mypage/mypage.html"
+                >MyProfile</a
+              >
+            </li>
 
-            <li class="item"><a href="#">금일 방문 일정</a></li>
-            <li class="item"><a href="#">현재 예약 현황</a></li>
-            <li class="item"><a href="#">상세 예약 현황</a></li>
-            <li class="item"><a href="#">My Like</a></li>
+            <li class="item" id="myPage_Visit">
+              <a href="http://127.0.0.1:5500/Wedder-FE/html/mypage/mypage.html"
+                >방문 일정</a
+              >
+            </li>
 
-            <li class="item"><a href="#">결제 내역</a></li>
-            <li class="item"><a href="#">나의 연인 추가</a></li>
-            <li class="item"><a href="#">커플 페이지 </a></li>
-            <li class="item"><a href="#">견적함</a></li>
+            <li class="item" id="myPage_Reservation">
+              <a href="http://127.0.0.1:5500/Wedder-FE/html/mypage/mypage.html"
+                >예약 현황</a
+              >
+            </li>
+            <br />
+            <li class="item">
+              <a
+                href="http://127.0.0.1:5500/Wedder-FE/html/mypage/LikeList.html"
+                >Like List</a
+              >
+            </li>
+
+            <li class="item">
+              <a
+                href="http://127.0.0.1:5500/Wedder-FE/html/mypage/myPayment.html"
+                >결제 내역</a
+              >
+            </li>
+            <li class="item">
+              <a href="#" class="open-modal">나의 연인 추가</a>
+            </li>
+            <div class="balck-bg">
+              <div class="white-bg">
+                <h2>커플링 연결</h2>
+                <form class="coupling-modal" action="" method="post">
+                  <p>본인의 연인의 이름을 입력해주세요~</p>
+                  <div class="partner-content">
+                    파트너의 이름:
+                    <input type="text" class="form-name" id="name" />
+                  </div>
+                  <div class="partner-content">
+                    파트너의 이메일: <input type="email" class="form-class" />
+                  </div>
+                  <br />
+                  <button type="submit" class="btn btn-submit" id="next">
+                    next
+                  </button>
+                  <button type="button" class="btn btn-close">close</button>
+                </form>
+              </div>
+            </div>
+
+            <li class="item">
+              <a
+                href="http://127.0.0.1:5500/Wedder-FE/html/mypage/couplePage.html"
+                >커플 페이지
+              </a>
+            </li>
+            <li class="item">
+              <a href="http://127.0.0.1:5500/html/mypage/estimateStorage.html"
+                >견적함</a
+              >
+            </li>
           </ul>
         </li>
         <li class="menu-section">
