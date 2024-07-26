@@ -20,7 +20,7 @@
 
 .banner-title {
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 310px;
     font-size: 27px;
     font-weight: 600;
@@ -29,7 +29,7 @@
 
 .banner-text {
     position: absolute;
-    bottom: 60px;
+    bottom: 55px;
     left: 310px;
     font-size: 18px;
     font-weight: 500;
@@ -39,7 +39,7 @@
 /* 희망 예식일 선택 */
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 650px 400px;
     padding: 10px 20px;
 }
 
@@ -133,10 +133,6 @@
 }
 
 /* 예상하객수 */
-.container {
-    display: grid;
-    grid-template-columns: 650px 400px;
-}
 .expect {
     margin: 20px;
 }
@@ -146,11 +142,12 @@
     font-weight: 600;
     letter-spacing: -0.5px;
     padding-bottom: 25px;
+    margin: 0;
 }
 
-.expect-audience {
+/* .expect-audience {
     box-sizing: border-box;
-}
+} */
 
 .expect-table {
     width: 100%;
@@ -161,12 +158,14 @@
 }
 
 .expect-table td {
-    font-size: 15px;
+    position: relative;
+    font-size: 16px;
     font-weight: 600;
     text-align: left;
+    text-align: center;
     align-content: center;
     padding: 0 20px;
-    padding-left: 40px;
+    padding-left: 30px;
     border-right: 1px solid #828282;    
 }
 
@@ -174,6 +173,12 @@
     border-bottom: 1px solid #828282;
 }
 
+.expect-table input {
+    position: absolute;
+    top: 20px;
+    left: 37px;
+    accent-color: #CA1A5A;
+}
 
 /* 버튼 */
 .btn {

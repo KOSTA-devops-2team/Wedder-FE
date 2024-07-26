@@ -1,23 +1,35 @@
-// HTML 문서의 로딩이 완료되었을 때, 해당 함수를 실행
+/* 예약 확인 모달창 */
 document.addEventListener("DOMContentLoaded", function () {
-    // elements
-    var modalBtn = document.getElementById("modal-btn");
-    var modal = document.getElementById("modal");
-    var closeBtn = document.getElementById("close");
+    const modal = document.querySelector(".modal");
+    const modalBtn = document.querySelector(".btn-nxt");
+    const closeBtn = document.querySelector(".cancel-btn");
+
   
-    // functions
-    function toggleModal() {
-      modal.classList.toggle("show");
-    }
-  
-    // events
-    modalBtn.addEventListener("click", toggleModal);
-    closeBtn.addEventListener("click", toggleModal);
-  
-    window.addEventListener("click", function (event) {
-      // 모달의 검은색 배경 부분이 클릭된 경우 닫히도록 하는 코드
-      if (event.target === modal) {
-        toggleModal();
-      }
+    modalBtn.addEventListener("click", function() {
+        modal.classList.add("show");
+        modal2.classList.remove("show2");
+    });
+
+    closeBtn.addEventListener("click", function() {
+        modal.classList.remove("show");
+    });
+
+    /* 예약 완료 모달창 */
+    const modalNxt = document.querySelector(".check-btn");
+    const modal2 = document.querySelector(".modal2");
+
+    modalNxt.addEventListener("click", function() {
+        modal.classList.remove("show");
+        modal2.classList.add("show2");
+    })
+
+    /* 외부 클릭 시 모달창 닫기 */ 
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.classList.remove("show");
+        }
+        /* if (event.target === modal2) {
+            modal2.classList.remove("show2");
+        } */
     });
   });
