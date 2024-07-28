@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function includeSidebar() {
-    fetch("../../components/sidebar/sidebarMyPage.html")
+    fetch("../../components/sidebar/sidebar-myPage.html")
         .then((response) => response.text())
         .then((data) => {
             document.getElementById("myPage-sidebar-placeholder").innerHTML =
