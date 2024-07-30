@@ -35,7 +35,7 @@
 }
 .white-bg {
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   top: 30%;
