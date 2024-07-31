@@ -18,11 +18,13 @@
 /* 1.마이페이지 메인페이지 */
 .sub-title {
   font-size: 24px;
-  color: #ca1a5a;
+  color: #000000;
   font-weight: bold;
-  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .sub-title-header {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #000000;
 }
 .body-header {
@@ -119,10 +121,12 @@
 .Reservation-mange-go {
   font-size: 14px;
   color: #858585;
-  position: relative;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: flex-end;
+  height: 15px;
+  margin-top: 15px;
+  /* position: relative; */
+
+  /* display: flex;
+  justify-content: flex-end; */
 }
 /* 4. 현재 예약 현황 */
 .category {

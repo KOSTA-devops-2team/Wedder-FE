@@ -74,6 +74,8 @@
 .calendar-option-list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
   background-color: #eeeeee;
 }
 .calandar-middle .calandar-option {
@@ -85,7 +87,12 @@
   right: 20px;
 
   width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .calendar-bottom .calendar-bottom span {
   font-weight: bold;
 }
@@ -135,4 +142,20 @@
   padding: 10px;
 
   font-weight: bold;
+}
+.calendar-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-table th,
+td {
+  width: 225px;
+  border: 1px solid black;
+  text-align: center;
+}
+.v-line {
+  margin: 40px 0px 20px 0px;
+
+  border-bottom: 1px solid #ccc;
 }
