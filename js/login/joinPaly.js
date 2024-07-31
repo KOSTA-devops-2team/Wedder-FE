@@ -4,6 +4,7 @@
 //     modal.style.display="flex";
 // });
 
-function showPopup() {
-    window.open("joinplayset.html", "a", "width=500, height=700, left=100 "); 
+function showpopup() {
+    window.open("../../html/login/passfind.html", "a", "width=550, height=700, left=100 "); 
 }
+

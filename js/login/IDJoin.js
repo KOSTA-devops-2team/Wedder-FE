@@ -1,4 +1,4 @@
-let id = document.querySelector("#idjoin");
+let id = document.querySelector("#id-join");
 let btn = document.querySelector(".bt")
 const fil = /[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*/gi;
 id.addEventListener("keyup",()=>{
