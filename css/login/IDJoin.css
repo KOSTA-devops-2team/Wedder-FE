@@ -34,7 +34,7 @@ hr{
     margin-left: 0;
 }
 
-.idset input{
+.id-set input{
     width: 440px;
     height: 50px;
     border: 1px solid gray;
@@ -43,7 +43,7 @@ hr{
     padding-left: 10px;
 }
 
-.idset input:focus{
+.id-set input:focus{
     border-color: #CA1A5A;
     outline: none;
     

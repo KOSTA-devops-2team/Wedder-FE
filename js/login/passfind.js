@@ -1,5 +1,5 @@
 let id = document.querySelector("#email");
-const btn = document.querySelector(".checkTime")
+const btn = document.querySelector(".check-time")
 const fil = /[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*/gi;
 id.addEventListener("keyup",()=>{
     if(fil.test(id.value)){
@@ -11,7 +11,9 @@ id.addEventListener("keyup",()=>{
     }
 });
 
-const close = document.querySelector(".checkPoint")
-{
-    window.close();
-}
+const close = document.querySelector(".check-point")
+close.addEventListener("click",function(){
+    {
+        window.close();
+    }
+})
