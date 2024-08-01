@@ -1,5 +1,6 @@
 .company-kind .List-search-bar {
-  margin-left: 300px;
+  position: relative;
+  left: 180px;
   padding-right: 0px;
   margin-top: 0px;
 }
@@ -43,15 +44,7 @@
   font-weight: bold;
   cursor: pointer;
 }
-.company-kind div:nth-of-type(1):hover {
+.company-kind .brand:hover {
   border-bottom: 3px solid #ca1a5a;
-  font-size: 17px;
-}
-.company-kind div:nth-of-type(2):hover {
-  border-bottom: 3px solid #ca1a5a;
-  font-size: 17px;
-}
-.company-kind div:nth-of-type(3):hover {
-  border-bottom: 3px solid #ca1a5a;
-  font-size: 17px;
+  font-size: 16px;
 }
