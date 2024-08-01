@@ -16,20 +16,20 @@
     text-align: left;
     color: #000;
 }
-.tabs {
+.tab {
     display: flex;  
     justify-content:center;
     margin: 5px 0;
     padding: 10px 180px;
     justify-content: space-between;
 }
-.tab {
+.tab-content {
     padding: 10px 20px;
     margin : 0px 30px;
     font-weight: bold   ;
     cursor: pointer;
 }
-.tab.active {
+.tab-active {
     border-bottom: 2px solid #CA1A5A;
     font-weight: bold;
 }
@@ -91,7 +91,7 @@
     margin-top: 20px;
     margin-bottom: 100px;
 }
-.basicOptionParagraph {
+.basic-detail {
     font-size: 12px;
 }
 .main-price {
@@ -154,17 +154,6 @@
     font-weight: bold;
     font-size: 18px;
 }
-.btn {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.btn:hover {
-    background-color: #555;
-}
 .img-container img {
     width: 100%;
     height: auto;
@@ -176,58 +165,32 @@
 .option span {
     display: block;
     margin-bottom: 5px;
-}
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.buttons .next {
-    width: 270px;
-    padding: 10px 20px;
-    font-size: 14px;
-    color: #fff;
-    background-color: #000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-} 
-.buttons .back {
-    width: 270px;
-    height: auto;
-    font-size: 14px;
-    color: #000;
-    background-color: #ffffff;
-    border: 1px solid #000;
-    border-radius: 5px;
-    cursor: pointer;
 }   
-
-.total1 {
+.price {
+    margin-bottom: 10px;
+}
+.price-regular {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.total2 {
+.price-discount {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     padding-bottom: 15px;
     border-bottom: 1px solid #757575;
 }
-.total2 .color {
+.price-discount .color {
     color: #CA1A5A;
 }
-.total3 {
+.price-total {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.price {
-    margin-bottom: 10px;
 }
 .material-symbols-outlined {
     font-variation-settings:
@@ -242,13 +205,28 @@
     margin-top: 52px;
     font-size: 13px;
 }
-.button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #000;
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btn .next {
+    width: 270px;
+    padding: 10px 20px;
+    font-size: 14px;
     color: #fff;
-    text-align: center;
+    background-color: #000;
+    border: none;
     border-radius: 5px;
-    text-decoration: none;
+    cursor: pointer;
+} 
+.btn .back {
+    width: 270px;
+    height: auto;
+    font-size: 14px;
+    color: #000;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
 }

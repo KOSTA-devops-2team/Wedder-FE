@@ -46,13 +46,13 @@
   font-size: 14px;
   color: #000;
 }
-.service .actions {
+.service .action {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-right: 30px;
 }
-.service .actions a {
+.service .action a {
   font-size: 14px;
   color: #ca1a5a;
   text-decoration: none;
@@ -75,11 +75,11 @@
   border: none;
   cursor: pointer;
 }
-.totals {
+.total {
   margin-top: 100px;
   text-align: right;
 }
-.title {
+.total-title {
   text-align: left;
   font-size: 25px;
   color: #000;
@@ -87,14 +87,14 @@
   border-bottom: 1px solid #757575;
   padding: 15px 5px;
 }
-.cost {
+.total-cost {
   display: flex;
   justify-content: space-between;
   padding: 15px 5px;
   font-size: 15px;
   color: #333;
 }
-.discount {
+.total-discount {
   display: flex;
   justify-content: space-between;
   padding: 15px 5px;
@@ -102,14 +102,14 @@
   color: #ca1a5a;
   border-bottom: 1px solid #757575;
 }
-.final {
+.total-final {
   display: flex;
   justify-content: space-between;
   padding: 15px 5px;
   font-size: 18px;
   color: #000000;
 }
-.discount-box {
+.choice-box {
   margin: 50px 100px 100px;
   padding: 40px;
   background-color: #ffffff;
@@ -127,11 +127,11 @@
   color: #2c3245;
   font-size: 15px;
 }
-.buttons {
+.btn {
   display: flex;
   justify-content: space-between;
 }
-.buttons .pay {
+.btn .pay {
   width: 270px;
   padding: 10px 20px;
   font-size: 16px;
@@ -141,7 +141,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.buttons .back {
+.btn .back {
   width: 270px;
   height: auto;
   padding: 10px 20px;
