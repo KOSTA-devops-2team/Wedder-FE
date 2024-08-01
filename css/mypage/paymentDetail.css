@@ -135,6 +135,13 @@ td {
 
   cursor: pointer;
 }
+.link:hover {
+  background-color: #ccc;
+}
+.link a {
+  color: rgb(50, 152, 220);
+  font-weight: normal;
+}
 
 .all-delete:hover {
   border: 1px solid #ccc;
