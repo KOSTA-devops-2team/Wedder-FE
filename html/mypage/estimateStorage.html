@@ -13,16 +13,38 @@
 </head>
 <body>
     <div id="header-placeholder"></div>
-    
-    
+     
     <div class="myPage-container hd__inner1100">
         <!-- 0. 마이페이지 사이드 바 -->
         <aside class="myPage-sidebar">
             <div id="myPage-sidebar-placeholder"></div>
         </aside>
 
-        <main class="myPage-content hd__inner960">
-            <!-- 1. 견적함 제목 -->
+        <div class="mypage-content hd__inner960">
+            <!-- 1.마이페이지 배너 -->
+            <section class="mypage-header" id="mypage-section1">
+                <div class="divide">
+                    <div class="mypage-header-main">
+                        <p>안녕하십니까 김유정님</p>
+                    </div>
+                    <div>
+                        <div class="mypage-header-footer">
+                            <div class="v-line"></div>
+                            <div>
+                                <p>현재 예약 현황</p>
+                                <p>3건</p>
+                            </div>
+                            <div class="v-line"></div>
+                            <div>
+                                <p>금일 방문 일정</p>
+                                <p>2건</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. 견적함 제목 -->
             <section class="estimate"> 
                 <div class="estimate-title">
                     <p class="category">견적함</p>
@@ -31,7 +53,7 @@
                         <p class="total">총 6개</p>
                     </div>
                 </div>
-                <!-- 2. 견적함 박스 -->
+                <!-- 3. 견적함 박스 -->
                 <div class="estimate-storage">
                     <div class="storage">
                         <div class="title-box">
@@ -143,7 +165,7 @@
                 </div>
             </section>
 
-            <!-- 3. 견적서 모달창 -->
+            <!-- 4. 견적서 모달창 -->
             <section id="modal" class="modal">
                 <div class="modal-content">
 
@@ -261,8 +283,7 @@
                 </div>     
 
             </section>
-        </main>
-    
+        </div>
     </div>
     <div id="footer-placeholder"></div>
     <script src="../../js/mypage/estimateStorage.js"></script>
