@@ -121,7 +121,7 @@
     padding: 10px 30px;
 }
 .like-btn:hover {
-    background-color: #f4699c;
+    opacity: 80%;
 }
 
 .list-btn {
@@ -130,7 +130,16 @@
 }
 
 .list-btn:hover {
+    opacity: 80%;
+}
+
+.estimate-btn {
     background-color: #717171;
+    padding: 10px 30px;
+}
+
+.estimate-btn:hover {
+    opacity: 80%;
 }
 
 /* 3. 예식일정 현황  */
