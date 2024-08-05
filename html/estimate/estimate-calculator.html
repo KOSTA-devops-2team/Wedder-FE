@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../../css/estimate/estimate-calculator.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <script src="../../js/main/main.js"></script>
+        <script src="../../js/estimate/estimate-calculator.js"></script>
     </head>
     <body>
         <div id="header-placeholder"></div>
@@ -17,10 +18,10 @@
                     <p>Estimate</p>
                     <p class="description">원하는 조건의 스튜디오, 드레스 메이크업 업체를 조합해 가격을 알아봐요</p>
                 </div>
-                <div class="tab">
-                    <div class="tab-active">스튜디오</div>
-                    <div class="tab-content">드레스</div>
-                    <div class="tab-content">헤어메이크업</div>
+                <div class="tabs">
+                    <div class="tab">스튜디오</div>
+                    <div class="tab">드레스</div>
+                    <div class="tab">헤어메이크업</div>
                 </div>
                 <!-- 필터 -->
                 <div class="filter">
@@ -33,91 +34,258 @@
                     <select>
                         <option>예산</option>
                     </select>
-                    <div class="search-container">
+                    <div class="search-box">
                         <input type="text" placeholder="업체명으로 검색">
                         <button class="search-btn">검색하기</button>
                     </div>
                 </div>
-                <div class="body">
-                    <div class="body-position">
-                        <div class="body-grid">
-                            <div class="item">
-                                <div class="image">
-                                    <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
+                <div class="divide">
+                    <!-- 스튜디오 그리드 -->
+                    <section class="body">
+                        <div class="body-studio">
+                            <div class="body-grid">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
                                 </div>
-                                <div class="details">
-                                    <div class="title">S 스튜디오</div>
-                                    <div class="address">서울특별시 서초구 신반포로 41길 7</div>
-                                    <a href="#" class="link">업체 보러가기 >></a>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png" alt="Wedding Photo" width="100">
-                                </div>
-                                <div class="details">
-                                    <div class="title">S 스튜디오</div>
-                                    <div class="address">서울특별시 서초구 신반포로 41길 7</div>
-                                    <a href="#" class="link">업체 보러가기 >></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
-                                </div>
-                                <div class="details">
-                                    <div class="title">S 스튜디오</div>
-                                    <div class="address">서울특별시 서초구 신반포로 41길 7</div>
-                                    <a href="#" class="link">업체 보러가기 >></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
-                                </div>
-                                <div class="details">
-                                    <div class="title">S 스튜디오</div>
-                                    <div class="address">서울특별시 서초구 신반포로 41길 7</div>
-                                    <a href="#" class="link">업체 보러가기 >></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
-                                </div>
-                                <div class="details">
-                                    <div class="title">S 스튜디오</div>
-                                    <div class="address">서울특별시 서초구 신반포로 41길 7</div>
-                                    <a href="#" class="link">업체 보러가기 >></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-2.png" alt="Wedding Photo" width="100">
-                                </div>
-                                <div class="details">
-                                    <div class="title">S 스튜디오</div>
-                                    <div class="address">서울특별시 서초구 신반포로 41길 7</div>
-                                    <a href="#" class="link">업체 보러가기 >></a>
-                                </div>
+                            <div class="similar-buttons">
+                                <button class="similar-button left" id="similar-prevButton">
+                                    <img
+                                        src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/left-arrow.png"
+                                    />
+                                </button>
+                                <div class="currentPage" id="similar-currentPage">1</div>
+                                <div class="slice">/</div>
+                                <div class="totalPages" id="similar-totalPages">3</div>
+                                <button class="similar-button right" id="similar-nextButton">
+                                    <img
+                                        src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/right-arrow.png"
+                                    />
+                                </button>
                             </div>
                         </div>
-                        <div class="similar-buttons">
-                            <button class="similar-button left" id="similar-prevButton">
-                                <img
-                                    src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/left-arrow.png"
-                                />
-                            </button>
-                            <div class="currentPage" id="similar-currentPage">1</div>
-                            <div class="slice">/</div>
-                            <div class="totalPages" id="similar-totalPages">3</div>
-                            <button class="similar-button right" id="similar-nextButton">
-                                <img
-                                    src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/right-arrow.png"
-                                />
-                            </button>
+                    </section>
+                    <!--드레스 그리드-->
+                    <section class="body">
+                        <div class="body-dress">
+                            <div class="body-grid">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/reservation/studio-1.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="similar-buttons">
+                                <button class="similar-button left" id="similar-prevButton">
+                                    <img
+                                        src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/left-arrow.png"
+                                    />
+                                </button>
+                                <div class="currentPage" id="similar-currentPage">1</div>
+                                <div class="slice">/</div>
+                                <div class="totalPages" id="similar-totalPages">3</div>
+                                <button class="similar-button right" id="similar-nextButton">
+                                    <img
+                                        src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/right-arrow.png"
+                                    />
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <!-- 드레스 메이크업-->
+                    <section class="body">
+                        <div class="body-makeup">
+                            <div class="body-grid">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="../../assets/images/storage-makeup.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="../../assets/images/storage-makeup.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="../../assets/images/storage-makeup.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="../../assets/images/storage-makeup.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="../../assets/images/storage-makeup.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="../../assets/images/storage-makeup.png" alt="Wedding Photo" width="100">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title">S 스튜디오</div>
+                                        <div class="address">서울특별시 서초구 신반포로 41길 7</div>
+                                        <a href="#" class="link">업체 보러가기 >></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="similar-buttons">
+                                <button class="similar-button left" id="similar-prevButton">
+                                    <img
+                                        src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/left-arrow.png"
+                                    />
+                                </button>
+                                <div class="currentPage" id="similar-currentPage">1</div>
+                                <div class="slice">/</div>
+                                <div class="totalPages" id="similar-totalPages">3</div>
+                                <button class="similar-button right" id="similar-nextButton">
+                                    <img
+                                        src="https://wdrtest1.s3.ap-northeast-2.amazonaws.com/common/arrow/right-arrow.png"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </section>
                     <div class="select-container">
                         <div class="select-list">
                             <div class="top">
@@ -145,17 +313,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="note">
-                            <p><strong>꼭 확인하세요!</strong></p>
-                            <p>- 예약 및 결제는 업체별로 진행됩니다.</p>
-                            <p>- 선택한 날짜에 따라 업체의 예약 가능 여부가 달라질 수 있습니다.</p>
-                            <p>- 최종 금액은 실제 결제 시 변동될 수 있습니다.</p>
-                        </div>
+                            <div class="note">
+                                <p><strong>꼭 확인하세요!</strong></p>
+                                <p>- 예약 및 결제는 업체별로 진행됩니다.</p>
+                                <p>- 선택한 날짜에 따라 업체의 예약 가능 여부가 달라질 수 있습니다.</p>
+                                <p>- 최종 금액은 실제 결제 시 변동될 수 있습니다.</p>
+                            </div>
+                        </div>    
+                    </div> 
+                    <div class="btn">
+                        <button class="back">이전</button>
+                        <button onclick="location.href='estimate-detail.html'" class="next">다음으로</button>
                     </div>
-                </div>
-                <div class="btn">
-                    <button class="back">이전</button>
-                    <button onclick="location.href='estimate-detail.html'" class="next">다음으로</button>
                 </div>
             </div>
         </div>    
