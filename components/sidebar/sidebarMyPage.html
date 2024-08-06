@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="../../js/myPage/myPage-main.js"></script>
     <title>마이페이지 사이드바</title>
   </head>
   <body>
@@ -12,17 +13,31 @@
           <span class="title"> <b>My Profile</b></span>
           <br />
           <ul class="list">
-            <li class="item"><a href="#">MyProfile</a></li>
+            <li class="item">
+              <a href="../../html/mypage/mypage.html">MyProfile</a>
+            </li>
 
-            <li class="item"><a href="#">금일 방문 일정</a></li>
-            <li class="item"><a href="#">현재 예약 현황</a></li>
-            <li class="item"><a href="#">상세 예약 현황</a></li>
-            <li class="item"><a href="#">My Like</a></li>
+            <li class="item" id="myPage_Visit">
+              <a href="../../html/mypage/mypage.html">방문 일정</a>
+            </li>
 
-            <li class="item"><a href="#">결제 내역</a></li>
-            <li class="item"><a href="#">나의 연인 추가</a></li>
-            <li class="item"><a href="#">커플 페이지 </a></li>
-            <li class="item"><a href="#">견적함</a></li>
+            <li class="item" id="myPage_Reservation">
+              <a href="../../html/mypage/reservationDetail.html"
+                >상세 예약 현황</a
+              >
+            </li>
+            <br />
+            <li class="item">
+              <a href="../../html/mypage/likeList.html">My-Like</a>
+            </li>
+
+            <li class="item">
+              <a href="../../html/mypage/myPayment.html">결제 내역</a>
+            </li>
+
+            <li class="item">
+              <a href="../../html/mypage/estimateStorage.html">견적함</a>
+            </li>
           </ul>
         </li>
         <li class="menu-section">

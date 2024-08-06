@@ -4,43 +4,66 @@
 //     modal.style.display="flex";
 // });
 
-let email = document.querySelector('#EmailID');
-let pas = document.querySelector('#Password');
+let email = document.querySelector('#email-id');
+let pass = document.querySelector('.password-ps');
 const loginbutton = document.querySelector('#continue');
+console.log(pass);
 
+function main(){
+    window.open("../../html/main/main.html");
+}
 
-function showPopup() {
-     window.open("passfind.html", "a", "width=500, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
-    }
+function showpopup() {
+    window.open("../../html/login/passfind.html", "a", "width=550, height=700, left=100 "); 
+}
+
+function showpopup1() {
+    window.open("../../html/login/passfind.html", "a", "width=700, height=700, left=100 "); 
+}
 
 function usePopup() {
-window.open("uselaw.html", "a", "width=710, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
+    window.open("../../html/login/uselaw.html", "a", "width=730, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
 }
 
 
 function privacyPopup() {
-window.open("privacy.html", "a", "width=710, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
+    window.open("../../html/login/uselaw.html", "a", "width=730, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
 }
 
 
 function marketingPopup() {
-window.open("marketing.html", "a", "width=710, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
+    window.open("../../html/login/uselaw.html", "a", "width=730, height=700, left=100,resizable=no, menuber=no, scrollbars=no "); 
 }
 
 
-pass1=document.querySelector("#Password");
-//눈 클릭
-const bt = document.querySelector(".btn");
-let typecheck=false;
-bt.addEventListener("click",function(){
-    if(!typecheck){
-        pass1.prop("type","password");
-        bt.src="file:///C:/Users/WD/Downloads/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24%20(1).svg";
-        typecheck=true;
-    }else if(typecheck){
-        pass1.prop("type","text");
-        bt.src="file:///C:/Users/WD/Downloads/visibility_off_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-        typecheck=false;
+//눈동자
+const mso = document.querySelector(".material-symbols-outlined");
+let msotf=false
+mso.addEventListener("click",()=>
+{
+    if(!msotf){
+        mso.innerText = "visibility_off";
+        msotf=true;
+        pass.type ="text";
     }
-    
+    else if(msotf){
+        mso.innerText = "visibility";
+        msotf=false;
+        pass.type="password";
+    }
 });
+
+// const fil = /[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*/gi;
+// //로그인
+// link = '../../html/main/main.html'
+// email.addEventListener("keyup",()=>{
+//     if(fil.test(email) && pass.value != ""){
+//         loginbutton.onclick = function(){
+//             location.href=link;
+//     }
+//     }else{
+//         loginbutton.onclick = function(){
+//             location.href='../../html/main/login.js';
+//         }
+//     }
+// });
