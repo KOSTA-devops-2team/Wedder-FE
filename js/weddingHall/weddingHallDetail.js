@@ -36,7 +36,7 @@ function showNextImage() {
     carouselInner.style.transform = `translateX(-${index * 100}%)`;
 }
 
-setInterval(showNextImage, 5000); // 5초마다 이미지 전환
+setInterval(showNextImage, 3000); // 5초마다 이미지 전환
 
 // Section5. 슬라이드 하단 페이지
 let currentIndex = 0;

@@ -1,42 +1,30 @@
-.banner {
-    background-image: url(../../assets/images/estimateBanner.png);
-    height: 170px;
-    padding: 53px 45px;
-    text-align: left;
+.container-title {
+    font-size: 30px;
+    color: #CA1A5A;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container-title .description {
     font-size: 15px;
 }
-.banner .bold {
-    font-size: 22px;
-    font-weight: bold;
-    color: #000;
-    padding-bottom: 15px;
-}
-.outer-par {
-    padding: 10px;
-    text-align: left;
-    color: #000;
-}
+
+/* 스드메 상단 탭 */
 .tabs {
-    display: flex;  
-    justify-content:center;
-    margin: 5px 0;
-    padding: 10px 180px;
-    justify-content: space-between;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .tab {
     padding: 10px 20px;
-    margin : 0px 30px;
-    font-weight: bold   ;
-    cursor: pointer;
-}
-.tab.active {
-    border-bottom: 2px solid #f00;
     font-weight: bold;
+    cursor: pointer;
+    flex: 1;
 }
 .main-grid {
     display: grid;
-    grid-template-columns: 650px auto;
-    grid-gap: 10px;
+    grid-template-columns: 690px auto;
+    grid-gap: 15px;
 }
 .left-panel {
     grid-row-start: 1;
@@ -49,28 +37,20 @@
     height: 700px;
     border: 1px solid #757575;
     border-radius: 10px;
-    padding: 30px 20px;
-}
-.note {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border: 1px solid #757575;
-    border-radius: 5px;
-    height: 150px;
-    color: #666;
-    font-size: 12px;
+    padding: 10px 20px;
 }
 .main img {
-    width: 250px;
-    height:250px;
+    width: 200px;
+    height:200px;
     float: left;
     margin-right: 20px;
 }
 .content-bold {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+}
+.content-address {
+    font-size: 14px
 }
 .selected {
     margin: 10px;
@@ -85,10 +65,13 @@
     justify-content: space-between;
     vertical-align: center;
     margin-top: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
-.basicOptionParagraph {
-    font-size: 10px;    
+.basic-detail {
+    font-size: 12px;
+}
+.main-price {
+    font-weight: 700;
 }
 .container {
     display: flex;
@@ -100,13 +83,8 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #000;
 }
-.list-main img {
-    display: flex;
-    float: left;
-}
 .item-main {
     display: flex;
-    justify-content: space-between; 
 }
 .option {
     display: flex;
@@ -129,32 +107,28 @@
 .item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
-.item total {
+.item img {
+    width: 10px;
+    height: auto;
+    margin-right: 8px;
+}
+.item-title {
     display: flex;
     justify-content: space-between;
+    font-size: 16x;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.items {
+    margin-bottom: 250px;
 }
 .total {
     font-weight: bold;
     font-size: 18px;
-}
-.btn-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-.btn {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.btn:hover {
-    background-color: #555;
 }
 .img-container img {
     width: 100%;
@@ -167,13 +141,66 @@
 .option span {
     display: block;
     margin-bottom: 5px;
+}   
+.price {
+    margin-bottom: 10px;
 }
-.buttons {
+.price-regular {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.buttons .next {
+.price-discount {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #757575;
+}
+.price-discount .color {
+    color: #CA1A5A;
+}
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 14
+}
+.replay {
+    display: flex;
+    justify-content: right;
+    margin-top: 52px;
+    font-size: 13px;
+}
+.note {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    padding: 30px;
+    height: 150px;
+    color: #666;
+    font-size: 12px;
+}
+
+/* 이전, 다음 버튼 */
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btn .next {
     width: 270px;
     padding: 10px 20px;
     font-size: 14px;
@@ -183,7 +210,7 @@
     border-radius: 5px;
     cursor: pointer;
 } 
-.buttons .back {
+.btn .back {
     width: 270px;
     height: auto;
     font-size: 14px;
@@ -192,4 +219,4 @@
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
-}   
+}

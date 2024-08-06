@@ -9,6 +9,14 @@ body {
   -ms-overflow-style: none;
 }
 
+.myPage-sidebar {
+  width: 240px;
+}
+.hd__inner1100 {
+  display: flex;
+  flex-direction: row;
+}
+
 /* 1. 헤더 설명 */
 .Wish_List-header {
   height: 200px;
@@ -31,10 +39,10 @@ body {
 }
 /*2. Follow List  */
 .recent {
-  width: 400px;
+  width: 380px;
 }
 .recent img {
-  width: 400px;
+  width: 350px;
 }
 .followListCover {
   margin-left: 20px;
@@ -57,7 +65,7 @@ body {
   width: 200px;
 }
 .followList-content {
-  width: 380px;
+  width: 200px;
   margin-left: 20px;
 }
 .followList a img {
@@ -797,3 +805,8 @@ button.swiper-pagination-bullet {
 /* slide  끝*/
 
 /*  */
+.hd__inner1400 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

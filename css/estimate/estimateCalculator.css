@@ -1,0 +1,264 @@
+.container-title {
+    font-size: 30px;
+    color: #CA1A5A;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container-title .description {
+    font-size: 15px;
+}
+
+/* 스드메 상단 탭 */
+.tabs {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+}
+
+/* 필터 */
+.filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filter select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+}
+.filter input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+}
+.search-box input {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 260px;
+}
+.search-btn {
+    background-color: #000;
+    color : white;
+    margin-left: 10px;  
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 90px;
+}
+
+/* 그리드 */
+.divide {
+    display: flex;
+    justify-content: space-between;
+}
+.body {
+    display: none;
+}
+.body-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(2, 350px);
+    grid-gap: 20px;
+}
+
+/* 슬라이드 <, > 버튼 */
+.similar-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.similar-button {
+    cursor: pointer;
+    border: none;
+}
+.similar-button.left {
+    margin-right: 30px;
+}
+.similar-button.right {
+    margin-left: 30px;
+}
+.similar-button img {
+    width: 25px;
+    height: 30px;
+}
+.currentPage {
+    font-size: 25px;
+    margin: 0 10px;
+    font-weight: 300;
+}
+.totalPages {
+    margin: 0 10px;
+    font-size: 25px;
+    color: rgb(160, 160, 160);
+    font-weight: 300;
+}
+.slice {
+    margin: 0 15px;
+    font-size: 25px;
+    color: rgb(160, 160, 160);
+    font-weight: 300;
+}
+.noline {
+    border-bottom: none;
+}
+
+/* 그리드 요소 속성 */
+.item {
+    text-align: center;
+    box-shadow: 5px 5px 5px #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.image img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.title {
+    font-size: 15PX;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.address {
+    margin: 5px 0;
+    font-size: 10px;
+    margin-bottom: 60px;
+}
+.link {
+    display: flex;
+    color: rgb(97, 97, 109);
+    text-decoration: none;
+    font-size: 10px;
+    justify-content: right;
+}
+
+/* 선택하신 목록 */
+.select-container {
+    margin-left: 30px;
+    width: 450px;
+}
+.select-list {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    height: 692px;
+}
+.select-title {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid #333;
+}
+.select-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 389px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.price {
+    margin-bottom: 10px;
+}
+.price-regular {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.price-discount {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #757575;
+}
+.price-discount .color {
+    color: #CA1A5A;
+}
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.replay {
+    display: flex;
+    justify-content: right;
+    margin-top: 37px;
+    font-size: 13px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 14
+}
+.note {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #777;
+}
+
+/* 이전, 다음 버튼 */   
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.btn .next {
+    width: 270px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.btn .back {
+    width: 270px;
+    height: auto;
+    font-size: 14px;
+    color: #000;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* js 설정 */
+.tab-selected {
+    color: #ca1a5a;
+    border-bottom: 2px solid #ca1a5a;
+}
+.contents-active {
+    display: block;
+}

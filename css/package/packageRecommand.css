@@ -1,5 +1,6 @@
+/* 슬라이드 */
 .slider-box {
-    height:75vh;
+    height: 75vh;
 }
 .slider-box .swiper {
     height:100%;
@@ -10,7 +11,7 @@
 .swiper > .swiper-wrapper > .swiper-slide:nth-child(even) {
     background-color: rgba(206, 26, 90, 0.15);
 }
-.paragraph {
+.banner-content {
     text-align: left;
     margin: 170px 500px;
 }
@@ -18,18 +19,19 @@
     font-size: 50px;
     font-weight: bold;
 }
-.par1 {
+.title-one {
     margin: 20px 0px 20px;
     color: #666;
 }
-.par2 {
+.title-two {
     margin: 20px 0px 20px;
     color: #666;
 }
-.par2 span {
+.color {
     color : red;
+    text-align: text-bottom;
 }
-.par3 {
+.title-three {
     margin: 20px 0px 20px;
     color: #666;
 }
@@ -48,10 +50,7 @@ span.color {
     vertical-align: text-bottom;
 }
 /* 상단 그리드 */
-.top-grid {
-    display: flex;
-}
-.top {
+.container-top {
     margin-top: 60px;
 }
 .pack-title {
@@ -64,6 +63,9 @@ span.color {
     font-weight: 700;
     margin-bottom: 10px;
 }
+.grid-top {
+    display: flex;
+}
 .grid {
     border-radius: 5px;
     box-shadow: 5px 5px 7px #eeeeee;
@@ -75,32 +77,32 @@ span.color {
     object-fit: cover;
     padding-bottom: 10px;
 }
-.con {
+.content {
     display: flex;
     margin-bottom: 5px;
     padding-bottom: 10px;
     border-bottom: 1px solid #757575;
 }
-.con img {
+.content img {
     width: 55px;
     height: 55px;
     border-radius: 5px;
     object-fit: cover;
     float: left;
 }
-.con-non {
+.content-bottom {
     display: flex;
     margin-bottom: 5px;
     padding-bottom: 10px;
 }
-.con-non img {
+.content-bottom img {
     width: 55px;
     height: 55px;
     border-radius: 5px;
     object-fit: cover;
     float: left;
 }
-.con-par {
+.content-detail {
     padding: 5px;
 }
 .detail {
@@ -109,18 +111,18 @@ span.color {
     font-size: 10px;
     font-weight: 700;
 }
-.con-par .up {
+.content-detail .up {
     color: #757575;
     font-size: 9px;
     font-weight: 500;
     padding-bottom: 5px;
 }
-.con-par .down{
+.content-detail .down{
     color: #000;
     font-size: 11px;
     font-weight: 700;
 }
-/* 하단 그리드 */
+/* 하단 그리드*/
 .bot {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -131,30 +133,31 @@ span.color {
     margin-bottom: 20px;
     padding-left: 10px;
 }
-.range-title {
+.price-title {
     font-size: 20px;
     font-weight: 700;
 }
-.price-range .button-price {
+.btn-price {
     border: none;
     font-size: 14px;
     color: #757575;
 }
-.bot-gridd {
+/* 하단 그리드 내용 */
+.grid-bottom {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
 }
-.gridd {
+.grid-content {
     margin-top: 30px;
 }
-.gridd-pic img {
+.grid-pic img {
     border-radius: 5px;
 }
-.gridd .name {
+.grid-content .name {
     font-size: 14px;
     font-weight: 700;
 }
-.gridd .cost {
+.grid-content .cost {
     color: #ca1a5a;
     font-size: 14px;
 }

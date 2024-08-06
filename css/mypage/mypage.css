@@ -18,11 +18,13 @@
 /* 1.마이페이지 메인페이지 */
 .sub-title {
   font-size: 24px;
-  color: #ca1a5a;
+  color: #000000;
   font-weight: bold;
-  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .sub-title-header {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #000000;
 }
 .body-header {
@@ -40,7 +42,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 10px 100px;
+  margin: 10px 80px;
 }
 .body-header-footer {
   display: flex;
@@ -116,21 +118,23 @@
 }
 
 /* 3. 금일 방문 일정 */
-.ReservationMange-go {
+.Reservation-mange-go {
   font-size: 14px;
   color: #858585;
-  position: relative;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: flex-end;
+  height: 15px;
+  margin-top: 15px;
+  /* position: relative; */
+
+  /* display: flex;
+  justify-content: flex-end; */
 }
 /* 4. 현재 예약 현황 */
 .category {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0px 10px;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 5px;
+  text-align: start;
 }
 .table {
   display: flex;
@@ -210,24 +214,25 @@ td {
 .tabs {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   border-bottom: 2px solid black;
-  margin: 20px;
   padding-top: 100px;
 }
 .tab {
-  padding: 10px 20px;
-  margin: 0px 30px 0px 30px;
+  padding: 10px 5px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
 }
-.tab_Active {
-  /* 탭 활성화 시 다른 내용 하이드 */
-  display: flex;
-}
+
 .content {
   margin-top: 20px;
+}
+.content {
+  display: grid;
+}
+.content div .is_on {
+  display: grid;
 }
 
 /* 콘텐트 내용 */

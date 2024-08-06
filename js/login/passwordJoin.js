@@ -1,5 +1,5 @@
-let pass1 = document.querySelector(".pass > #passSet1");
-let pass2 = document.querySelector(".pass > #passSet2");
+let pass1 = document.querySelector(".pass > #pass-set1");
+let pass2 = document.querySelector(".pass > #pass-set2");
 const eg = /^[a-zA-Z]/;
 const sp = /[!@#$%^&*()_+~`,./?;'";:]/;
 const su = /[0-9]/;
@@ -9,7 +9,7 @@ const up2 = document.querySelector("#num");
 const up3 = document.querySelector("#special");
 const up4 = document.querySelector("#limit");
 
-const up5 = document.querySelector("#checkset");
+const up5 = document.querySelector("#check-set");
 
 const btn = document.querySelector(".bt");
 
@@ -75,7 +75,7 @@ pass1.addEventListener('keyup',()=>{
     if(pass2.value == pass1.value && a && b && c && d && e)
         {
             document.querySelector(".check > #up5").style.color="black";
-            up5.setAttribute("id","checkset2");
+            up5.setAttribute("id","check-set2");
                 console.log("오픈 비밀문");
                 btn.style.backgroundColor="black";
                 link ='joinPaly.html';
@@ -89,7 +89,7 @@ pass1.addEventListener('keyup',()=>{
         }
         else{
             document.querySelector(".check > #up5").style.color="#b1b1b1";
-            up5.setAttribute("id","checkset");
+            up5.setAttribute("id","check-set");
             btn.style.backgroundColor="#b1b1b1";
             btn.style.cursor = "default";
             btn.disabled = true;
@@ -103,7 +103,7 @@ pass2.addEventListener('keyup',()=>{
     {
         e=true;
         document.querySelector(".check > #up5").style.color="black";
-        up5.setAttribute("id","checkset2");
+        up5.setAttribute("id","check-set2");
             console.log("오픈 비밀문");
             btn.style.backgroundColor="black";
             link ='joinPaly.html';
@@ -118,7 +118,7 @@ pass2.addEventListener('keyup',()=>{
     else{
         e=false;
         document.querySelector(".check > #up5").style.color="#b1b1b1";
-        up5.setAttribute("id","checkset");
+        up5.setAttribute("id","check-set");
         btn.style.backgroundColor="#b1b1b1";
         btn.style.cursor = "default";
         btn.disabled = true;
@@ -126,20 +126,24 @@ pass2.addEventListener('keyup',()=>{
     }
 });
 
-//눈 클릭
-const bt = document.querySelector(".btn");
-let typecheck=false;
-bt.addEventListener("Click",()=>{
-    if(!typecheck){
-        pass1.prop("type","password");
-        pass2.prop("type","password");
-        bt.src="file:///C:/Users/WD/Downloads/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24%20(1).svg";
-        typecheck=true;
-    }else if(typecheck){
-        pass1.prop("type","text");
-        pass2.prop("type","text");
-        bt.src="file:///C:/Users/WD/Downloads/visibility_off_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-        typecheck=false;
+
+//눈동자
+const mso = document.querySelector(".material-symbols-outlined");
+
+let msotf=false
+mso.addEventListener("click",()=>
+{
+    if(!msotf){
+        mso.innerText = "visibility_off";
+        msotf=true;
+        pass1.type ="text";
+        pass2.type ="text";
+        
     }
-    
+    else if(msotf){
+        mso.innerText = "visibility";
+        msotf=false;
+        pass1.type ="password";
+        pass2.type ="password";
+    }
 });
