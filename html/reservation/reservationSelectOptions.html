@@ -39,7 +39,7 @@
         <!-- 선택 업체 정보 -->
         <section class="company">
             <div class="company-title">
-                <h1>[스튜디오] 빌링스 스튜디오</h1>
+                <h1>[스튜디오] 비마이 스튜디오</h1>
             </div>
             <div class="company-container">
                 <div class="img-container">
@@ -58,12 +58,12 @@
                             <div class="basic-option">                            
                                 <p>촬영 소요 시간</p>
                                 <ul>
-                                <li>4시간</li>
+                                    <li>4시간</li>
                                 </ul>
                             </div>
                             <div class="basic-option">                            
                                 <p>촬영 스케줄</p>
-                                <ul><li>10시, 12시, 14시, 15시</li></ul>
+                                <ul><li>10시, 12시, 14시, 1시</li></ul>
                             </div>
                         </div>
                         <div class="basic-options-right">
@@ -90,8 +90,8 @@
         <section class="option-list">
             <div class="option-card">
                 <div class="option-img">
-                    <input type="checkbox">
-                    <img src="../../assets/images/option1.png" alt="옵션 이미지">
+                    <input type="checkbox" class="option-checkbox" id="option1">
+                    <img src="../../assets/images/option1.png" alt="옵션 이미지1">
                 </div>
                 <div class="option-info">
                     <h2 class="option-name">야간 촬영</h2>
@@ -101,8 +101,41 @@
             </div>
             <div class="option-card">
                 <div class="option-img">
-                    <input type="checkbox">
-                    <img src="../../assets/images/option2.png" alt="옵션 이미지">
+                    <input type="checkbox" class="option-checkbox" id="option2">
+                    <img src="../../assets/images/option2.png" alt="옵션 이미지2">
+                </div>
+                <div class="option-info">
+                    <h2 class="option-name">옥상씬 촬영</h2>
+                    <p class="option-descript">옥상씬 촬영 시 발생하는 비용</p>
+                    <h6 class="option-price">110,000원</h6>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-img">
+                    <input type="checkbox" class="option-checkbox" id="option3">
+                    <img src="../../assets/images/option3.png" alt="옵션 이미지3">
+                </div>
+                <div class="option-info">
+                    <h2 class="option-name">애견동반 촬영</h2>
+                    <p class="option-descript">애견동반 촬영 시 발생하는 비용</p>
+                    <h6 class="option-price">100,000원</h6>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-img">
+                    <input type="checkbox" class="option-checkbox" id="option4">
+                    <img src="../../assets/images/option4.png" alt="옵션 이미지4">
+                </div>
+                <div class="option-info">
+                    <h2 class="option-name">로드씬 촬영</h2>
+                    <p class="option-descript">로드씬 촬영 시 발생하는 비용</p>
+                    <h6 class="option-price">110,000원</h6>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-img">
+                    <input type="checkbox" class="option-checkbox" id="option5">
+                    <img src="../../assets/images/option5.png" alt="옵션 이미지5">
                 </div>
                 <div class="option-info">
                     <h2 class="option-name">들러리 촬영</h2>
@@ -112,48 +145,59 @@
             </div>
             <div class="option-card">
                 <div class="option-img">
-                    <input type="checkbox">
-                    <img src="../../assets/images/option3.png" alt="옵션 이미지">
-                </div>
-                <div class="option-info">
-                    <h2 class="option-name">애견동반 촬영</h2>
-                    <p class="option-descript">12시 이후부터 촬영 가능</p>
-                    <h6 class="option-price">100,000원</h6>
-                </div>
-            </div>
-            <div class="option-card">
-                <div class="option-img">
-                    <input type="checkbox">
-                    <img src="../../assets/images/option4.png" alt="옵션 이미지">
-                </div>
-                <div class="option-info">
-                    <h2 class="option-name">앨범 추가</h2>
-                    <p class="option-descript">앨범 페이지 추가</p>
-                    <h6 class="option-price">33,000원(1장 당)</h6>
-                </div>
-            </div>
-            <div class="option-card">
-                <div class="option-img">
-                    <input type="checkbox">
-                    <img src="../../assets/images/option5.png" alt="옵션 이미지">
+                    <input type="checkbox" class="option-checkbox" id="option6">
+                    <img src="../../assets/images/option6.png" alt="옵션 이미지6">
                 </div>
                 <div class="option-info">
                     <h2 class="option-name">의상 대여</h2>
-                    <p class="option-descript">1벌 당 추가 금액</p>
+                    <p class="option-descript">대여 의상 1벌당 추가 비용</p>
                     <h5 class="option-price">100,000원</h5>
                 </div>
             </div>
             <div class="option-card">
                 <div class="option-img">
-                    <input type="checkbox">
-                    <img src="../../assets/images/option6.png" alt="옵션 이미지">
+                    <input type="checkbox" class="option-checkbox" id="option7"> 
+                    <img src="../../assets/images/option7.png" alt="옵션 이미지7">
+                </div>
+                <div class="option-info">
+                    <h2 class="option-name">앨범 추가</h2>
+                    <p class="option-descript">앨범 페이지 1장당 추가 비용</p>
+                    <h6 class="option-price">33,000원(1장 당)</h6>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-img">
+                    <input type="checkbox" class="option-checkbox" id="option8">
+                    <img src="../../assets/images/option8.png" alt="옵션 이미지8">
                 </div>
                 <div class="option-info">
                     <h2 class="option-name">촬영 수정본 컨펌</h2>
                     <p class="option-descript">촬영 후 수정본 1번 더 컨펌 이용 가능</p>
                     <h5 class="option-price">110,000원</h5>
                 </div>
-            </div>    
+            </div>
+            <div class="option-card">
+                <div class="option-img">
+                    <input type="checkbox" class="option-checkbox" id="option9">
+                    <img src="../../assets/images/option9.jpg" alt="옵션 이미지9">
+                </div>
+                <div class="option-info">
+                    <h2 class="option-name">작가 지정</h2>
+                    <p class="option-descript">촬영 작가 지정 시 발생하는 비용</p>
+                    <h5 class="option-price">220,000원</h5>
+                </div>
+            </div> 
+            <div class="option-card">
+                <div class="option-img">
+                    <input type="checkbox" class="option-checkbox" id="option10">
+                    <img src="../../assets/images/option10.png" alt="옵션 이미지10">
+                </div>
+                <div class="option-info">
+                    <h2 class="option-name">촬영 시간 추가</h2>
+                    <p class="option-descript">30분 추가당 발생하는 비용</p>
+                    <h5 class="option-price">55,000원</h5>
+                </div>
+            </div>     
         </section>
 
 
@@ -168,7 +212,7 @@
                         <img id="company-images" src="../../assets/images/reserve-studio-company.png" alt="업체 이미지">
                     </div>
                     <div>
-                        <h4 class="select-company-title">빌링스 스튜디오</h4>
+                        <h4 class="select-company-title">비마이 스튜디오</h4>
                         <p  class="select-purpose">[웨딩촬영]</p>
                     </div>
                 </div>
@@ -176,7 +220,7 @@
                     <div class="option-container">
                         <div class="select-option">
                             <div>
-                                <img src="../../assets/images/option1.png" alt="옵션 이미지">
+                                <img src="../../assets/images/option1.png" alt="옵션 이미지1">
                             </div>
                             <div class="select-option-info">
                                 <h6>야간 촬영</h6>
@@ -190,7 +234,7 @@
                     <div class="option-container">
                         <div class="select-option">
                             <div>
-                                <img src="../../assets/images/option2.png" alt="옵션 이미지">
+                                <img src="../../assets/images/option5.png" alt="옵션 이미지5">
                             </div>
                             <div class="select-option-info">
                                 <h6>들러리 촬영</h6>

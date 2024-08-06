@@ -2,7 +2,7 @@
 .title {
     text-align: left;
     color: #ca1a5a;
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
     padding-bottom: 5px;
 }
 
@@ -19,56 +19,6 @@
     margin-top: 0;
     margin-bottom: 5px;
 }
-
-/* 스텝 Bar */
-/* .steps-bar {
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    width: 100%;
-}
-
-.step {
-    color: #737373;
-    position: relative;
-    flex: 1;
-    padding: 13px 20px;
-    text-align: center;
-    background: #f3f3f3;
-}
-
-.step::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #f3f3f3;
-    z-index: 1;
-}
-
-.step:not(:last-child)::before {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    z-index: 2;
-}
-
-.step.active::after {
-    border-left-color: #000;
-}
-
-.step.active {
-    background: #000;
-    color: #fff;
-} */
 
 /* 안내멘트 */
 .guide {
@@ -113,7 +63,7 @@
 .company-container {
     display: flex;
     background-color: #eee;
-    /* padding: 20px; */
+    height: 300px;
 }
 
 .company-container img {
@@ -130,11 +80,12 @@
 
 .company-info {
     padding: 15px;
+    width: 100%;
 }
 
 .company-info h3 {
-    width: 720px;
-    font-size: 17px;
+    width: 98%;
+    font-size: 18px;
     font-weight: 600;
     padding-bottom: 8px;
     margin: 5px 0;
@@ -152,14 +103,15 @@
 }
 
 .basic-option p {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
     color: #000;
 }
 
 .basic-option li {
     font-size: 12px;
     list-style-type : disc;
-    margin: 5px 17px;
+    margin: 10px 17px;
 }
 
 /* 옵션 리스트 */
@@ -192,11 +144,13 @@
 
 .option-img img{
     width: 200px;
-    height: 100%;
+    height: 160px;
+    object-fit: cover;
 }
 
 .option-info {
     width: 100%;
+    height: 160px;
     padding: 20px 30px;
 }
 
@@ -227,7 +181,7 @@
 .select-list {
     padding: 10px; 
     background-color: #fff;
-    position: sticky;
+    /* position: sticky; */
     bottom: 0px;
 }   
 
