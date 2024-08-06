@@ -2,24 +2,26 @@
 .title {
     text-align: left;
     color: #ca1a5a;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
 }
 
 .title-sub {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     letter-spacing: -0.5px;
     margin-bottom: 5px;
 }
 
 .title-main {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 /* 스텝 Bar */
-.steps-bar {
+/* .steps-bar {
     font-size: 14px;
     display: flex;
     justify-content: space-between;
@@ -66,53 +68,50 @@
 .step.active {
     background: #000;
     color: #fff;
-}
+} */
 
 /* 안내멘트 */
 .guide {
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 5px;    
 }
 
 .guide-step {
     font-size: 22px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 2px;
     margin: 0;
-    margin-right: 5px;
-
 }
 
 .guide-explain {
     font-size: 16px;
     font-weight: normal;
     letter-spacing: -0.5px;
-    padding-top: 3px;
+    padding-top: 12px;
     padding-left: 11px;
 }
 
 /* 선택 업체 정보 */
 .company {
-    width: 1050px;
-    margin: 15px 25px;
+    margin: 15px 5px;
 }
 
 .company-title {
-    width: 1050px;
-    border-bottom: 2px solid #000;
-    margin-bottom: 20px;
+    background-color: rgba(204, 204, 204, 0.5);
+    margin-bottom: 15px;
 }
 
 .company-title h1 {
     font-size: 20px;
-    margin: 25px 0 0 5px;
-    padding-bottom: 15px;
+    margin: 5px;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
 }
 
 .company-container {
     display: flex;
-    width: 1050px;
     background-color: #eee;
     /* padding: 20px; */
 }
@@ -121,6 +120,12 @@
     width: 280px;
     height: 270px;
     padding: 20px;
+    object-fit: cover;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
 }
 
 .company-info {

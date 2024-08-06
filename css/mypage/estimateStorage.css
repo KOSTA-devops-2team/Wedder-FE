@@ -11,17 +11,67 @@
   min-height: 1000px;
 }
 
-/* 1. 견적함 제목 */
+/* 1. 마이페이지 배너 */
+.mypage-header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin: 10px;
+  }
+  .mypage-header-main {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 100px;
+  }
+
+  .mypage-header-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .mypage-header-footer p:nth-of-type(1) {
+    margin: 10px;
+  }
+  
+  .divide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .divide p {
+    color: white;
+  }
+  
+  .v-line {
+    border-left: 1px solid white;
+    height: 60px;
+    margin: 10px;
+    margin-left: 80px;
+    align-self: center;
+  }
+
+/* 2. 견적함 제목 */
 .estimate-title {
-  border-bottom: 2px solid #000;
-  padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .category {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  padding-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .main-title {
@@ -30,11 +80,10 @@
 }
 
 .title-myestimate {
-  font-size: 21px;
-  font-weight: 600;
-  color: #ca1a5a;
-  margin: 0;
-  padding-left: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #CA1A5A;
+    margin: 0;
 }
 
 .total {
@@ -44,7 +93,7 @@
   padding-top: 7px;
 }
 
-/* 2. 견적함 박스 */
+/* 3. 견적함 박스 */
 .estimate-storage {
   display: grid;
   grid-template-columns: repeat(3, 280px);
@@ -101,7 +150,7 @@
   margin-right: 5px;
 }
 
-/* 3. 견적서 모달창 */
+/* 4. 견적서 모달창 */
 .modal {
   position: fixed;
   top: 70px;
@@ -127,17 +176,17 @@
   overflow-x: hidden;
 }
 
-.modal.show {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
+.modal.show { 
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
 
 .selectedList {
@@ -256,10 +305,11 @@
 }
 
 .regular {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  color: #757575;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    color: #757575;
 }
 .discount {
   display: flex;
@@ -280,6 +330,8 @@
   font-weight: bolder;
 }
 
+
+/* 버튼 */
 .btn {
   display: flex;
   justify-content: space-between;
