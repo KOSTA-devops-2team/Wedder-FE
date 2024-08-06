@@ -7,42 +7,125 @@
     background-color: #fff;
     border-radius: 5px;
     top: 40%;
-    left: 35%;
+    left: 25%;
     transform: translate(-50%, -45%);
    
 }
 
 .box{
-    width: 673px;
+    width: 680px;
     height: 30px;
     background-color: #F776A5;
     
     
 }
 
-#Use{
-    text-align: center;
-    font-size: 30px;
-    font:bold;
-    border: none;
-}
-
 .agree{
-    width: 150%;
+    width: 200%;
     height: 600px;
     border: 1px solid black;
     overflow-y: scroll;
     box-shadow: 5px 5px 7px #c8c8c8c8;
 }
 
+* { 
+    list-style: none; 
+    padding: 10px; 
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.tab_wrap { 
+    display: flex; 
+    vertical-align: middle;
+}
+
+.tab_wrap .tab { 
+    background: #efefef; 
+    padding: 1rem; 
+    width: 20rem; 
+    vertical-align: middle;
+}
+
+.tab_wrap .tab:hover { 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.tab.active { 
+    background: #000; 
+    color: #fff; 
+    font-weight: bold; 
+}
+
+.content_wrap .content { 
+    width: 41rem; 
+    text-align: left;
+    background: #f9f9f9;  
+    display: none; }
+
+.content_wrap .content.con_active { 
+    display: block; 
+}
+
+
+
+/* .laws{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.laws li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.laws li.current{
+    background: #8f8282;
+    color: #222;
+}
+
+.teb-content{
+    display: none;
+    background: #ededed;
+    padding: 15px;
+}
+
+.tab-content .current{
+    display: inherit;
+}
+
+.law-manu .laws #use-teb{
+    width: 120px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.law-manu .laws #privacy-teb{
+    width: 120px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.law-manu .laws #marketing-teb{
+    width: 120px;
+    height: auto;
+    border: 1px solid black;
+}
+ */
+
 
 /*
-.box input[type="checkbox"]
+.box input[type="check-box"]
 {
     display: none;
 }
 
-.box input[type="checkbox"] + label{
+.box input[type="check-box"] + label{
     display: inline-block;
     position: relative;
     padding-left:30px;
@@ -51,7 +134,7 @@
   
 }
 
-.box input[type="checkbox"] + label::before{
+.box input[type="check-box"] + label::before{
     display: inline-block;
     content:'';
     font-size: 20px;
@@ -68,7 +151,7 @@
     
 }
 
-.box input[type="checkbox"]:checked + label::before{
+.box input[type="check-box"]:checked + label::before{
     content:'✔';
     background-color: #CA1A5A;
     color:white;

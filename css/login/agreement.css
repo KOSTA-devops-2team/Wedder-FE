@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*창 설정*/
-.agreement{
+.agree-ment{
     position: absolute;
     padding: 50px;
     width: 450px;
@@ -72,19 +72,19 @@ td{
 }
 
 /*모두 동의*/
-.checkin input[type="checkbox"]
+.check-in input[type="checkbox"]
 {
       display: none;
 }
   
-.checkin input[type="checkbox"] + label{
+.check-in input[type="checkbox"] + label{
       display: inline-block;
       position: relative;
       padding-left:30px;
 
 }
 
-.checkin input[type="checkbox"] + label::before{
+.check-in input[type="checkbox"] + label::before{
     display: inline-block;
     content:'';
     font-size: 20px;
@@ -100,7 +100,7 @@ td{
 }
 
 
-.checkin input[type="checkbox"]:checked + label::before{
+.check-in input[type="checkbox"]:checked + label::before{
       content:'✔';
       font-weight: 1px;
       background-color: black;

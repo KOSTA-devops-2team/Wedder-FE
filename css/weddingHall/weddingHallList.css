@@ -75,21 +75,20 @@
 /* 업체 리스트(card) 부분 */
 .list-all {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 35px;
     margin-top: 30px;
 }
 
 .card {
-    height: 350px;
+    height: 375px;
     width: 100%;
-    max-width: 250px;
     overflow: inherit;
 }
 
 .card img {
     width: 100%;
-    height: 60%;
+    height: 70%;
     object-fit: cover;
 }
 
