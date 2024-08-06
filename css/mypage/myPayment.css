@@ -48,7 +48,7 @@ body {
   justify-content: space-between;
 }
 .myPage-sidebar {
-  width: 220px;
+  width: 140px;
 }
 .myPage-content {
   width: 960px;
@@ -65,40 +65,131 @@ body {
   justify-content: flex-end;
 }
 /* 4. 결제 내역*/
-.table-myPayment {
-  border-collapse: collapse;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  border-spacing: 500px;
+
+.payment-total li {
+  margin: 20px;
 }
-.table-myPayment thead {
-  height: 60px;
+
+.payment-body-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-th,
-td {
-  width: 400px;
-  text-align: center;
-  border-bottom: 1px solid #eeeeee;
+.payment-body-top dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  font-weight: bold;
 }
-.table-myPayment td {
-  height: 130px;
-  background-color: white;
+.payment-body-top dl dt {
+  padding-right: 5px;
 }
-.table-myPayment thead tr {
-  border: none;
+.body-top-link {
+  padding: 5px;
+  font-size: 14px;
 }
-.table-myPayment tbody :nth-last-of-type(5) {
-  color: #ca1a5a;
+
+.body-top-link:hover {
+  background-color: #858585;
+  border-radius: 4px;
 }
-.table-myPayment tbody img {
-  width: 100px;
+
+.payment-body-content {
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-.table-myPayment tbody td ul {
+.payment-content1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+
+  width: 550px;
 }
-.table-myPayment tbody li {
-  font-size: 9px;
-  display: none;
+.payment-content1-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.payment-status {
+  background-color: #ca1a5a;
+  border-radius: 5px;
+  margin-right: 5px;
+  height: 25px;
+}
+.payment-status-cancle {
+  background-color: #858585;
+  border-radius: 5px;
+  margin-right: 5px;
+  height: 25px;
+}
+
+.status-text {
+  padding: 3px;
+  margin: 1px;
+
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+.payment-num {
+  font-size: 14px;
+}
+.payment-number {
+  font-weight: bold;
+}
+.content1-brand {
+  margin-top: 5px;
+}
+.payment-content2 {
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content2-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content2-minus {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.content2-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-weight: bold;
+}
+.payment-content3 {
+  width: 150px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: relative;
+  left: 20px;
+}
+.payment-content3 a {
+  height: 30px;
+
+  padding: 3px;
+  margin: 1px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+.payment-content3 a:hover {
+  background-color: #eee;
 }
