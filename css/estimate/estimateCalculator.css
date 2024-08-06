@@ -254,6 +254,7 @@
     cursor: pointer;
 }
 
+/* js 설정 */
 .tab-selected {
     color: #ca1a5a;
     border-bottom: 2px solid #ca1a5a;

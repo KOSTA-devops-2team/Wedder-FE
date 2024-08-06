@@ -1,37 +1,25 @@
-.banner {
-    background-image: url(../../assets/images/estimateBanner.png);
-    height: 170px;
-    padding: 53px 45px;
-    text-align: left;
+.container-title {
+    font-size: 30px;
+    color: #CA1A5A;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container-title .description {
     font-size: 15px;
 }
-.banner .bold {
-    font-size: 22px;
-    font-weight: bold;
-    color: #000;
-    padding-bottom: 15px;
-}
-.outer-par {
-    padding: 10px;
-    text-align: left;
-    color: #000;
+
+/* 스드메 상단 탭 */
+.tabs {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .tab {
-    display: flex;  
-    justify-content:center;
-    margin: 5px 0;
-    padding: 10px 180px;
-    justify-content: space-between;
-}
-.tab-content {
     padding: 10px 20px;
-    margin : 0px 30px;
-    font-weight: bold   ;
-    cursor: pointer;
-}
-.tab-active {
-    border-bottom: 2px solid #CA1A5A;
     font-weight: bold;
+    cursor: pointer;
+    flex: 1;
 }
 .main-grid {
     display: grid;
@@ -50,18 +38,6 @@
     border: 1px solid #757575;
     border-radius: 10px;
     padding: 10px 20px;
-}
-.note {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border: 1px solid #757575;
-    border-radius: 5px;
-    padding: 30px;
-    height: 150px;
-    color: #666;
-    font-size: 12px;
 }
 .main img {
     width: 200px;
@@ -107,11 +83,6 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #000;
 }
-.list-main img {
-    display: flex;
-    float: left;
-    margin-right: 20px;
-}
 .item-main {
     display: flex;
 }
@@ -138,6 +109,11 @@
     justify-content: space-between;
     margin-bottom: 20px;
     font-weight: 500;
+}
+.item img {
+    width: 10px;
+    height: auto;
+    margin-right: 8px;
 }
 .item-title {
     display: flex;
@@ -205,6 +181,20 @@
     margin-top: 52px;
     font-size: 13px;
 }
+.note {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    padding: 30px;
+    height: 150px;
+    color: #666;
+    font-size: 12px;
+}
+
+/* 이전, 다음 버튼 */
 .btn {
     display: flex;
     justify-content: space-between;
