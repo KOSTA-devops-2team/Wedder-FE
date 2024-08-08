@@ -47,9 +47,9 @@
             <!-- 2. 견적함 제목 -->
             <section class="estimate"> 
                 <div class="title-container">
-                    <p class="category">견적함</p>
+                    <!-- <p class="category">견적함</p> -->
                     <div class="main-title">
-                        <h2 class="estimate-title">My 견적</h2>
+                        <h2 class="estimate-title">견적함</h2>
                         <p class="total">총 6개</p>
                     </div>
                 </div>
@@ -208,7 +208,7 @@
             <section id="modal" class="modal">
                 <div class="modal-content">
 
-                    <div class="selectedList">
+                    <div class="selected-list">
                             <h1>선택하신 목록</h1>
                         <div class="estimate-list">
                             <div class="product-img">
@@ -216,7 +216,11 @@
                             </div>
                             <div class="company-content">
                                 <div class="company-info">
-                                    <p class="company-name">S 스튜디오</p>
+                                    <div class="company-title">
+                                        <p class="company-name">S 스튜디오</p>
+                                        <p class="del-list">삭제</p>
+                                    </div>
+                                    
                                     <div class="company-detail">
                                         <p class="basic-option">[웨딩촬영]앨범 20p + 기본 액자 (20R)</p>
                                         <h4 class="price-basic">330,000원</h4>
@@ -247,7 +251,11 @@
                             </div>
                             <div class="company-content">
                                 <div class="company-info">
-                                    <p class="company-name">안나스포사</p>
+                                    <div class="company-title">
+                                        <p class="company-name">안나스포사</p>
+                                        <p class="del-list">삭제</p>
+                                    </div>
+                                    
                                     <div class="company-detail">
                                         <p class="basic-option">[촬영] 드레스 3벌</p>
                                         <h4 class="price-basic">1,120,000원</h4>
@@ -278,7 +286,10 @@
                             </div>
                             <div class="company-content">
                                 <div class="company-info">
-                                    <p class="company-name">제니하우스 청담힐</p>
+                                    <div class="company-title">
+                                        <p class="company-name">제니하우스 청담힐</p>
+                                        <p class="del-list">삭제</p>
+                                    </div>
                                     <div class="company-detail">
                                         <p class="basic-option">[촬영+본식] 신부신랑 메이크업</p>
                                         <h4 class="price-basic">330,000원</h4>
@@ -296,20 +307,18 @@
                             </div>
                         </div>
 
-                        <div class="price">
-                            <div class="priceDetail">
-                                <div class="regular">
-                                    <p class="price-p">정상가</p>
-                                    <p>3,260,000원</p>
-                                </div>
-                                <div class="discount">
-                                    <p class="price-p">쿠폰/옵션 할인가</p>
-                                    <p class="discount-color">-206,000원</p>
-                                </div>
-                                <div class="final">
-                                    <p class="price-p">최종 금액</p>
-                                    <p>3,000,000원</p>
-                                </div>
+                        <div class="price-container">
+                            <div class="price-regular">
+                                <p>정상가</p>
+                                <p>3,260,000원</p>
+                            </div>
+                            <div class="discount">
+                                <p>쿠폰/옵션 할인가</p>
+                                <p>-206,000원</p>
+                            </div>
+                            <div class="price-final">
+                                <p>최종 금액</p>
+                                <p>3,000,000원</p>
                             </div>
                         </div>
 
@@ -321,7 +330,7 @@
                 </div>     
             </section>
 
-            <!-- 삭제 모달창 -->
+            <!-- 견적함 삭제 모달창 -->
             <section id="modal" class="modal2">
                 <div class="modal-content2">
                     <h2 class="modal-q">견적함을 삭제 하시겠습니까?</h2>
@@ -329,6 +338,18 @@
                     <div class="modal-btn">
                         <a href="#"><button class="check-btn">확인</button></a> 
                         <button class="cancel-btn">취소</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 견적서 상품 삭제 모달창 -->
+            <section id="modal" class="modal3">
+                <div class="modal-content3">
+                    <h2 class="modal-q">상품을 삭제 하시겠습니까?</h2>
+                    <p>상품의 내용이 모두 삭제됩니다.</p>
+                    <div class="modal-btn">
+                        <a href=""><button class="check-btn">확인</button></a> 
+                        <button class="cancel-btn2">취소</button>
                     </div>
                 </div>
             </section>
