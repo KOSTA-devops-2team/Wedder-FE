@@ -2,95 +2,45 @@
 .title {
     text-align: left;
     color: #ca1a5a;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
 }
 
 .title-sub {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     letter-spacing: -0.5px;
     margin-bottom: 5px;
 }
 
 .title-main {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
-/* 스텝 Bar */
-.steps-bar {
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    width: 100%;
-}
-
-.step {
-    color: #737373;
-    position: relative;
-    flex: 1;
-    padding: 13px 20px;
-    text-align: center;
-    background: #f3f3f3;
-}
-
-.step::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #f3f3f3;
-    z-index: 1;
-}
-
-.step:not(:last-child)::before {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    z-index: 2;
-}
-
-.step.active::after {
-    border-left-color: #000;
-}
-
-.step.active {
-    background: #000;
-    color: #fff;
-}
 
 /* 안내멘트 */
 .guide {
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 5px;    
 }
 
 .guide-step {
     font-size: 22px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 2px;
     margin: 0;
-    margin-right: 5px;
-
 }
 
 .guide-explain {
     font-size: 16px;
     font-weight: normal;
     letter-spacing: -0.5px;
-    padding-top: 3px;
+    padding-top: 12px;
     padding-left: 11px;
-
 }
 
 /* 방문 일자 선택 */
@@ -100,14 +50,15 @@
 
 .company-title {
     width: 1050px;
-    border-bottom: 2px solid #000;
+    /* border-bottom: 2px solid #000; */
     margin-bottom: 20px;
 }
 
 .company-title h1 {
     font-size: 20px;
-    margin: 25px 0 0 5px;
-    padding-bottom: 15px;
+    margin: 5px 0;
+    padding: 8px 5px;
+    background-color: rgba(204, 204, 204, 0.3);   
 }
 
 .company-title p {
@@ -197,19 +148,23 @@
     cursor: pointer;
 }
 
+.time-slot-none {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    color: #ccc;
+    cursor: default;
+}
+
 .time-slot-selected {
     background-color: rgba(255, 203, 222, 0.3);
     color: #ca1a5a;
     border: 1px solid #ca1a5a;
 }
-
-.time-slot:nth-of-type(3) {
-    border: 1px solid #ccc;
-    color: #ccc;
-    cursor: default;
-}
-
-
 
 /* 선택 목록 */
 .select-list {

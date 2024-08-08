@@ -1,6 +1,9 @@
+/* 슬라이드 상단 공백 해결 */
 body {
     margin-top: 143px !important;
 }
+
+/* 슬라이드 */
 .slider-box {
     height: 75vh;
 }
@@ -13,7 +16,7 @@ body {
 .swiper > .swiper-wrapper > .swiper-slide:nth-child(even) {
     background-color: rgba(206, 26, 90, 0.15);
 }
-.paragraph {
+.banner-text {
     text-align: left;
     margin: 170px 500px;
 }
@@ -21,15 +24,15 @@ body {
     font-size: 50px;
     font-weight: bold;
 }
-.par1 {
+.title-one {
     margin: 20px 0px 20px;
     color: #666;
 }
-.par2 {
+.title-two {
     margin: 20px 0px 20px;
     color: #666;
 }
-.par3 {
+.title-three {
     margin: 20px 0px 20px;
     color: #666;
 }
@@ -43,12 +46,6 @@ body {
     top: 292px;
     right: 473px;
 }
-.midpar {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 100px;
-    text-align: center;
-}
 span.color {
     color: red;
     vertical-align: text-bottom;
@@ -60,6 +57,14 @@ span.color {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* 패키지 추천 */
+.notice {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 100px;
+    text-align: center;
 }
 .recommendations {
     display: grid;
@@ -77,19 +82,19 @@ span.color {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 40px;
-    height: 300px;
+    height: 340px;
     text-align: center;
 }
 .recommendation h2 {
     font-size: 25px;
     color: #ca1a5a;
 }
-.recommendpar {
+.recommand-detail {
     color: #666;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 600;
 }
-.recommendpar-top {
+.recommand-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,14 +110,16 @@ span.color {
     justify-content: center;
     margin-right: 7px;
 }
-.steps-title {
+
+/* 패키지 이용방법 */
+.step-title {
     text-align: center;
     margin-top: 30px;
     color: #000;
     font-size: 20px;
     font-weight: 700;
 }
-.steps {
+.step {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 100px;
@@ -120,12 +127,12 @@ span.color {
     margin-bottom: 100px;
     padding: 50px;
 }
-.how-to-use {
+.step-name {
     font-size: 30px;
     color: #ca1a5a;
     font-weight: 700;
 }
-.step {
+.step-content {
     display: flex;
     font-size: 22px;
     color: #6B7684;
@@ -141,39 +148,41 @@ span.color {
     margin-bottom: 10px;
     margin-right: 20px;
 }
-.step-par {
+.step-detail {
     margin-top: 20px;
 }
 .title {
     font-weight: bolder;
     padding-bottom: 5px;
 }
+
+/* 베스트 패키지 */
 .packages {
     text-align: center;
 }
-.pack-title {
+.package-title {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 20px;
     border-bottom: 1px solid #000;
 }
-.bestpackage {
+.package-best {
     font-size: 24px;
     color: #333;
     font-weight: bolder;
 }
-.look-aroud {
+.package-watch {
     font-size: 14px;
 }
-.look-aroud a {
+.package-watch a {
     text-decoration-line: none;
 }
 .package-list {
     display: flex;
     justify-content: space-around;
 }
-.package {
+.package-content {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -181,11 +190,11 @@ span.color {
     width: 30%;
     text-align: center;
 }
-.package img {
+.package-content img {
     width: 100%;
     margin-bottom: 10px;
 }
-.package h3 {
+.package-content h3 {
     font-size: 18px;
     color: #333;
 }

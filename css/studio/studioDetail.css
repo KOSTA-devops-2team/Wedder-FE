@@ -99,8 +99,9 @@
 
 .info-map img {
     width: 450px;
-    height: 200px;
+    height: 280px;
     margin-left: 8px;
+    object-fit: cover;
 }
 
 .buttons {
@@ -142,7 +143,7 @@
     opacity: 80%;
 }
 
-/* 3. 예식일정 현황  */
+/* 3. 일정 현황  */
 .schedule {
     margin-top: 100px;
 }
@@ -192,93 +193,43 @@
     background-color: #f4699c;
 }
 
-/* 4. 웨딩홀 견적 계산기 */
+/* 4. 추가 옵션 */
 .estimator {
     margin-top: 100px;
 }
 
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 30px 50px;
     gap: 23px 80px;
-}
+} */
 
 .section h2 {
-    margin-bottom: 13px;
+    margin: 13px 0;
     font-size: 20px;
     color: #ca1a5a;
 }
 
-.estimator table {
-    width: 100%;
-    margin-bottom: 15px;
+.option-table {
+    width: 95%;
+    margin: 15px auto;
 }
 
-.estimator th {
+.option-table th {
     background-color: #f2f2f2;
     padding: 8px 0px;
 }
 
-.estimator td {
-    height: 35px;
+.option-table td {
+    height: 50px;
     vertical-align: middle;
     text-align: center;
 }
 
-.month-grids {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 0 20px;
-}
-.month-grids button {
-    border: 1px solid #eeeeee;
-    height: 58px;
-}
-
-.month-grid-selected {
-    background-color: rgba(255, 203, 222, 0.3);
-    color: #ca1a5a;
-    border: 1px solid #ca1a5a;
-}
-
-.result {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-start;
-}
-
-.guest-num {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.result input {
-    border: 1px solid #eeeeee;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-}
-
-.result-sub-title {
-    font-size: 16px;
-    color: #848484;
-    margin-bottom: 10px;
-}
-
-.guest-num span {
-    width: 50%;
-}
-
-.guest-num input {
-    margin-left: 200px;
-    margin-right: 10px;
-    width: 50%;
-}
 
 .estimator-warning {
-    width: 95%;
+    width: 90%;
     border: 1px solid #ca1a5a;
     padding: 15px 20px;
     border-radius: 10px;
@@ -286,29 +237,12 @@
 }
 .estimator-warning p {
     font-size: 14px;
+    line-height: 2;
     word-break: keep-all;
 }
 
-.result-calc {
-    text-align: right;
-    font-size: 20px;
-}
 
-.calculate-button {
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #ca1a5a;
-    padding: 13px 30px;
-    margin-bottom: 12px;
-}
-
-.calculate-button:hover {
-    background-color: #f4699c;
-}
-
-/* 5. 비슷한 가격대 웨딩홀 */
+/* 5. 비슷한 가격대 업체 */
 .similar {
     margin-top: 90px;
     position: relative;
