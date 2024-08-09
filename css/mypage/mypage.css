@@ -15,6 +15,58 @@
 .p {
   text-align: center;
 }
+.hd__inner880 {
+  width: 880px;
+}
+/* 0. 상단 요약 섹션 */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #303033;
+  height: 100px;
+  width: 880px;
+}
+
+.summary h1 {
+  font-size: 24px;
+  padding-left: 40px;
+}
+.summary-lists {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-right: 30px;
+  border-left: 1px solid white;
+  padding-left: 13px;
+}
+
+.summary-title {
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.summary-count {
+  display: flex;
+  align-items: baseline;
+}
+
+.summary-count .number {
+  font-size: 26px;
+}
+
+.summary-count .unit {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
 /* 1.마이페이지 메인페이지 */
 .sub-title {
   font-size: 24px;
@@ -59,6 +111,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  width: 880px;
+  height: 100px;
 }
 .divide p {
   color: white;
@@ -114,7 +169,6 @@
   width: 270px;
   height: 270px;
   margin: 100px;
-  margin-right: 130px;
 }
 
 /* 3. 금일 방문 일정 */

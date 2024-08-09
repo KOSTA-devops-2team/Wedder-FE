@@ -1,9 +1,3 @@
-.company-kind .List-search-bar {
-  position: relative;
-  left: 180px;
-  padding-right: 0px;
-  margin-top: 0px;
-}
 .company-kind .List-search-bar input {
   height: 20px;
   border-radius: 5px;
@@ -27,7 +21,7 @@
 .company-kind {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   height: 40px;
   margin: 10px 0px 20px;
@@ -35,14 +29,21 @@
   background-color: white;
   border-radius: 4px;
 }
-
+.company {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 .company-kind div {
   padding: 5px 20px;
-  margin: 5px;
+
   color: black;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+}
+.company-kind .brand {
+  height: 30px;
 }
 .company-kind .brand:hover {
   border-bottom: 3px solid #ca1a5a;

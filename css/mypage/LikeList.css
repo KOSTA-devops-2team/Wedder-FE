@@ -13,6 +13,53 @@ body {
 .side-bar-flex {
   width: 220px;
 }
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #303033;
+  height: 100px;
+  width: 880px;
+}
+
+.summary h1 {
+  font-size: 24px;
+  padding-left: 40px;
+}
+.summary-lists {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-right: 30px;
+  border-left: 1px solid white;
+  padding-left: 13px;
+}
+
+.summary-title {
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.summary-count {
+  display: flex;
+  align-items: baseline;
+}
+
+.summary-count .number {
+  font-size: 26px;
+}
+
+.summary-count .unit {
+  font-size: 16px;
+  margin-left: 5px;
+}
 .body-header {
   background-color: black;
   width: 900px;
@@ -75,62 +122,28 @@ h3 {
 .List-content p {
   font-size: 10px;
 }
-
-.company-kind .List-search-bar {
-  margin-left: 300px;
-  padding-right: 0px;
-  margin-top: 0px;
-}
-.company-kind .List-search-bar input {
-  height: 20px;
-  border-radius: 5px;
-  padding: 0px;
-}
-.company-kind .List-search-bar button {
-  background-color: #eeeeee;
-  cursor: pointer;
-  height: 20px;
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
-}
-.company-kind .List-search-bar button:hover {
-  cursor: pointer;
-  height: 25px;
-  color: white;
-  border: 1px solid #ca1a5a;
-  background-color: #ca1a5a;
-  border-radius: 5px;
-}
 .company-kind {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-
-  height: 40px;
-  margin: 10px 0px 20px;
-
-  background-color: white;
-  border-radius: 4px;
+  justify-content: space-between;
 }
-
-.company-kind div {
-  padding: 5px 20px;
-  margin: 5px;
-  color: black;
-  font-size: 16px;
+.company-kind .kind-box {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.company {
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+.company:hover {
   font-weight: bold;
-  cursor: pointer;
-}
-.company-kind div:nth-of-type(1):hover {
   border-bottom: 3px solid #ca1a5a;
+  margin-bottom: 7px;
 }
-.company-kind div:nth-of-type(2):hover {
-  border-bottom: 3px solid #ca1a5a;
+.company-kind .List-search-bar {
+  margin-top: 10px;
 }
-.company-kind div:nth-of-type(3):hover {
-  border-bottom: 3px solid #ca1a5a;
-}
-
 /* 2. 서치 바 기능 Search-bar */
 .search-bar {
   display: block;
@@ -157,8 +170,19 @@ h3 {
 }
 .LikeList-Card img {
   width: 200px;
+  height: 200px;
 }
 .LikeList-Card-List {
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+/* 탭 활성화 */
+.tab-selected {
+  color: #ca1a5a;
+}
+.contents-active {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
