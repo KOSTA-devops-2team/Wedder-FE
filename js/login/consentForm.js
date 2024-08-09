@@ -13,5 +13,3 @@ tab.forEach(function(tab_btn, index){
     con[index].classList.add('con_active');
   });
 });
-
-
