@@ -16,25 +16,33 @@ body {
 .swiper > .swiper-wrapper > .swiper-slide:nth-child(even) {
     background-color: rgba(206, 26, 90, 0.15);
 }
-.banner-text {
+.banner-content {
     text-align: left;
     margin: 170px 500px;
 }
-.title-bold {
+.banner-content2 {
+    text-align: center;
+    margin: 170px 500px;
+}
+
+/* 슬라이드 내용 */
+.banner-bold {
     font-size: 50px;
     font-weight: bold;
 }
-.title-one {
+.banner-text1 {
     margin: 20px 0px 20px;
     color: #666;
 }
-.title-two {
-    margin: 20px 0px 20px;
-    color: #666;
+.banner-text2 {
+    font-size: 50px;
+    color: #000;
+    font-weight: 700    ;
 }
-.title-three {
-    margin: 20px 0px 20px;
-    color: #666;
+.banner-text3 {
+    font-size: 35px;
+    color: #000;
+    font-weight: 700    ;
 }
 .gift {
     position: fixed;
